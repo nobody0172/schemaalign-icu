@@ -54,7 +54,11 @@ calibration split fixed and varies only what consumes the signal. (2) We release
 three-database field-level reference standard for open-set alignment---$710$
 field--concept pairs covering $135$ of $138$ catalogue concepts, and $2{,}428$ adjudicated
 \textsc{unknown} fields drawn from real schemas rather than constructed as
-negatives---validated by two blinded independent human experts ($\kappa{=}0.952$).
+negatives---validated by two blinded independent human experts
+($\kappa{=}0.952$).\footnote{Code, the reference standard and every model prompt and
+completion: \url{https://anonymous.4open.science/r/schemaalign-icu-89A8/}. No
+patient-level record is redistributed; the underlying databases remain under their
+PhysioNet credentialed data use agreement.}
 (3) We show the effect replicates across three language-model families and quantify what
 alignment quality is worth downstream, in a zero-shot cross-database transfer of a
 $24$-channel physiological time-series model.
