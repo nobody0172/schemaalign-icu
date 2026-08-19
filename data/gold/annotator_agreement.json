@@ -1,0 +1,8 @@
+{
+  "n": 1447,
+  "Po": 0.9855,
+  "Pe": 0.5632,
+  "kappa": 0.9668,
+  "note": "Per-annotator row-level labels were produced by the adjudication run and were not retained; only these aggregate statistics are reproducible from released artifacts. The restricted-kappa figure quoted in earlier internal notes (n=367, kappa=0.9419) is therefore NOT reproducible and must not be used in the paper.",
+  "reproducible_from": "data/gold/adjudication_result.json (final labels + agree/disagree flag)"
+}

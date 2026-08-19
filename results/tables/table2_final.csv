@@ -1,0 +1,22 @@
+method,domain,theta,Recall@1,Precision,F1,Coverage,OpenSet_AUROC,CI_lo,CI_hi,n_fields,n_positive
+Exact / normalized name,mimic-iv,,36.73,100.0,53.73,13.64,68.37,61.85,75.41,132,49
+Ontology only (LOINC),mimic-iv,,26.53,100.0,41.94,9.85,63.27,57.69,70.01,132,49
+"Frozen encoder, general (MiniLM-L6)",mimic-iv,0.64,48.98,82.76,61.54,21.97,91.12,85.99,95.75,132,49
+"Frozen encoder, biomedical (SapBERT)",mimic-iv,0.68,67.35,91.67,77.65,27.27,93.36,88.5,97.55,132,49
+SapBERT + deterministic checks as abstention,mimic-iv,0.68,67.35,91.67,77.65,27.27,92.4,86.42,97.05,132,49
+"Direct LLM (gpt-4.1, LLMatch prompt)",mimic-iv,,95.92,69.12,80.34,51.52,90.96,86.87,94.65,132,49
++ deterministic checks as abstention (ours),mimic-iv,,95.92,69.12,80.34,51.52,96.64,93.84,98.64,132,49
+Exact / normalized name,mimic-iii,,37.16,94.02,53.27,16.81,68.29,65.53,70.85,696,296
+Ontology only (LOINC),mimic-iii,,24.66,100.0,39.57,10.49,62.33,59.83,64.69,696,296
+"Frozen encoder, general (MiniLM-L6)",mimic-iii,0.64,62.16,86.79,72.44,30.46,90.03,87.55,92.45,696,296
+"Frozen encoder, biomedical (SapBERT)",mimic-iii,0.68,70.61,83.6,76.56,35.92,92.48,90.2,94.18,696,296
+SapBERT + deterministic checks as abstention,mimic-iii,0.68,70.61,83.6,76.56,35.92,90.3,87.85,92.72,696,296
+"Direct LLM (gpt-4.1, LLMatch prompt)",mimic-iii,,97.3,72.0,82.76,57.47,87.93,85.7,90.24,696,296
++ deterministic checks as abstention (ours),mimic-iii,,97.3,72.0,82.76,57.47,93.57,91.71,95.26,696,296
+Exact / normalized name,eicu,,44.08,98.53,60.91,27.87,72.37,68.67,76.21,244,152
+Ontology only (LOINC),eicu,,0.0,0.0,0.0,0.0,50.0,50.0,50.0,244,152
+"Frozen encoder, general (MiniLM-L6)",eicu,0.64,44.08,75.28,55.6,36.48,73.14,66.73,79.52,244,152
+"Frozen encoder, biomedical (SapBERT)",eicu,0.68,57.89,79.28,66.92,45.49,80.65,75.01,85.62,244,152
+SapBERT + deterministic checks as abstention,eicu,0.68,57.89,79.28,66.92,45.49,79.8,73.86,84.74,244,152
+"Direct LLM (gpt-4.1, LLMatch prompt)",eicu,,88.16,85.35,86.73,64.34,84.39,79.3,88.76,244,152
++ deterministic checks as abstention (ours),eicu,,88.16,85.35,86.73,64.34,85.04,79.22,89.54,244,152

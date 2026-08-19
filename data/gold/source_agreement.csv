@@ -1,0 +1,4 @@
+source_a,source_b,concepts_a,concepts_b,intersection,union,jaccard
+mimic-iv,mimic-iii,89,47,40,96,0.4167
+mimic-iv,eicu,89,67,35,121,0.2893
+mimic-iii,eicu,47,67,32,82,0.3902

@@ -1,0 +1,2311 @@
+{
+ "chunks": 5,
+ "total_rows": 284,
+ "raw_agreement_pct": 100,
+ "per_chunk": [
+  {
+   "name": "eicu_00",
+   "n": 2,
+   "agree": 2,
+   "disagree": 0
+  },
+  {
+   "name": "mimiciii_00",
+   "n": 39,
+   "agree": 39,
+   "disagree": 0
+  },
+  {
+   "name": "mimiciv_00",
+   "n": 120,
+   "agree": 120,
+   "disagree": 0
+  },
+  {
+   "name": "mimiciv_01",
+   "n": 120,
+   "agree": 120,
+   "disagree": 0
+  },
+  {
+   "name": "mimiciv_02",
+   "n": 3,
+   "agree": 3,
+   "disagree": 0
+  }
+ ],
+ "assignments": [
+  {
+   "chunk": "eicu_00",
+   "field_key": "Propofol (ml/hr)",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Propofol 是镇静麻醉药 (sedative/hypnotic), 不属于目录内的六种升压药, 按裁决规则2判 UNKNOWN。'(ml/hr)' 只是 eICU infusionDrug 的单位后缀, 不改变药物身份。src_table=eicu.infusionDrug 表示实际输注给药, 故 method=administration。剂量率单位为 mL/hr, p50=14.0 mL/hr、p99=166.8 mL/hr, 与丙泊酚常见泵速量级一致, 进一步佐证其为镇静输注而非升压药。",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "eicu_00",
+   "field_key": "Norepinephrine (ml/hr)",
+   "concept": "norepinephrine",
+   "method": "administration",
+   "reason": "字段名直接为通用名 Norepinephrine (即 Levophed/Noradrenaline 的通用名), 命中目录概念 norepinephrine。'(ml/hr)' 为单位后缀, 不改变药物身份, 不另立概念。src_table=eicu.infusionDrug 为实际输注记录, 故 method=administration; 与 prescriptions 来源的去甲肾上腺素共享同一 base_concept, 差异由 method 承载。数值为容积速率 (p50=13.1 mL/hr, p99=185.7 mL/hr), 属于 eICU 常见的按 mL/hr 记录的升压药泵速, 临床上合理。",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30001",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Packed RBC's is a blood product. Blood products excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30005",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Fresh Frozen Plasma is a blood product. Excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30006",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Platelets is a blood product. Excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30013",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "D5W = 5% dextrose in water, a crystalloid IV fluid. Not one of the six vasopressors; categorical volume entry with no dose-rate unit.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30015",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "D5/.45NS = 5% dextrose in half-normal saline, a crystalloid IV fluid. Excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30018",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "0.9% Normal Saline, a crystalloid IV fluid. Explicitly excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30020",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "0.45% Normal Saline is a hypotonic crystalloid IV fluid. Excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30021",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Lactated Ringers is a crystalloid IV fluid. Explicitly excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30025",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Heparin anticoagulant infusion (U/hr, p50 ~974). Explicitly excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30026",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "KCL = potassium chloride, an electrolyte replacement. Explicitly excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30029",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Potassium Phosphate is an electrolyte replacement. Explicitly excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30030",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Sodium Bicarbonate is a buffering/electrolyte agent, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30032",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "TPN = total parenteral nutrition. Nutrition excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30043",
+   "concept": "dopamine",
+   "method": "administration",
+   "reason": "Label is already the generic name dopamine, one of the six catalog concepts. Unit mcg/kg/min with p50 4.0 and p99 20.0 matches the standard dopamine infusion range (2-20 mcg/kg/min).",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30045",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Insulin infusion (U/hr, p50 3). Explicitly excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30050",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Nitroprusside (sodium nitroprusside) is a vasodilator/antihypertensive, not a vasopressor, and is not in the six-concept catalog.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30054",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'Pre-Admission Intake' is an aggregate intake volume placeholder with no drug identity.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30055",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'Cath Lab Intake' is an aggregate fluid intake volume from the catheterization lab, not a drug.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30056",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'Po Intake' is an oral intake volume placeholder, not a drug. Explicitly listed as UNKNOWN in rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30058",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'Free Water Bolus' is a plain water volume administration, not a drug.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30059",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'GT Flush' is a gastrostomy-tube water flush volume, not a drug.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30060",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "D5NS = 5% dextrose in normal saline, a crystalloid IV fluid. Excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30065",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Sterile Water is a diluent/fluid, not a drug. Excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30073",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Impact w/fiber is an enteral nutrition formula. Excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30095",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'TF Residual' = tube-feed gastric residual volume, a nutrition-related measurement, not a drug.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30101",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'OR Crystalloid' is intraoperative crystalloid fluid volume. Excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30102",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'OR Colloid' is intraoperative colloid fluid (e.g. albumin/hetastarch). Colloids excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30104",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'OR Packed RBC's' is an intraoperative blood product. Excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30112",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Amiodarone is a class III antiarrhythmic (mg/min, p50 0.5, p99 1.0 matching standard 0.5-1 mg/min maintenance), not a vasopressor and not in the six-concept catalog.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30118",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Fentanyl is an opioid analgesic (mcg/hr, p50 ~76). Analgesia excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30120",
+   "concept": "norepinephrine",
+   "method": "administration",
+   "reason": "Levophed-k is the brand name Levophed = norepinephrine; '-k' is a MIMIC-III concentration variant only. Unit mcg/kg/min with p50 0.08 and p99 0.88 sits squarely in the canonical 0.01-1 mcg/kg/min norepinephrine range.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30121",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Nitroglycerine-k is nitroglycerin, a vasodilator (opposite pharmacologic action to a vasopressor). Not in the catalog; '-k' is only a concentration variant.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30124",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Midazolam is a benzodiazepine sedative (mg/hr, p50 2.8). Sedation excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30126",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Morphine Sulfate is an opioid analgesic (mg/hr, p50 4.0). Analgesia excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30128",
+   "concept": "phenylephrine",
+   "method": "administration",
+   "reason": "Neosynephrine-k is the brand name Neo-Synephrine = phenylephrine; the MIMIC-III '-k' suffix is a concentration variant and does not change drug identity. Unit mcg/kg/min with p50 0.73, p99 6.18 is a clinically plausible phenylephrine infusion rate.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30131",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Propofol is a sedative/hypnotic (mcg/kg/min p50 30, typical sedation range). Sedation drugs are excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30140",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'N/A' is a placeholder label with no drug identity; explicitly listed as UNKNOWN in rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30144",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'Gastric Meds' is a generic grouping placeholder for medications given via gastric route, with no vasopressor identity.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciii_00",
+   "field_key": "30166",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Promote w/fiber is an enteral tube-feed nutrition formula. Excluded by rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "0.9% Sodium Chloride",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Crystalloid IV fluid (normal saline), unit mL, p50 ~250 mL — a fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Potassium Chloride",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Electrolyte replacement (mEq, p50 40) — outside the six-vasopressor catalog.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Insulin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Insulin in UNIT — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Furosemide",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Loop diuretic (Lasix) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Sodium Chloride 0.9%  Flush",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Saline line flush, p50 3 mL — fluid/flush, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "5% Dextrose",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Dextrose IV fluid (D5W) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Bag",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Container placeholder name with unit BAG — no drug identity.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Magnesium Sulfate",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Electrolyte replacement (gm, p50 2) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Metoprolol Tartrate",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Beta-blocker (Lopressor) — cardiovascular but not one of the six vasopressors.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Acetaminophen",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Analgesic/antipyretic (Tylenol) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Iso-Osmotic Dextrose",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Dextrose diluent solution in mL — fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Calcium Gluconate",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Electrolyte/calcium replacement — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Vancomycin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Glycopeptide antibiotic — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Heparin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Anticoagulant in UNIT — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "HYDROmorphone (Dilaudid)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Dilaudid is the brand name of hydromorphone, an opioid analgesic — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Senna",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Laxative — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Sodium Chloride 0.9%",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Normal saline fluid, p50 1000 mL — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Docusate Sodium",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Stool softener (Colace) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Sterile Water",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Diluent fluid — not a drug in the catalog.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Lactated Ringers",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Balanced crystalloid (LR), p50 1000 mL — fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "SW",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Local abbreviation for Sterile Water (mL, p50 200) — diluent fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Bisacodyl",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Laxative (Dulcolax) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Vial",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Container placeholder name with unit VIAL — no drug identity.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Propofol",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Sedative-hypnotic (Diprivan); sedation is explicitly out of scope for the medication group.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Potassium Chloride Replacement (Critical Care and Oncology) ",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Electrolyte replacement protocol in mEq — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Dextrose 50%",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "D50 hypoglycemia rescue sugar (gm) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Warfarin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Oral anticoagulant (Coumadin) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Heparin Sodium",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Anticoagulant salt form of heparin — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Fentanyl Citrate",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Opioid analgesic salt form (mcg) — analgesia is out of scope.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Ondansetron",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Antiemetic (Zofran) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Morphine Sulfate",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Opioid analgesic salt form — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Acetaminophen IV",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "IV paracetamol (Ofirmev) — analgesic/antipyretic, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Aspirin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Antiplatelet/NSAID — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Glucagon",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Peptide hormone for hypoglycemia/beta-blocker overdose; despite inotropic use it is not one of the six catalog concepts.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Iso-Osmotic Sodium Chloride",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Saline diluent solution (BAG) — fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Pantoprazole",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Proton pump inhibitor (Protonix) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "OxyCODONE (Immediate Release)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Opioid analgesic — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "0.9% Sodium Chloride (Mini Bag Plus)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Saline mini-bag drug-delivery container — fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Amiodarone",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Class III antiarrhythmic (Cordarone) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Lorazepam",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Benzodiazepine sedative (Ativan) — sedation is out of scope.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Heparin Flush (10 units/ml)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Anticoagulant line flush — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Famotidine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "H2 blocker (Pepcid) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "CefePIME",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "4th-generation cephalosporin antibiotic (Maxipime) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "D5W",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Local abbreviation for 5% dextrose in water — IV fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "PHENYLEPHrine",
+   "concept": "phenylephrine",
+   "method": "prescription",
+   "reason": "MIMIC tall-man casing of phenylephrine (Neo-Synephrine); an alpha-1 agonist vasopressor in the catalog. Prescription-side mg amounts (p50 50 mg, i.e. drip bag content) are consistent with an ordered infusion.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Neutra-Phos",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Brand name for potassium/sodium phosphate electrolyte supplement (PKT) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Glucose Gel",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Oral dextrose gel for hypoglycemia — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Polyethylene Glycol",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Osmotic laxative (MiraLAX) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Soln",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Placeholder 'Solution' name with no drug identity — explicitly UNKNOWN per rule 2.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Atorvastatin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Statin (Lipitor) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "LORazepam",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Tall-man variant of lorazepam, a benzodiazepine — sedation is out of scope.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Albuterol 0.083% Neb Soln",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Inhaled beta-2 agonist bronchodilator (salbutamol) — not a systemic vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Chlorhexidine Gluconate 0.12% Oral Rinse",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Topical oral antiseptic — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "NS",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Local abbreviation for normal saline — IV fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Labetalol",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Alpha/beta blocker antihypertensive (Trandate) — lowers blood pressure, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Nitroglycerin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Nitrate vasodilator (Tridil) — opposite pharmacology and outside the catalog.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "HydrALAZINE",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Direct arterial vasodilator (Apresoline) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Piperacillin-Tazobactam",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Beta-lactam/inhibitor antibiotic (Zosyn) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Dextrose 5%",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "D5W IV fluid, p50 1000 mL — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Ranitidine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "H2 blocker (Zantac) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Lisinopril",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "ACE inhibitor antihypertensive — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Haloperidol",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Typical antipsychotic (Haldol) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "NORepinephrine",
+   "concept": "norepinephrine",
+   "method": "prescription",
+   "reason": "MIMIC tall-man casing of norepinephrine (Levophed/noradrenaline) — the primary catalog vasopressor. mg values (p50 8 mg) are the standard ordered bag content.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Midazolam",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Benzodiazepine sedative (Versed) — sedation is out of scope.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Dexamethasone",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Corticosteroid (Decadron) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "OxycoDONE (Immediate Release) ",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Case/whitespace variant of oxycodone, an opioid analgesic — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "HydrALAzine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Casing variant of hydralazine, a vasodilator — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "PredniSONE",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Oral corticosteroid — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Lactulose",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Osmotic laxative for hepatic encephalopathy — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "QUEtiapine Fumarate",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Atypical antipsychotic (Seroquel) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Influenza Vaccine Quadrivalent",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Vaccine — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Aspirin EC",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Enteric-coated aspirin — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Diltiazem",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Calcium channel blocker (Cardizem) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "D5 1/2NS",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Dextrose 5% in half normal saline — IV maintenance fluid, p50 1000 mL.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Potassium Phosphate",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Electrolyte replacement (mmol) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Insulin Human Regular",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Regular insulin (Humulin R) in UNIT — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Thiamine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Vitamin B1 supplement — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Albumin 25% (12.5g / 50mL)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Colloid volume expander — fluid/blood product, explicitly out of scope.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Levothyroxine Sodium",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Thyroid hormone replacement (Synthroid) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Sodium Bicarbonate",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Alkalinizing electrolyte (mEq) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Dexmedetomidine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Alpha-2 agonist sedative (Precedex); sedation explicitly out of scope despite hemodynamic effects.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Milk of Magnesia",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Magnesium hydroxide laxative/antacid — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Omeprazole",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Proton pump inhibitor (Prilosec) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "LevETIRAcetam",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Antiepileptic (Keppra) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Metoclopramide",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Prokinetic/antiemetic (Reglan) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Gabapentin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Anticonvulsant/neuropathic analgesic (Neurontin) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Syringe",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Container placeholder name with unit SYR — no drug identity.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Albuterol Inhaler",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Inhaled bronchodilator (PUFF) — not a systemic vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "LR",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Local abbreviation for Lactated Ringers — crystalloid fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Ipratropium Bromide Neb",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Inhaled anticholinergic bronchodilator (Atrovent) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "FoLIC Acid",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Vitamin B9 supplement — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Potassium Chloride (Powder)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Oral electrolyte replacement — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Metoprolol Succinate XL",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Extended-release beta-blocker (Toprol XL) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "CefazoLIN",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "1st-generation cephalosporin antibiotic (Ancef) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Albumin 5% (12.5g / 250mL)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Colloid volume expander — out of scope.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "DiphenhydrAMINE",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Antihistamine (Benadryl) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "CefTRIAXone",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "3rd-generation cephalosporin antibiotic (Rocephin) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Docusate Sodium (Liquid)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Liquid formulation of the stool softener — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Phytonadione",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Vitamin K1 (Mephyton/AquaMEPHYTON) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Sodium Phosphate",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Electrolyte replacement (mmol) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Multivitamins",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Nutritional supplement (TAB) — explicitly out of scope.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Influenza Virus Vaccine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Vaccine — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Lidocaine 1% (For PICC/Midline Insertions)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Local anesthetic for line placement — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Ketorolac",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "NSAID analgesic (Toradol) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "MethylPREDNISolone Sodium Succ",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "IV corticosteroid (Solu-Medrol) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Lidocaine Jelly 2% (Glydo)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Topical local anesthetic; Glydo is a brand of lidocaine jelly — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Meropenem",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Carbapenem antibiotic (Merrem) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Ipratropium-Albuterol Neb",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Combination inhaled bronchodilator (DuoNeb) — not a systemic vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Magnesium Oxide",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Oral magnesium supplement — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "CeFAZolin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Casing variant of cefazolin, an antibiotic — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Lidocaine 5% Patch",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Topical anesthetic patch (Lidoderm) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "LeVETiracetam",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Casing variant of levetiracetam, an antiepileptic — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Simvastatin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Statin (Zocor) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Phosphorus",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Phosphate supplement (K-Phos/Neutra-Phos family) — electrolyte, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Clopidogrel",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Antiplatelet (Plavix) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "TraZODone",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Antidepressant/hypnotic (Desyrel) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Diazepam",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Benzodiazepine (Valium) — sedation is out of scope.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Calcium Carbonate",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Calcium supplement/antacid (Tums) — not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Glycopyrrolate",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Anticholinergic antisialagogue (Robinul); raises heart rate but is not one of the six catalog vasopressors.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_00",
+   "field_key": "Albumin 5% (25g / 500mL)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Colloid volume expander — fluid/blood product, explicitly out of scope.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "220862",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Albumin 25% colloid fluid; excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "220864",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Albumin 5% colloid fluid, mL/hour p50 500; explicitly excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "220949",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Label 'Dextrose 5%', mL/hour; carrier/maintenance fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "220952",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Dextrose 50% hypoglycemia rescue/fluid; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "220970",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Fresh frozen plasma; blood product, explicitly excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "221347",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Amiodarone antiarrhythmic infusion; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "221385",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Ativan is the brand for lorazepam, a benzodiazepine sedative; excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "221456",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Calcium gluconate electrolyte repletion; excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "221668",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Versed is the brand for midazolam, a sedative; explicitly excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "221744",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Fentanyl analgesic infusion (mcg/hour ~100); analgesia is excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "221749",
+   "concept": "phenylephrine",
+   "method": "administration",
+   "reason": "Label 'Phenylephrine' (Neosynephrine); mcg/kg/min p50 0.81 matches a phenylephrine drip. icu.inputevents -> administration; same base_concept as the prescriptions row, differing only in method.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "221794",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Lasix is the brand for furosemide, a loop diuretic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "221824",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Haldol is the brand for haloperidol, an antipsychotic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "221828",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Hydralazine is a vasodilator antihypertensive; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "221833",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Dilaudid is the brand for hydromorphone, an opioid; excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "221906",
+   "concept": "norepinephrine",
+   "method": "administration",
+   "reason": "Label 'Norepinephrine' (Levophed/noradrenaline); mcg/kg/min with p01 0.011, p50 0.10, p99 0.56 - textbook norepinephrine drip range. icu.inputevents -> administration.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "222011",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Magnesium sulfate electrolyte repletion; excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "222042",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Nicardipine is a calcium-channel-blocker antihypertensive infusion; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "222056",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Nitroglycerin infusion is a VASODILATOR despite the mcg/kg/min drip unit; not among the six vasopressors.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "222168",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Propofol sedative infusion (mcg/kg/min ~35); sedation is explicitly excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "222315",
+   "concept": "vasopressin",
+   "method": "administration",
+   "reason": "Label 'Vasopressin' (Pitressin/ADH); units/hour with p50 2.4 matches the standard 0.01-0.04 units/min ICU drip. icu.inputevents -> administration; same base_concept as the prescriptions row.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "223258",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Regular insulin infusion in units/hour; insulin is explicitly excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "223260",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Insulin glargine; insulin is excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "223262",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Humalog is the brand for insulin lispro; insulin is excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225150",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Dexmedetomidine (Precedex) sedative, duplicate itemid of 229420; sedation is excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225152",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Heparin infusion units/hour ~1244; anticoagulant, excluded (the units/hour unit alone must not be confused with vasopressin).",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225153",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Labetalol is an alpha/beta BLOCKER antihypertensive infusion; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225154",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Morphine sulfate opioid infusion; excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225158",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Label 'NaCl 0.9%', mL/hour with p50 ~13 mL/hr; crystalloid carrier fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225166",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Potassium chloride electrolyte replacement; explicitly excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225168",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Packed red blood cells; blood product, explicitly excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225170",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Platelets; blood product, explicitly excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225797",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'Free Water' intake placeholder; not a drug.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225798",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Vancomycin antibiotic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225799",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'Gastric Meds' is a route/category placeholder, not an identified drug.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225823",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "D5 1/2NS premixed crystalloid, mL/hour p50 ~82; fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225828",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'LR' = Lactated Ringer's crystalloid, mL/hour with p50 100; fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225833",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Thiamine vitamin supplementation; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225834",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'K Phos' = potassium phosphate electrolyte repletion; excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225850",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Cefazolin antibiotic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225851",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Cefepime antibiotic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225855",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Ceftriaxone antibiotic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225859",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Ciprofloxacin antibiotic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225884",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Metronidazole antibiotic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225893",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Zosyn is the brand for piperacillin/tazobactam, an antibiotic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225907",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Pepcid is the brand for famotidine, an H2 blocker; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225910",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Protonix is the brand for pantoprazole, a proton-pump inhibitor; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225942",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Concentrated fentanyl infusion; analgesia, excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225943",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Label 'Solution' is a generic placeholder for an unnamed fluid; mL/hour dosing. Not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225944",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Sterile water diluent/flush, mL/hour; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225974",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Metoprolol is a beta-BLOCKER, opposite pharmacology; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "225975",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Prophylactic heparin; anticoagulant, explicitly excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "226089",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'Piggyback' names a secondary-infusion delivery method, not a drug; mL/hour placeholder.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "226361",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'Pre-Admission/Non-ICU Intake' is an intake bookkeeping placeholder; not a drug.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "226364",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'OR Crystalloid Intake' is an intraoperative fluid-intake placeholder; not a drug.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "226372",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'OR Cell Saver Intake' is autologous blood salvage return; blood product/placeholder, excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "226452",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'PO Intake' is an intake placeholder with no unit; not a drug.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "226453",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'GT Flush' is a gastric-tube water flush placeholder; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "227522",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "KCl bolus in mL/hour; electrolyte replacement, excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "227523",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Magnesium sulfate bolus in mL/hour; electrolyte, excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "228315",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "IV acetaminophen (Ofirmev) analgesic/antipyretic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "228316",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Keppra is the brand for levetiracetam, an antiepileptic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "229420",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "Precedex is the brand for dexmedetomidine, a sedative; explicitly excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Alteplase (Catheter Clearance)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Alteplase = tPA thrombolytic used for catheter clearance; not one of the six vasopressors.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Ramelteon",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Melatonin-receptor hypnotic, 8 mg fixed dose; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Lidocaine 1%",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Local anesthetic/antiarrhythmic in mL; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "NiCARdipine IV",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Nicardipine is a calcium-channel blocker antihypertensive (opposite of a vasopressor).",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Vasopressin",
+   "concept": "vasopressin",
+   "method": "prescription",
+   "reason": "Generic name is directly vasopressin (ADH/Pitressin); UNIT dosing 20-100 units is consistent with vasopressin orders. src_table is hosp.prescriptions -> prescription.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "MetroNIDAZOLE",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Antibiotic (metronidazole), 500 mg fixed; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "PNEUMOcoccal 23-valent polysaccharide vaccine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Vaccine, 0.5 mL; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "amLODIPine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Amlodipine, calcium-channel blocker antihypertensive; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Pneumococcal Vac Polyvalent",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Vaccine 0.5 mL; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "MetRONIDAZOLE (FLagyl)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Flagyl is the brand for metronidazole, an antibiotic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Syringe (0.9% Sodium Chloride)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Normal-saline flush syringe (a fluid/placeholder container name); not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Vitamin D",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Vitamin supplement; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Ciprofloxacin IV",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Fluoroquinolone antibiotic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Levofloxacin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Fluoroquinolone antibiotic; note it is NOT Levophed despite the similar prefix; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Ciprofloxacin HCl",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Antibiotic salt form; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Syringe (Iso-Osmotic Dextrose)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Dextrose flush/diluent syringe (fluid); not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "TraMADol",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Opioid analgesic; excluded by the analgesia rule.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "CeftriaXONE",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Cephalosporin antibiotic, 1-2 gm; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Mupirocin Ointment 2%",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Topical antibiotic ointment (Appl); not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "HYDROmorphone",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Opioid analgesic (Dilaudid); not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Tamsulosin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Alpha-1 BLOCKER for BPH - opposite pharmacology to phenylephrine; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Phenylephrine",
+   "concept": "phenylephrine",
+   "method": "prescription",
+   "reason": "Generic name is phenylephrine (Neosynephrine); mg-scale order quantities (12-240 mg) match drip-bag preparations. hosp.prescriptions -> prescription.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Potassium Chl 20 mEq / 1000 mL D5 1/2 NS",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Premixed crystalloid with KCl, 1000 mL bag; fluid/electrolyte, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Amlodipine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Calcium-channel blocker antihypertensive; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "TraMADOL (Ultram)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Ultram is the brand for tramadol, an opioid analgesic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Multivitamins W/minerals",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Nutritional supplement tablet; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Lidocaine Jelly 2% (Urojet)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Urojet is branded lidocaine jelly, a topical anesthetic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Oxycodone-Acetaminophen",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Opioid/analgesic combination tablet; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Azithromycin",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Macrolide antibiotic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Enoxaparin Sodium",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Low-molecular-weight heparin (Lovenox); anticoagulant, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Neostigmine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Cholinesterase inhibitor for neuromuscular-blockade reversal; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Prochlorperazine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Antiemetic/antipsychotic phenothiazine; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Ipratropium Bromide MDI",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Inhaled anticholinergic bronchodilator (PUFF); not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Lansoprazole Oral Disintegrating Tab",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Proton-pump inhibitor; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "0.83% Sodium Chloride",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Saline solution, 200 mL; crystalloid fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Insulin Glargine  (CVICU Protocol)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Long-acting insulin under a CVICU protocol; insulin is explicitly excluded.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "EPINEPHrine",
+   "concept": "epinephrine",
+   "method": "prescription",
+   "reason": "MIMIC tall-man spelling of epinephrine (Adrenaline); mg order quantities. hosp.prescriptions -> prescription. Same base_concept as the ICU infusion, differing only in method.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Simethicone",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Antiflatulent; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Acetaminophen (Liquid)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Analgesic/antipyretic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Apixaban",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Direct oral anticoagulant (Eliquis); not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "0.45% Sodium Chloride",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Half-normal saline 1000 mL; crystalloid fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Ibuprofen",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "NSAID analgesic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Allopurinol",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Xanthine oxidase inhibitor for gout; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Mouth Care Oral Rinse",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Oral hygiene rinse, a care-item placeholder; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Oxycodone-Acetaminophen (5mg-325mg)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Percocet-type analgesic combination tablet; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Nystatin Oral Suspension",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Antifungal suspension; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Readi-Cat 2 (Barium Sulfate 2% Suspension)",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Readi-Cat is branded barium sulfate oral contrast; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Nicotine Patch",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Nicotine replacement patch; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Hydrochlorothiazide",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Thiazide diuretic antihypertensive; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Sarna Lotion",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Sarna is a branded topical antipruritic lotion (camphor/menthol); not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Meperidine",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Opioid analgesic (Demerol); not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Artificial Tears",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Ophthalmic lubricant drops; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "0.9 % Sodium Chloride",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Normal saline; crystalloid fluid, not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Sodium Chloride Nasal",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Saline nasal spray; not a vasopressor (contrast with Neosynephrine nasal, which would be phenylephrine).",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Scopolamine Patch",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Transdermal anticholinergic antiemetic; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Miconazole Powder 2%",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Topical antifungal powder; not a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_01",
+   "field_key": "Nitroglycerin SL",
+   "concept": "UNKNOWN",
+   "method": "prescription",
+   "reason": "Sublingual nitrate VASODILATOR; opposite of a vasopressor.",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_02",
+   "field_key": "225835",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "标签 'Na Phos' = sodium phosphate (磷酸钠), 属电解质补充剂, 不在六个升压药概念目录内, 按规则2判 UNKNOWN。无剂量率单位与分位数证据 (categorical), n_rows=3689/coverage=0.059, 与升压药输注无关。src_table 含 inputevents -> method=administration。",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_02",
+   "field_key": "225911",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'Ranitidine (Prophylaxis)' = 雷尼替丁, H2 受体拮抗剂 (应激性溃疡预防), 非升压药; 括号内 'Prophylaxis' 只是用途标注, 不改变药物身份。不属六种升压药 -> UNKNOWN。src_table 含 inputevents -> method=administration。",
+   "source": "both_agree"
+  },
+  {
+   "chunk": "mimiciv_02",
+   "field_key": "226368",
+   "concept": "UNKNOWN",
+   "method": "administration",
+   "reason": "'OR Packed RBC Intake' = 手术室内输注的浓缩红细胞 (血制品摄入量), 属血制品/液体入量记录, 明确在规则2排除范围内 -> UNKNOWN。'OR' 为 operating room 前缀、'Intake' 为入量占位命名, 均非商品名, 无通用名可还原。src_table 含 inputevents -> method=administration。",
+   "source": "both_agree"
+  }
+ ]
+}

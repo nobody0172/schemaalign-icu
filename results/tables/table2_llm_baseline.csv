@@ -1,0 +1,5 @@
+method,domain,Recall@1,Precision,Recall,F1,Coverage,OpenSet_AUROC,n_fields,n_positive,n_unknown,prompt_sha,prompt_tokens,completion_tokens
+Direct LLM JSON matching (gpt-4.1),mimic-iv,100.0,77.42,100.0,87.27,50.0,90.79,62,24,38,b4c100e71d3dbf0e,4501,2576
+Direct LLM JSON matching (gpt-4.1),mimic-iv,95.92,69.12,95.92,80.34,51.52,88.55,132,49,83,b4c100e71d3dbf0e,9300,5634
+Direct LLM JSON matching (gpt-4.1),mimic-iii,97.3,72.0,97.3,82.76,57.47,86.12,696,296,400,b4c100e71d3dbf0e,42133,30064
+Direct LLM JSON matching (gpt-4.1),eicu,88.16,85.35,88.16,86.73,64.34,85.07,244,152,92,b4c100e71d3dbf0e,15480,8910

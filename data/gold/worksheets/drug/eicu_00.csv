@@ -1,0 +1,3 @@
+src_table,field_key,label,unit_observed,dtype_inferred,p01,p50,p99,n_rows,n_keys,coverage,concept,method,note
+eicu.infusionDrug,Propofol (ml/hr),Propofol (ml/hr),,numeric,0.0,14.0066,166.7825,213134,5931,0.0538,,,
+eicu.infusionDrug,Norepinephrine (ml/hr),Norepinephrine (ml/hr),,numeric,0.0,13.1451,185.7254,185586,5630,0.0511,,,

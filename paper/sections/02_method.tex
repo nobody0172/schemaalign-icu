@@ -1,0 +1,96 @@
+\section{Method}
+\label{sec:method}
+
+
+Fig.~\ref{fig:arch} shows an overview of the proposed method. A field is first rendered
+into a textual field card, which a frozen language model maps to a candidate concept;
+four deterministic predicates then compare the field against a representative of that
+concept, and their total discounts the matcher's confidence to give an abstention score.
+
+\subsection{Field Cards}
+
+Let $\mathcal{C}$ be a catalogue of unified clinical concepts and $j$ a field of a target
+database. We render $j$ into a fixed template holding its dictionary label and
+abbreviation, source table, category, inferred data type, modal observed unit,
+training-split $1$st/$50$th/$99$th value percentiles, observations per stay and missing
+rate. Units are recovered from observed values rather than read from the dictionary,
+because dictionaries usually lack them: $85.3\%$ of MIMIC-IV \texttt{chartevents}
+dictionary entries carry no unit.
+
+A runtime assertion forbids any numeric primary key---item identifier, laboratory
+identifier, or stay, admission and subject keys---from appearing in a card. This matters
+because \texttt{mimic-code}~\cite{mimiccode} is a widely mirrored public repository, so a
+card carrying an identifier would let a language model retrieve a memorised crosswalk
+instead of reading the field; Sec.~\ref{sec:ablation} tests whether it does. No patient
+trajectory enters the card.
+
+\subsection{Deterministic Compatibility Checks}
+
+For a field $j$ and a candidate concept $c$ we evaluate four predicates, each returning
+$V_d(j,c)\in\{0,\tfrac12,1\}$ for compatible, undecidable and incompatible. Every
+predicate is printable, and each decision is reported together with the rule that
+produced it.
+
+\noindent\textbf{Unit.}
+$V_{\mathrm{unit}}$ performs dimensional analysis against a conversion table in which
+every row cites a public source. Exactly convertible pairs
+(\textsc{mEq/L}$\leftrightarrow$\textsc{mmol/L} for monovalent ions) are compatible;
+dimension mismatches are incompatible; a missing unit on either side is undecidable.
+
+\noindent\textbf{Data type.}
+$V_{\mathrm{type}}$ returns $1$ only when \emph{both} sides' types are
+dictionary-declared, and $\tfrac12$ if either is inferred. The distinction is not
+cosmetic: before it was introduced, $23$ of $34$ erroneous rejections on reference pairs
+were numeric fields stored as text and inferred to be categorical. eICU declares no
+parameter types, so all of its type conflicts are undecidable by construction.
+
+\noindent\textbf{Specimen.}
+$V_{\mathrm{specimen}}$ returns $1$ for distinct specimen types. It is the only signal
+separating \texttt{Albumin} (blood) from \texttt{Albumin, Ascites}: identical names,
+identical \textsc{g/dL} units, different analyte.
+
+\noindent\textbf{Provenance.}
+$V_{\mathrm{prov}}$ returns $1$ for conflicting measurement methods and $\tfrac12$ for
+conflicting table families. A concept is not bound to one source table, so in
+field-to-concept matching this predicate is weak by construction; the calibration of
+Sec.~\ref{sec:calib} discards it.
+
+\subsection{Abstention Score}
+
+Let $\hat{c}(j)=\arg\max_{c\in\mathcal{C}} f(j,c)$ be the matcher's top candidate and
+$b(j)$ its own confidence. A generative matcher emits a decision rather than a score, so
+$b(j)\in\{0,1\}$: it is $0$ when the matcher returns no concept for $j$ and $1$
+otherwise. For a ranking matcher $b(j)$ is instead the top-$1$ cosine similarity. We
+score
+\begin{equation}
+s(j) \;=\; b(j)\Bigl(1 - w\!\!\sum_{d\in\mathcal{D}}\!\! V_d\bigl(j,\hat{c}(j)\bigr)\Bigr),
+\label{eq:abstain}
+\end{equation}
+where $\mathcal{D}$ is the selected subset of predicates and $w$ the penalty weight, and
+we declare
+\begin{equation}
+\hat{y}(j) \;=\;
+\begin{cases}
+\hat{c}(j), & s(j) \ge \theta,\\[2pt]
+\textsc{unknown}, & s(j) < \theta .
+\end{cases}
+\label{eq:decide}
+\end{equation}
+The checks never alter $\hat{c}(j)$. They only discount the confidence attached to it,
+which is what distinguishes Eq.~\eqref{eq:abstain} from applying the same predicates to
+filter candidates before $\hat{c}(j)$ is formed.
+
+\subsection{Calibration}
+\label{sec:calib}
+
+$\mathcal{D}$, $w$ and $\theta$ are selected on the MIMIC-IV validation split
+($62$ fields, $24$ positives) over $15$ dimension subsets $\times$ $4$ weights, and are
+never refitted on the reported domains or per model. The selection returns
+$\mathcal{D}=\{\mathrm{unit},\mathrm{type},\mathrm{specimen}\}$ and $w{=}0.1$, dropping
+$V_{\mathrm{prov}}$ in agreement with the ablation of Sec.~\ref{sec:ablation}.
+
+The weight must be read against the spread of the confidence it discounts. For
+cosine-ranked candidates the top-$1$/top-$2$ margin has median $0.068$, so $w{=}1$ makes
+a single unit conflict worth seven times the gap between the two best candidates and
+collapses precision from $83.6$ to $51.5$. Any reimplementation that inherits an unscaled
+penalty reproduces that collapse rather than the result reported here.

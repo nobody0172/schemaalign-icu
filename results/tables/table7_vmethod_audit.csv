@@ -1,0 +1,10 @@
+domain,gold_positives,flagged,flag_rate_%,method_type
+mimic-iv,49,3,6.1,
+mimic-iii,286,20,7.0,
+eicu,139,16,11.5,
+ALL,,13,,measured
+ALL,,12,,invasive
+ALL,,5,,set
+ALL,,4,,bedside
+ALL,,4,,bloodgas_sat
+ALL,,1,,

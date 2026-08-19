@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.secrets/
+data/**/*.parquet
+data_parquet/
+data/embed*/
+data/t5b/
+outputs/
+logs/
+refs/
+paper/*.aux
+paper/*.log
+paper/*.blg
+paper/*.bbl
+paper/*.out

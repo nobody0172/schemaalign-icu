@@ -1,0 +1,7 @@
+{
+  "Exact / normalized name": null,
+  "Ontology only (LOINC)": null,
+  "Name embedding (frozen)": 0.64,
+  "FieldCard embedding, no gate": 0.84,
+  "Semantic recall + gate (T5a)": 0.94
+}

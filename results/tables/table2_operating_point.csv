@@ -1,0 +1,7 @@
+domain,method,theta_locked,Precision,Recall,F1,UNKNOWN_detection_recall,n_fields
+mimic-iv,LLM self-abstention,1.0,76.56,100.0,86.73,81.93,132
+mimic-iv,+ checks (ours),0.9,80.0,89.8,84.62,86.75,132
+mimic-iii,LLM self-abstention,1.0,76.15,94.93,84.51,78.0,696
+mimic-iii,+ checks (ours),0.9,86.91,87.5,87.21,90.25,696
+eicu,LLM self-abstention,1.0,87.07,84.21,85.62,79.35,244
+eicu,+ checks (ours),0.9,87.41,77.63,82.23,81.52,244

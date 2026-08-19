@@ -1,0 +1,4 @@
+method,domain,Recall@1,Precision,Recall,F1,Coverage,n_fields,n_positive
+Second annotator (human ceiling),mimic-iv,100.0,100.0,100.0,100.0,31.43,105,33
+Second annotator (human ceiling),mimic-iii,98.25,99.12,98.25,98.68,36.09,629,229
+Second annotator (human ceiling),eicu,100.0,98.81,100.0,99.4,57.14,147,83

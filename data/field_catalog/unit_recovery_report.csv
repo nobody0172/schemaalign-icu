@@ -1,0 +1,15 @@
+db,src_table,n_fields,n_fields_with_unit,pct_fields_with_unit,n_rows,n_rows_with_unit,pct_rows_with_unit
+MIMIC-III-CareVue,mimiciii.CHARTEVENTS,3545,419,11.82,122949529,44583638,36.26
+MIMIC-III-CareVue,mimiciii.INPUTEVENTS_CV,1635,53,3.24,11217343,3086929,27.52
+MIMIC-III-CareVue,mimiciii.LABEVENTS,661,424,64.15,9739007,8395294,86.2
+MIMIC-III-CareVue,mimiciii.INPUTEVENTS_MV,82,36,43.9,5092,2742,53.85
+MIMIC-IV,mimiciv.icu.chartevents,2293,468,20.41,198087748,48437753,24.45
+MIMIC-IV,mimiciv.hosp.labevents,862,560,64.97,18548652,16083741,86.71
+MIMIC-IV,mimiciv.icu.inputevents,312,186,59.62,5150630,2885263,56.02
+MIMIC-IV,mimiciv.hosp.prescriptions,4021,3920,97.49,3983964,3981115,99.93
+eICU,eicu.vitalPeriodic,16,0,0.0,549650820,0,0.0
+eICU,eicu.nurseCharting,95,0,0.0,111490006,0,0.0
+eICU,eicu.vitalAperiodic,10,0,0.0,53545386,0,0.0
+eICU,eicu.lab,158,134,84.81,27981662,26681467,95.35
+eICU,eicu.respiratoryCharting,198,0,0.0,15722960,0,0.0
+eICU,eicu.infusionDrug,2897,0,0.0,3551876,0,0.0

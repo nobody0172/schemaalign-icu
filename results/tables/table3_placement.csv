@@ -1,0 +1,10 @@
+domain,placement,Recall@1,dRecall@1,Precision,OpenSet_AUROC,dAUROC,paired_CI_lo,paired_CI_hi
+mimic-iv,re-rank: reject on any hard violation (max V=1),87.76,-8.16,68.25,90.24,-0.73,-4.65,2.63
+mimic-iv,re-rank: reject on any violation incl. undecidable,26.53,-69.39,65.0,64.61,-26.36,-33.9,-17.78
+mimic-iv,abstention evidence (ours),95.92,0.0,69.12,96.64,5.68,2.7,8.99
+mimic-iii,re-rank: reject on any hard violation (max V=1),96.62,-0.68,73.33,88.61,0.69,-0.18,1.61
+mimic-iii,re-rank: reject on any violation incl. undecidable,23.99,-73.31,63.39,61.64,-26.28,-29.82,-22.65
+mimic-iii,abstention evidence (ours),97.3,0.0,72.0,93.57,5.65,4.02,7.21
+eicu,re-rank: reject on any hard violation (max V=1),87.5,-0.66,87.5,86.38,1.99,-0.08,4.57
+eicu,re-rank: reject on any violation incl. undecidable,7.24,-80.92,68.75,55.26,-29.13,-34.6,-23.2
+eicu,abstention evidence (ours),88.16,0.0,85.35,85.04,0.65,-1.48,2.76

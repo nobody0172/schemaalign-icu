@@ -1,0 +1,30 @@
+\begin{table*}[t]
+\centering
+\caption{Field alignment and open-set detection. All rows are evaluated on \emph{identical} field sets (MIMIC-IV test split, CareVue and eICU in full); $n$ fields\,/\,mappable are $132/49$, $696/296$, $244/152$. R@1 is Recall@1 over mappable fields and is blind to the abstention decision; P is precision of the top-1 assignment; AUC is open-set AUROC. $\Delta$ compares each matcher with and without the checks, with a \emph{paired} bootstrap 95\% CI over field indices ($B{=}2000$). Thresholds are fitted on the MIMIC-IV validation split only and never refitted per model.}
+\label{tab:main}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l rrr l rrr l rrr l@{}}
+\toprule
+& \multicolumn{4}{c}{MIMIC-IV} & \multicolumn{4}{c}{CareVue} & \multicolumn{4}{c}{eICU} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}\cmidrule(lr){10-13}
+Matcher & R@1 & P & AUC & $\Delta$AUC\,[95\% CI] & R@1 & P & AUC & $\Delta$AUC\,[95\% CI] & R@1 & P & AUC & $\Delta$AUC\,[95\% CI] \\
+\midrule
+\multicolumn{13}{@{}l}{\emph{(a) non-semantic}}\\
+Exact / normalized name & 36.7 & 100.0 & 68.4 & -- & 37.2 & 94.0 & 68.3 & -- & 44.1 & 98.5 & 72.4 & -- \\
+Ontology only (LOINC) & 26.5 & 100.0 & 63.3 & -- & 24.7 & 100.0 & 62.3 & -- & 0.0 & 0.0 & 50.0 & -- \\
+\multicolumn{13}{@{}l}{\emph{(b) frozen encoders}}\\
+MiniLM-L6, 23\,M & 49.0 & 82.8 & 91.1 & -- & 62.2 & 86.8 & 90.0 & -- & 44.1 & 75.3 & 73.1 & -- \\
+SapBERT, 110\,M (biomedical) & 67.3 & 91.7 & 93.4 & -- & 70.6 & 83.6 & 92.5 & -- & 57.9 & 79.3 & 80.7 & -- \\
+\quad + checks as abstention & 67.3 & 91.7 & 92.4 & -- & 70.6 & 83.6 & 90.3 & -- & 57.9 & 79.3 & 79.8 & -- \\
+\multicolumn{13}{@{}l}{\emph{(c) frozen LLM matchers}}\\
+\textsc{gpt-4.1} (OpenAI) & 95.9 & 69.1 & 91.0 & -- & 97.3 & 72.0 & 87.9 & -- & 88.2 & 85.3 & 84.4 & -- \\
+\quad + checks (\textbf{ours}) & \textbf{95.9} & \textbf{69.1} & \textbf{96.6} & \textbf{5.7\,[2.7,\,9.0]} & \textbf{97.3} & \textbf{72.0} & \textbf{93.6} & \textbf{5.7\,[4.1,\,7.2]} & \textbf{88.2} & \textbf{85.3} & \textbf{85.0} & \textbf{0.7\,[-1.5,\,2.8]} \\
+\textsc{deepseek-v3.2} & 95.9 & 60.3 & 85.8 & -- & 98.0 & 68.9 & 85.9 & -- & 88.2 & 68.4 & 75.3 & -- \\
+\quad + checks (\textbf{ours}) & \textbf{95.9} & \textbf{60.3} & \textbf{95.3} & \textbf{9.5\,[5.8,\,13.8]} & \textbf{98.0} & \textbf{68.9} & \textbf{93.1} & \textbf{7.2\,[5.6,\,9.0]} & \textbf{88.2} & \textbf{68.4} & \textbf{79.3} & \textbf{4.0\,[0.9,\,7.2]} \\
+\textsc{gemini-2.5-pro} (Google) & 95.9 & 65.3 & 87.3 & -- & 97.6 & 70.2 & 88.0 & -- & 73.0 & 79.9 & 78.8 & -- \\
+\quad + checks (\textbf{ours}) & \textbf{95.9} & \textbf{65.3} & \textbf{96.2} & \textbf{8.9\,[5.2,\,13.2]} & \textbf{97.6} & \textbf{70.2} & \textbf{95.0} & \textbf{7.1\,[5.3,\,8.8]} & \textbf{73.0} & \textbf{79.9} & \textbf{80.4} & \textbf{1.6\,[-0.6,\,4.0]} \\
+\bottomrule
+\end{tabular}
+\vspace{-4pt}
+\end{table*}

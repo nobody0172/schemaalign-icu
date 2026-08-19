@@ -1,0 +1,42 @@
+symbol,value,source_file,note
+gold pairs,710,data/gold/gold_pairs.csv,
+concepts covered,135,data/gold/gold_pairs.csv,
+concepts in all three DBs,86,data/gold/gold_pairs.csv,
+"gold pairs, eicu",160,data/gold/gold_pairs.csv,
+"gold pairs, mimic-iii",304,data/gold/gold_pairs.csv,
+"gold pairs, mimic-iv",246,data/gold/gold_pairs.csv,
+non-LLM-evidence pairs,217,data/gold/gold_pairs.csv (evidence column),
+non-LLM share (%),30.6,data/gold/gold_pairs.csv,
+  3-source agreement,159,data/gold/gold_pairs.csv,
+  explicit table column,24,data/gold/gold_pairs.csv,
+  structural (shared lab itemid),34,data/gold/gold_pairs.csv,
+concept catalogue size,138,data/gold/concepts.csv,
+adjudicated UNKNOWN fields,2428,data/gold/unknown_set_adjudicated.csv,
+annotator agreement n,1447,data/gold/annotator_agreement.json,
+annotator agreement Po,0.9855,data/gold/annotator_agreement.json,
+annotator agreement Pe,0.5632,data/gold/annotator_agreement.json,
+annotator agreement kappa,0.9668,data/gold/annotator_agreement.json,
+pairwise Jaccard min,0.2893,data/gold/source_agreement.csv,
+pairwise Jaccard max,0.4167,data/gold/source_agreement.csv,
+eICU zero-unit tables: fields,319,data/field_catalog/unit_recovery_report.csv,
+eICU zero-unit tables: rows,730409172,data/field_catalog/unit_recovery_report.csv,
+eICU vitalPeriodic rows,549650820,data/field_catalog/unit_recovery_report.csv,quoted as 5.5e8 samples
+"cohort stays, mimic-iv",51838,data/field_catalog/cohort_m4.parquet,
+"cohort stays, mimic-iii(CareVue)",19112,data/field_catalog/cohort_m3cv.parquet,
+"cohort stays, eicu",110257,data/field_catalog/cohort_eicu.parquet,
+table2_paired_delta[mimic-iv],AUROC_base=90.96 AUROC_ours=96.64 delta=5.68 paired_CI_lo=2.7 paired_CI_hi=8.99 boot_p_delta_le_0=0.0,results/tables/table2_paired_delta.csv,
+table2_paired_delta[mimic-iii],AUROC_base=87.93 AUROC_ours=93.57 delta=5.65 paired_CI_lo=4.02 paired_CI_hi=7.21 boot_p_delta_le_0=0.0,results/tables/table2_paired_delta.csv,
+table2_paired_delta[eicu],AUROC_base=84.39 AUROC_ours=85.04 delta=0.65 paired_CI_lo=-1.48 paired_CI_hi=2.76 boot_p_delta_le_0=0.2825,results/tables/table2_paired_delta.csv,
+table2_error_decomp[mimic-iv],over_share_of_errors_%=90.5,results/tables/table2_error_decomp.csv,
+table2_error_decomp[mimic-iii],over_share_of_errors_%=93.0,results/tables/table2_error_decomp.csv,
+table2_error_decomp[eicu],over_share_of_errors_%=51.4,results/tables/table2_error_decomp.csv,
+table3_encoder_checks[mimic-iv],delta=-0.02,results/tables/table3_encoder_checks.csv,
+table3_encoder_checks[mimic-iii],delta=-1.89,results/tables/table3_encoder_checks.csv,
+table3_encoder_checks[eicu],delta=-1.22,results/tables/table3_encoder_checks.csv,
+V_type false rejections traced to inferred type,23 of 34,(no standalone CSV),"EVIDENCE_LOG E30; derived during gate development, no standalone CSV"
+cosine top1-top2 margin (median),0.068,(no standalone CSV),EVIDENCE_LOG E29; measured on MIMIC-IV val during lambda calibration
+precision collapse at unscaled penalty,83.6 -> 51.5,(no standalone CSV),data/gold/lambda_calibration.json
+CareVue-MIMIC-IV chartevents itemid intersection,0,(no standalone CSV),EVIDENCE_LOG E14
+full MIMIC-III-MIMIC-IV shared itemids,2968,(no standalone CSV),EVIDENCE_LOG E14
+ricu concepts / databases,119 / 5,(no standalone CSV),"external: Bennett et al., GigaScience 2023"
+MIMIC-IV d_items chartevents missing unit (%),85.3,(no standalone CSV),EVIDENCE_LOG session01; data/raw_catalog/01_field_catalog/

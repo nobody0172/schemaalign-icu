@@ -1,0 +1,55 @@
+{
+  "lambda_star": 0.0,
+  "grid": [
+    {
+      "lambda": 0.0,
+      "P@Cov30": 89.47368421052632,
+      "UnitViol@Cov30": 0.0
+    },
+    {
+      "lambda": 0.01,
+      "P@Cov30": 89.47368421052632,
+      "UnitViol@Cov30": 0.0
+    },
+    {
+      "lambda": 0.02,
+      "P@Cov30": 89.47368421052632,
+      "UnitViol@Cov30": 0.0
+    },
+    {
+      "lambda": 0.05,
+      "P@Cov30": 89.47368421052632,
+      "UnitViol@Cov30": 0.0
+    },
+    {
+      "lambda": 0.1,
+      "P@Cov30": 89.47368421052632,
+      "UnitViol@Cov30": 0.0
+    },
+    {
+      "lambda": 0.15,
+      "P@Cov30": 89.47368421052632,
+      "UnitViol@Cov30": 0.0
+    },
+    {
+      "lambda": 0.2,
+      "P@Cov30": 89.47368421052632,
+      "UnitViol@Cov30": 0.0
+    },
+    {
+      "lambda": 0.3,
+      "P@Cov30": 89.47368421052632,
+      "UnitViol@Cov30": 0.0
+    },
+    {
+      "lambda": 0.5,
+      "P@Cov30": 84.21052631578948,
+      "UnitViol@Cov30": 0.0
+    },
+    {
+      "lambda": 1.0,
+      "P@Cov30": 84.21052631578948,
+      "UnitViol@Cov30": 0.0
+    }
+  ]
+}

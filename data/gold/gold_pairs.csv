@@ -1,0 +1,711 @@
+base_concept,group,db,field_key,method,src_table,unit_observed,p01,p50,p99,n_rows,evidence,src_file
+albumin,lab,eicu,albumin,unspecified,eicu.lab,g/dL,1.2592,2.7544,4.5111,356149,3-source agreement,pivoted/pivoted-lab.sql
+albumin,lab,mimic-iii,50862,unspecified,mimiciii.LABEVENTS,g/dL,1.4605,2.8029,4.4957,40212,3-source agreement,firstday/labs_first_day.sql
+albumin,lab,mimic-iv,50862,unspecified,mimiciv.hosp.labevents,g/dL,1.5911,2.9995,4.5893,76215,3-source agreement,measurement/chemistry.sql
+anion_gap,lab,eicu,anion gap,unspecified,eicu.lab,,2.0278,10.0,25.0793,726026,3-source agreement,pivoted/pivoted-bg.sql
+anion_gap,lab,mimic-iii,50868,unspecified,mimiciii.LABEVENTS,mEq/L,6.9897,13.0,26.1242,239038,3-source agreement,firstday/labs_first_day.sql
+anion_gap,lab,mimic-iv,50868,unspecified,mimiciv.hosp.labevents,mEq/L,6.0,13.0,25.9025,513101,3-source agreement,measurement/chemistry.sql
+bands,lab,eicu,-bands,unspecified,eicu.lab,%,0.0,5.0107,64.2471,52541,3-source agreement,pivoted/pivoted-lab.sql
+bands,lab,mimic-iii,51144,unspecified,mimiciii.LABEVENTS,%,0.0,0.5211,36.6254,19225,3-source agreement,firstday/labs_first_day.sql
+bands,lab,mimic-iv,51144,unspecified,mimiciv.hosp.labevents,%,0.0,1.0,27.9378,23254,3-source agreement,measurement/blood_differential.sql
+base_excess,respiratory_bloodgas,eicu,Base Excess,unspecified,eicu.lab,mEq/L,-17.5952,0.2391,17.8522,255811,3-source agreement,pivoted/pivoted-bg.sql
+base_excess,respiratory_bloodgas,mimic-iii,50802,unspecified,mimiciii.LABEVENTS,mEq/L,-13.2814,0.0,12.3974,253395,3-source agreement,firstday/blood_gas_first_day.sql
+base_excess,respiratory_bloodgas,mimic-iv,50802,unspecified,mimiciv.hosp.labevents,mEq/L,-15.3365,0.0,14.6018,298887,3-source agreement,measurement/bg.sql
+bicarbonate,lab,eicu,bicarbonate,unspecified,eicu.lab,mmol/L,11.933,25.0,40.0217,845083,3-source agreement,pivoted/pivoted-lab.sql
+bicarbonate,lab,eicu,Total CO2,unspecified,eicu.lab,,10.7141,25.5211,68.872,145400,3-source agreement,pivoted/pivoted-lab.sql
+bicarbonate,lab,eicu,HCO3,unspecified,eicu.infusionDrug,,,,,1,3-source agreement,concepts/labsfirstday.sql
+bicarbonate,lab,mimic-iii,50803,unspecified,mimiciii.LABEVENTS,mEq/L,9.3714,24.0,38.1989,3441,3-source agreement,firstday/blood_gas_first_day.sql
+bicarbonate,lab,mimic-iii,50804,unspecified,mimiciii.LABEVENTS,mEq/L,13.3676,25.9887,41.9703,253384,3-source agreement,firstday/blood_gas_first_day.sql
+bicarbonate,lab,mimic-iii,50882,unspecified,mimiciii.LABEVENTS,mEq/L,13.1294,25.0,37.7126,245803,3-source agreement,firstday/labs_first_day.sql
+bicarbonate,lab,mimic-iv,50803,unspecified,mimiciv.hosp.labevents,mEq/L,9.1135,23.0,38.4765,3459,3-source agreement,measurement/bg.sql
+bicarbonate,lab,mimic-iv,50804,unspecified,mimiciv.hosp.labevents,mEq/L,12.1322,25.0,44.0635,298876,3-source agreement,measurement/bg.sql
+bicarbonate,lab,mimic-iv,50882,unspecified,mimiciv.hosp.labevents,mEq/L,12.7172,24.9857,38.3853,514940,3-source agreement,measurement/chemistry.sql
+bilirubin,unassigned,eicu,total bilirubin,total,eicu.lab,mg/dL,0.197,0.6718,20.3888,299538,3-source agreement,pivoted/pivoted-lab.sql
+bilirubin,unassigned,mimic-iii,50885,total,mimiciii.LABEVENTS,mg/dL,0.1808,0.9748,36.48,56168,3-source agreement,firstday/labs_first_day.sql
+bilirubin,unassigned,mimic-iv,50885,total,mimiciv.hosp.labevents,mg/dL,0.1997,0.8892,37.2838,147713,3-source agreement,measurement/enzyme.sql
+bun,lab,eicu,BUN,unspecified,eicu.lab,mg/dL,3.765,21.6393,112.0977,896094,3-source agreement,pivoted/pivoted-lab.sql
+bun,lab,mimic-iii,51006,unspecified,mimiciii.LABEVENTS,mg/dL,4.1392,21.9738,115.4788,252171,3-source agreement,firstday/labs_first_day.sql
+bun,lab,mimic-iv,51006,unspecified,mimiciv.hosp.labevents,mg/dL,4.0608,21.669,117.8934,518206,3-source agreement,measurement/chemistry.sql
+calcium,lab,eicu,calcium,unspecified,eicu.lab,mg/dL,6.2988,8.4,10.4039,861453,3-source agreement,pivoted/pivoted-lab.sql
+calcium,lab,mimic-iii,50808,unspecified,mimiciii.LABEVENTS,mmol/L,0.8293,1.1375,1.4266,135655,3-source agreement,firstday/blood_gas_first_day.sql
+calcium,lab,mimic-iv,50808,unspecified,mimiciv.hosp.labevents,mmol/L,0.8491,1.1214,1.446,174600,3-source agreement,measurement/bg.sql
+calcium,lab,mimic-iv,50893,unspecified,mimiciv.hosp.labevents,mg/dL,6.6616,8.4988,10.6788,450306,3-source agreement,measurement/chemistry.sql
+chloride,lab,eicu,chloride,unspecified,eicu.lab,mmol/L,85.4034,103.9999,122.1991,907279,3-source agreement,pivoted/pivoted-lab.sql
+chloride,lab,mimic-iii,50806,unspecified,mimiciii.LABEVENTS,mEq/L,91.0241,106.0215,120.4892,18864,3-source agreement,firstday/blood_gas_first_day.sql
+chloride,lab,mimic-iii,50902,unspecified,mimiciii.LABEVENTS,mEq/L,89.3084,104.0,119.3542,245887,3-source agreement,firstday/labs_first_day.sql
+chloride,lab,mimic-iv,50806,unspecified,mimiciv.hosp.labevents,mEq/L,90.0138,105.4734,119.794,33536,3-source agreement,measurement/bg.sql
+chloride,lab,mimic-iv,50902,unspecified,mimiciv.hosp.labevents,mEq/L,86.3456,102.5774,119.9748,533138,3-source agreement,measurement/chemistry.sql
+creatinine,lab,eicu,creatinine,unspecified,eicu.lab,mg/dL,0.3128,1.0085,8.5351,901029,3-source agreement,pivoted/pivoted-lab.sql
+creatinine,lab,mimic-iii,50912,unspecified,mimiciii.LABEVENTS,mg/dL,0.2997,0.9483,7.8685,253176,3-source agreement,firstday/labs_first_day.sql
+creatinine,lab,mimic-iv,50912,unspecified,mimiciv.hosp.labevents,mg/dL,0.3,0.9979,7.5883,519789,3-source agreement,measurement/chemistry.sql
+dbp,vital,eicu,Vital Signs|Non-Invasive BP|Non-Invasive BP Diastolic,noninvasive,eicu.nurseCharting,,34.5525,64.7758,108.6732,9992144,3-source agreement,pivoted/pivoted-vital.sql
+dbp,vital,eicu,Vital Signs|Invasive BP|Invasive BP Diastolic,invasive,eicu.nurseCharting,,32.8682,57.8081,100.6106,2592898,3-source agreement,pivoted/pivoted-vital.sql
+dbp,vital,mimic-iii,8368,unspecified,mimiciii.CHARTEVENTS,mmHg,33.1663,58.9391,100.2529,1570955,3-source agreement,firstday/vitals_first_day.sql
+dbp,vital,mimic-iii,8440,unspecified,mimiciii.CHARTEVENTS,mmHg,31.13,61.7837,99.0367,1489,3-source agreement,firstday/vitals_first_day.sql
+dbp,vital,mimic-iii,8441,unspecified,mimiciii.CHARTEVENTS,mmHg,26.7487,57.0563,98.8023,1045799,3-source agreement,firstday/vitals_first_day.sql
+dbp,vital,mimic-iii,8555,unspecified,mimiciii.CHARTEVENTS,mmHg,28.8136,57.1763,96.2427,14845,3-source agreement,firstday/vitals_first_day.sql
+dbp,vital,mimic-iii,220180,unspecified,mimiciii.CHARTEVENTS,mmHg,34.91,66.0954,101.471,1523,3-source agreement,firstday/vitals_first_day.sql
+dbp,vital,mimic-iii,220051,unspecified,mimiciii.CHARTEVENTS,mmHg,36.3222,59.9912,96.3778,1240,3-source agreement,firstday/vitals_first_day.sql
+dbp,vital,mimic-iv,220180,unspecified,mimiciv.icu.chartevents,mmHg,35.2368,64.5765,110.345,2317959,3-source agreement,measurement/vitalsign.sql
+dbp,vital,mimic-iv,220051,unspecified,mimiciv.icu.chartevents,mmHg,34.2917,57.7372,98.5245,1526345,3-source agreement,measurement/vitalsign.sql
+dbp,vital,mimic-iv,225310,unspecified,mimiciv.icu.chartevents,mmHg,29.7264,56.8551,98.0818,185986,3-source agreement,measurement/vitalsign.sql
+glucose,lab,eicu,bedside glucose,unspecified,eicu.lab,mg/dL,60.0165,138.1475,373.9323,2275585,3-source agreement,pivoted/pivoted-lab.sql
+glucose,lab,eicu,glucose,unspecified,eicu.lab,mg/dL,64.3387,124.5849,427.0305,934056,3-source agreement,pivoted/pivoted-lab.sql
+glucose,lab,mimic-iii,50809,unspecified,mimiciii.LABEVENTS,mg/dL,60.9899,130.1471,329.2384,110647,3-source agreement,firstday/blood_gas_first_day.sql
+glucose,lab,mimic-iii,50931,unspecified,mimiciii.LABEVENTS,mg/dL,58.7913,119.256,339.7565,243060,3-source agreement,firstday/labs_first_day.sql
+glucose,lab,mimic-iii,807,unspecified,mimiciii.CHARTEVENTS,,61.0412,130.143,332.2447,305034,3-source agreement,firstday/vitals_first_day.sql
+glucose,lab,mimic-iii,811,unspecified,mimiciii.CHARTEVENTS,,60.9541,125.7254,317.8038,279109,3-source agreement,firstday/vitals_first_day.sql
+glucose,lab,mimic-iii,1529,unspecified,mimiciii.CHARTEVENTS,,60.2054,123.4376,312.7063,203899,3-source agreement,firstday/vitals_first_day.sql
+glucose,lab,mimic-iii,225664,unspecified,mimiciii.CHARTEVENTS,,55.07,149.84,307.65,357,3-source agreement,firstday/vitals_first_day.sql
+glucose,lab,mimic-iii,220621,unspecified,mimiciii.CHARTEVENTS,mg/dL,61.3212,124.1664,325.3244,10219,3-source agreement,firstday/vitals_first_day.sql
+glucose,lab,mimic-iii,226537,unspecified,mimiciii.CHARTEVENTS,mg/dL,60.0094,121.2454,276.4306,6362,3-source agreement,firstday/vitals_first_day.sql
+glucose,lab,mimic-iv,50809,unspecified,mimiciv.hosp.labevents,mg/dL,67.8184,133.3099,317.0065,119727,3-source agreement,measurement/bg.sql
+glucose,lab,mimic-iv,50931,unspecified,mimiciv.hosp.labevents,mg/dL,65.4862,121.7652,346.9996,505890,3-source agreement,measurement/chemistry.sql
+glucose,lab,mimic-iv,225664,unspecified,mimiciv.icu.chartevents,,65.0865,137.6317,365.8524,466121,3-source agreement,measurement/vitalsign.sql
+glucose,lab,mimic-iv,220621,unspecified,mimiciv.icu.chartevents,mg/dL,66.8886,128.7272,358.5033,261758,3-source agreement,measurement/vitalsign.sql
+glucose,lab,mimic-iv,226537,unspecified,mimiciv.icu.chartevents,mg/dL,67.0733,133.2107,323.0977,104415,3-source agreement,measurement/vitalsign.sql
+heart_rate,vital,eicu,Vital Signs|Heart Rate|Heart Rate,unspecified,eicu.nurseCharting,,49.5509,84.9941,136.6683,12850933,3-source agreement,pivoted/pivoted-vital.sql
+heart_rate,vital,mimic-iii,211,unspecified,mimiciii.CHARTEVENTS,BPM,51.4583,85.7331,135.1195,2476111,3-source agreement,firstday/vitals_first_day.sql
+heart_rate,vital,mimic-iii,220045,unspecified,mimiciii.CHARTEVENTS,bpm,49.3636,84.7848,138.7857,2650,3-source agreement,firstday/vitals_first_day.sql
+heart_rate,vital,mimic-iv,220045,unspecified,mimiciv.icu.chartevents,bpm,49.1024,84.3441,135.3071,3947601,3-source agreement,measurement/vitalsign.sql
+hematocrit,lab,eicu,Hct,unspecified,eicu.lab,%,19.1072,30.5224,48.4893,905005,3-source agreement,pivoted/pivoted-lab.sql
+hematocrit,lab,mimic-iii,50810,unspecified,mimiciii.LABEVENTS,%,18.1268,30.9853,46.714,47335,3-source agreement,firstday/blood_gas_first_day.sql
+hematocrit,lab,mimic-iii,51221,unspecified,mimiciii.LABEVENTS,%,20.8924,30.2299,44.421,289976,3-source agreement,firstday/labs_first_day.sql
+hematocrit,lab,mimic-iv,50810,unspecified,mimiciv.hosp.labevents,%,17.9576,29.9971,46.5548,55919,3-source agreement,measurement/bg.sql
+hematocrit,lab,mimic-iv,51221,unspecified,mimiciv.hosp.labevents,%,19.746,28.8475,45.9256,519688,3-source agreement,measurement/complete_blood_count.sql
+hemoglobin,lab,eicu,Hgb,unspecified,eicu.lab,g/dL,6.3321,9.9772,16.2097,920579,3-source agreement,pivoted/pivoted-lab.sql
+hemoglobin,lab,mimic-iii,50811,unspecified,mimiciii.LABEVENTS,g/dL,6.036,10.2566,15.5185,47333,3-source agreement,firstday/blood_gas_first_day.sql
+hemoglobin,lab,mimic-iii,51222,unspecified,mimiciii.LABEVENTS,g/dL,7.0461,10.269,15.3498,234246,3-source agreement,firstday/labs_first_day.sql
+hemoglobin,lab,mimic-iv,50811,unspecified,mimiciv.hosp.labevents,g/dL,5.9561,9.9096,15.3762,55916,3-source agreement,measurement/bg.sql
+hemoglobin,lab,mimic-iv,51222,unspecified,mimiciv.hosp.labevents,g/dL,6.4361,9.4326,15.282,481938,3-source agreement,measurement/complete_blood_count.sql
+inr,lab,eicu,PT - INR,unspecified,eicu.lab,ratio,0.9,1.3,5.866,285576,3-source agreement,pivoted/pivoted-lab.sql
+inr,lab,mimic-iii,51237,unspecified,mimiciii.LABEVENTS,,0.9,1.3,5.2181,163049,3-source agreement,firstday/labs_first_day.sql
+inr,lab,mimic-iv,51237,unspecified,mimiciv.hosp.labevents,,0.9001,1.3,4.7233,291819,3-source agreement,measurement/coagulation.sql
+lactate,lab,eicu,lactate,unspecified,eicu.lab,mmol/L,0.4974,1.7945,14.7338,154120,3-source agreement,pivoted/pivoted-lab.sql
+lactate,lab,mimic-iii,50813,unspecified,mimiciii.LABEVENTS,mmol/L,0.6053,1.8429,14.8203,70422,3-source agreement,firstday/blood_gas_first_day.sql
+lactate,lab,mimic-iv,50813,unspecified,mimiciv.hosp.labevents,mmol/L,0.6,1.7895,13.1361,188290,3-source agreement,measurement/bg.sql
+o2_flow,respiratory_bloodgas,eicu,Vital Signs|O2 L/%|O2 L/%,unspecified,eicu.nurseCharting,,0.6618,4.0,100.0,1438199,3-source agreement,pivoted/pivoted-o2.sql
+o2_flow,respiratory_bloodgas,mimic-iii,50815,unspecified,mimiciii.LABEVENTS,L/min,0.6175,4.0,100.0,6342,3-source agreement,firstday/blood_gas_first_day.sql
+o2_flow,respiratory_bloodgas,mimic-iv,50815,unspecified,mimiciv.hosp.labevents,L/min,0.6696,4.0,100.0,3929,3-source agreement,measurement/bg.sql
+o2_flow,respiratory_bloodgas,mimic-iv,223834,unspecified,mimiciv.icu.chartevents,L/min,1.0,4.0,57.9582,338199,3-source agreement,measurement/oxygen_delivery.sql
+pco2,respiratory_bloodgas,eicu,paCO2,unspecified,eicu.lab,mm Hg,20.8372,40.7146,95.0292,324889,3-source agreement,pivoted/pivoted-bg.sql
+pco2,respiratory_bloodgas,mimic-iii,50818,unspecified,mimiciii.LABEVENTS,mm Hg,23.959,40.0,77.685,253360,3-source agreement,firstday/blood_gas_first_day.sql
+pco2,respiratory_bloodgas,mimic-iv,50818,unspecified,mimiciv.hosp.labevents,mm Hg,23.3508,40.9803,81.652,298835,3-source agreement,measurement/bg.sql
+peep,respiratory_bloodgas,eicu,PEEP,unspecified,eicu.lab,cm H2O,3.2533,5.0,19.2835,90757,3-source agreement,pivoted/pivoted-bg.sql
+peep,respiratory_bloodgas,mimic-iii,50819,unspecified,mimiciii.LABEVENTS,,1.4679,5.0,21.972,47609,3-source agreement,firstday/blood_gas_first_day.sql
+peep,respiratory_bloodgas,mimic-iv,50819,unspecified,mimiciv.hosp.labevents,,0.3495,8.0,22.3011,32654,3-source agreement,measurement/bg.sql
+peep,respiratory_bloodgas,mimic-iv,220339,unspecified,mimiciv.icu.chartevents,cmH2O,0.0,5.0,18.1914,407008,3-source agreement,measurement/ventilator_setting.sql
+peep,respiratory_bloodgas,mimic-iv,224700,unspecified,mimiciv.icu.chartevents,cmH2O,4.9993,8.0,21.2517,122081,3-source agreement,measurement/ventilator_setting.sql
+ph,respiratory_bloodgas,eicu,pH,unspecified,eicu.lab,,7.0473,7.3805,7.5621,322260,3-source agreement,pivoted/pivoted-bg.sql
+ph,respiratory_bloodgas,mimic-iii,50820,unspecified,mimiciii.LABEVENTS,units,7.1453,7.3982,7.536,275962,3-source agreement,firstday/blood_gas_first_day.sql
+ph,respiratory_bloodgas,mimic-iv,50820,unspecified,mimiciv.hosp.labevents,units,7.1113,7.385,7.5414,320795,3-source agreement,measurement/bg.sql
+platelets,lab,eicu,platelets x 1000,unspecified,eicu.lab,K/mcL,22.0151,194.1101,614.3356,809530,3-source agreement,pivoted/pivoted-lab.sql
+platelets,lab,mimic-iii,51265,unspecified,mimiciii.LABEVENTS,K/uL,20.75,209.2022,759.8632,246006,3-source agreement,firstday/labs_first_day.sql
+platelets,lab,mimic-iv,51265,unspecified,mimiciv.hosp.labevents,K/uL,15.6695,192.3568,697.6281,485164,3-source agreement,measurement/complete_blood_count.sql
+po2,respiratory_bloodgas,eicu,paO2,unspecified,eicu.lab,mm Hg,36.0044,96.1547,486.0152,328557,3-source agreement,pivoted/pivoted-bg.sql
+po2,respiratory_bloodgas,mimic-iii,50821,unspecified,mimiciii.LABEVENTS,mm Hg,32.512,111.5229,465.4954,253363,3-source agreement,firstday/blood_gas_first_day.sql
+po2,respiratory_bloodgas,mimic-iv,50821,unspecified,mimiciv.hosp.labevents,mm Hg,29.2346,103.3243,450.9593,298962,3-source agreement,measurement/bg.sql
+potassium,lab,eicu,potassium,unspecified,eicu.lab,mmol/L,2.7566,3.9997,6.0829,1065018,3-source agreement,pivoted/pivoted-lab.sql
+potassium,lab,mimic-iii,50822,unspecified,mimiciii.LABEVENTS,mEq/L,2.8603,4.1,6.4853,106969,3-source agreement,firstday/blood_gas_first_day.sql
+potassium,lab,mimic-iii,50971,unspecified,mimiciii.LABEVENTS,mEq/L,2.9094,4.0093,6.0143,269392,3-source agreement,firstday/labs_first_day.sql
+potassium,lab,mimic-iv,50822,unspecified,mimiciv.hosp.labevents,mEq/L,2.8174,4.1,6.4814,112379,3-source agreement,measurement/bg.sql
+potassium,lab,mimic-iv,50971,unspecified,mimiciv.hosp.labevents,mEq/L,2.9754,4.0877,5.9721,545228,3-source agreement,measurement/chemistry.sql
+pt,lab,eicu,PT,unspecified,eicu.lab,sec,10.0624,15.5228,58.5596,275975,3-source agreement,concepts/labsfirstday.sql
+pt,lab,mimic-iii,51274,unspecified,mimiciii.LABEVENTS,sec,11.3595,14.151,37.9495,162797,3-source agreement,firstday/labs_first_day.sql
+pt,lab,mimic-iv,51274,unspecified,mimiciv.hosp.labevents,sec,10.2948,14.318,49.601,291808,3-source agreement,measurement/coagulation.sql
+ptt,lab,eicu,PTT,unspecified,eicu.lab,sec,21.4065,37.1388,147.7286,207733,3-source agreement,pivoted/pivoted-lab.sql
+ptt,lab,mimic-iii,51275,unspecified,mimiciii.LABEVENTS,sec,21.0658,34.5991,150.0,176157,3-source agreement,firstday/labs_first_day.sql
+ptt,lab,mimic-iv,51275,unspecified,mimiciv.hosp.labevents,sec,21.8782,35.2411,150.0,321337,3-source agreement,measurement/coagulation.sql
+respiratory_rate,vital,eicu,Vital Signs|Respiratory Rate|Respiratory Rate,unspecified,eicu.nurseCharting,,8.5324,19.0,38.6526,11914385,3-source agreement,pivoted/pivoted-vital.sql
+respiratory_rate,vital,mimic-iii,50827,set,mimiciii.LABEVENTS,,,,,52471,3-source agreement,firstday/blood_gas_first_day.sql
+respiratory_rate,vital,mimic-iii,615,unspecified,mimiciii.CHARTEVENTS,BPM,8.6671,20.0,37.612,301373,3-source agreement,firstday/vitals_first_day.sql
+respiratory_rate,vital,mimic-iii,618,unspecified,mimiciii.CHARTEVENTS,BPM,7.8177,19.6875,37.7512,2408175,3-source agreement,firstday/vitals_first_day.sql
+respiratory_rate,vital,mimic-iii,220210,unspecified,mimiciii.CHARTEVENTS,insp/min,9.0,20.0,40.782,2659,3-source agreement,firstday/vitals_first_day.sql
+respiratory_rate,vital,mimic-iii,224690,unspecified,mimiciii.CHARTEVENTS,insp/min,11.42,23.0,42.16,192,3-source agreement,firstday/vitals_first_day.sql
+respiratory_rate,vital,mimic-iv,224688,set,mimiciv.icu.chartevents,insp/min,6.2135,18.0,34.7526,216448,3-source agreement,measurement/ventilator_setting.sql
+respiratory_rate,vital,mimic-iv,224690,total,mimiciv.icu.chartevents,insp/min,8.9994,20.6372,37.8789,358253,3-source agreement,measurement/ventilator_setting.sql
+respiratory_rate,vital,mimic-iv,224689,spontaneous,mimiciv.icu.chartevents,insp/min,0.0,9.1335,36.6942,375569,3-source agreement,measurement/ventilator_setting.sql
+respiratory_rate,vital,mimic-iv,220210,unspecified,mimiciv.icu.chartevents,insp/min,8.0762,19.5389,36.7446,3891517,3-source agreement,measurement/vitalsign.sql
+sbp,vital,eicu,Vital Signs|Non-Invasive BP|Non-Invasive BP Systolic,noninvasive,eicu.nurseCharting,,75.9669,120.8976,186.8126,9992195,3-source agreement,pivoted/pivoted-vital.sql
+sbp,vital,eicu,Vital Signs|Invasive BP|Invasive BP Systolic,invasive,eicu.nurseCharting,,71.0943,119.7567,190.4254,2592192,3-source agreement,pivoted/pivoted-vital.sql
+sbp,vital,mimic-iii,51,unspecified,mimiciii.CHARTEVENTS,mmHg,69.2983,120.5858,189.8377,1578805,3-source agreement,firstday/vitals_first_day.sql
+sbp,vital,mimic-iii,442,unspecified,mimiciii.CHARTEVENTS,mmHg,69.6121,120.5458,189.2413,1754,3-source agreement,firstday/vitals_first_day.sql
+sbp,vital,mimic-iii,455,unspecified,mimiciii.CHARTEVENTS,mmHg,75.3966,118.9683,181.2962,1050200,3-source agreement,firstday/vitals_first_day.sql
+sbp,vital,mimic-iii,6701,unspecified,mimiciii.CHARTEVENTS,mmHg,50.9037,108.6144,180.9568,15175,3-source agreement,firstday/vitals_first_day.sql
+sbp,vital,mimic-iii,220179,unspecified,mimiciii.CHARTEVENTS,mmHg,77.873,125.0435,187.6825,1527,3-source agreement,firstday/vitals_first_day.sql
+sbp,vital,mimic-iii,220050,unspecified,mimiciii.CHARTEVENTS,mmHg,70.2756,132.1667,208.3111,1242,3-source agreement,firstday/vitals_first_day.sql
+sbp,vital,mimic-iv,220179,unspecified,mimiciv.icu.chartevents,mmHg,77.8832,118.6456,178.5178,2318386,3-source agreement,measurement/vitalsign.sql
+sbp,vital,mimic-iv,220050,unspecified,mimiciv.icu.chartevents,mmHg,74.3972,117.4358,184.0858,1526547,3-source agreement,measurement/vitalsign.sql
+sbp,vital,mimic-iv,225309,unspecified,mimiciv.icu.chartevents,mmHg,65.5376,112.1252,180.9812,186034,3-source agreement,measurement/vitalsign.sql
+sodium,lab,eicu,sodium,unspecified,eicu.lab,mmol/L,121.8855,138.8239,155.3377,991978,3-source agreement,pivoted/pivoted-lab.sql
+sodium,lab,mimic-iii,50824,unspecified,mimiciii.LABEVENTS,mEq/L,124.8915,137.0,150.1363,34565,3-source agreement,firstday/blood_gas_first_day.sql
+sodium,lab,mimic-iii,50983,unspecified,mimiciii.LABEVENTS,mEq/L,125.9601,139.0,151.7003,251898,3-source agreement,firstday/labs_first_day.sql
+sodium,lab,mimic-iv,50824,unspecified,mimiciv.hosp.labevents,mEq/L,114.5935,136.0,157.148,53714,3-source agreement,measurement/bg.sql
+sodium,lab,mimic-iv,50983,unspecified,mimiciv.hosp.labevents,mEq/L,125.0425,138.6111,154.2462,541967,3-source agreement,measurement/chemistry.sql
+spo2,vital,eicu,Vital Signs|O2 Saturation|O2 Saturation,unspecified,eicu.nurseCharting,,86.3225,97.0,100.0,10590118,3-source agreement,pivoted/pivoted-vital.sql
+spo2,vital,mimic-iii,646,unspecified,mimiciii.CHARTEVENTS,%,87.2615,98.0,100.0,2439167,3-source agreement,firstday/vitals_first_day.sql
+spo2,vital,mimic-iii,220277,unspecified,mimiciii.CHARTEVENTS,%,86.0,98.0,100.0,2737,3-source agreement,firstday/vitals_first_day.sql
+spo2,vital,mimic-iv,220277,unspecified,mimiciv.icu.chartevents,%,87.4732,97.0,100.0,3870472,3-source agreement,measurement/vitalsign.sql
+temperature,vital,eicu,Vital Signs|Temperature|Temperature (C),unspecified,eicu.nurseCharting,,34.1314,36.9,39.2333,4591818,3-source agreement,pivoted/pivoted-vital.sql
+temperature,vital,mimic-iii,50825,unspecified,mimiciii.LABEVENTS,,34.9363,37.231,39.4875,72009,3-source agreement,firstday/blood_gas_first_day.sql
+temperature,vital,mimic-iii,223761,unspecified,mimiciii.CHARTEVENTS,?F,95.8,98.9302,102.736,582,3-source agreement,firstday/vitals_first_day.sql
+temperature,vital,mimic-iii,678,unspecified,mimiciii.CHARTEVENTS,Deg. F,95.1193,98.7111,102.6414,544102,3-source agreement,firstday/vitals_first_day.sql
+temperature,vital,mimic-iii,223762,unspecified,mimiciii.CHARTEVENTS,?C,33.7,38.9444,41.654,196,3-source agreement,firstday/vitals_first_day.sql
+temperature,vital,mimic-iii,676,unspecified,mimiciii.CHARTEVENTS,Deg. C,34.8576,37.2,38.936,304958,3-source agreement,firstday/vitals_first_day.sql
+temperature,vital,mimic-iv,50825,unspecified,mimiciv.hosp.labevents,,33.7245,37.0,39.3628,55536,3-source agreement,measurement/bg.sql
+wbc,lab,eicu,WBC x 1000,unspecified,eicu.lab,K/mcL,1.7849,10.1944,35.9186,798155,3-source agreement,pivoted/pivoted-lab.sql
+wbc,lab,mimic-iii,51300,unspecified,mimiciii.LABEVENTS,K/uL,1.316,8.0438,35.64,266,3-source agreement,firstday/labs_first_day.sql
+wbc,lab,mimic-iii,51301,unspecified,mimiciii.LABEVENTS,K/uL,1.0638,10.5046,35.3234,235183,3-source agreement,firstday/labs_first_day.sql
+wbc,lab,mimic-iv,51300,unspecified,mimiciv.hosp.labevents,K/uL,0.533,7.0188,35.436,283,3-source agreement,measurement/blood_differential.sql
+wbc,lab,mimic-iv,51301,unspecified,mimiciv.hosp.labevents,K/uL,0.7495,10.0514,38.0509,476740,3-source agreement,measurement/blood_differential.sql
+age,demographic,mimic-iv,hosp/patients.anchor_age,unspecified,table_column,,,,,,explicit table column,
+age,demographic,mimic-iii,PATIENTS.DOB+ICUSTAYS.INTIME,unspecified,table_column,,,,,,explicit table column,
+age,demographic,eicu,patient.age,unspecified,table_column,,,,,,explicit table column,
+sex,demographic,mimic-iv,hosp/patients.gender,unspecified,table_column,,,,,,explicit table column,
+sex,demographic,mimic-iii,PATIENTS.GENDER,unspecified,table_column,,,,,,explicit table column,
+sex,demographic,eicu,patient.gender,unspecified,table_column,,,,,,explicit table column,
+admission_weight,demographic,mimic-iv,icu/chartevents:Admission Weight,unspecified,table_column,,,,,,explicit table column,
+admission_weight,demographic,mimic-iii,CHARTEVENTS:Admit Wt,unspecified,table_column,,,,,,explicit table column,
+admission_weight,demographic,eicu,patient.admissionweight,unspecified,table_column,,,,,,explicit table column,
+admission_height,demographic,mimic-iv,icu/chartevents:Height,unspecified,table_column,,,,,,explicit table column,
+admission_height,demographic,mimic-iii,CHARTEVENTS:Height,unspecified,table_column,,,,,,explicit table column,
+admission_height,demographic,eicu,patient.admissionheight,unspecified,table_column,,,,,,explicit table column,
+ethnicity,demographic,mimic-iv,hosp/admissions.race,unspecified,table_column,,,,,,explicit table column,
+ethnicity,demographic,mimic-iii,ADMISSIONS.ETHNICITY,unspecified,table_column,,,,,,explicit table column,
+ethnicity,demographic,eicu,patient.ethnicity,unspecified,table_column,,,,,,explicit table column,
+admission_type,demographic,mimic-iv,hosp/admissions.admission_type,unspecified,table_column,,,,,,explicit table column,
+admission_type,demographic,mimic-iii,ADMISSIONS.ADMISSION_TYPE,unspecified,table_column,,,,,,explicit table column,
+admission_type,demographic,eicu,patient.unitadmitsource,unspecified,table_column,,,,,,explicit table column,
+first_careunit,demographic,mimic-iv,icu/icustays.first_careunit,unspecified,table_column,,,,,,explicit table column,
+first_careunit,demographic,mimic-iii,ICUSTAYS.FIRST_CAREUNIT,unspecified,table_column,,,,,,explicit table column,
+first_careunit,demographic,eicu,patient.unittype,unspecified,table_column,,,,,,explicit table column,
+hospital_los,demographic,mimic-iv,hosp/admissions(dis-adm),unspecified,table_column,,,,,,explicit table column,
+hospital_los,demographic,mimic-iii,ADMISSIONS(DIS-ADM),unspecified,table_column,,,,,,explicit table column,
+hospital_los,demographic,eicu,patient.hospitaldischargeoffset,unspecified,table_column,,,,,,explicit table column,
+alkaline_phosphatase,lab,mimic-iii,50863,unspecified,mimiciii.LABEVENTS,IU/L,34.433,104.8288,875.1485,53913,structural: shared lab itemid space (label identical); LOINC=6768-6,bridge: m3_d_labitems x m4_d_labitems
+alt,lab,mimic-iii,50861,unspecified,mimiciii.LABEVENTS,IU/L,5.7437,39.6408,3500.6495,55411,structural: shared lab itemid space (label identical); LOINC=1742-6,bridge: m3_d_labitems x m4_d_labitems
+ast,lab,mimic-iii,50878,unspecified,mimiciii.LABEVENTS,IU/L,9.7788,46.4633,4719.4349,55368,structural: shared lab itemid space (label identical); LOINC=1920-8,bridge: m3_d_labitems x m4_d_labitems
+amylase,lab,mimic-iii,50867,unspecified,mimiciii.LABEVENTS,IU/L,10.5269,63.6602,936.1793,27861,structural: shared lab itemid space (label identical); LOINC=1798-8,bridge: m3_d_labitems x m4_d_labitems
+atypical_lymphocytes,lab,mimic-iii,51143,unspecified,mimiciii.LABEVENTS,%,0.0,0.0,8.0769,12632,structural: shared lab itemid space (label identical); LOINC=733-6,bridge: m3_d_labitems x m4_d_labitems
+basophils,lab,mimic-iii,51146,unspecified,mimiciii.LABEVENTS,%,0.0,0.1929,1.9509,34927,structural: shared lab itemid space (label identical); LOINC=704-7,bridge: m3_d_labitems x m4_d_labitems
+bilirubin_direct,lab,mimic-iii,50883,unspecified,mimiciii.LABEVENTS,mg/dL,0.1,1.6077,27.4899,4864,structural: shared lab itemid space (label identical); LOINC=1968-7,bridge: m3_d_labitems x m4_d_labitems
+bilirubin_indirect,lab,mimic-iii,50884,unspecified,mimiciii.LABEVENTS,mg/dL,0.1,1.0,13.7117,4584,structural: shared lab itemid space (label identical); LOINC=1971-1,bridge: m3_d_labitems x m4_d_labitems
+ck_cpk,lab,mimic-iii,50910,unspecified,mimiciii.LABEVENTS,IU/L,11.335,145.4779,14465.0489,45392,structural: shared lab itemid space (label identical); LOINC=2157-6,bridge: m3_d_labitems x m4_d_labitems
+ck_mb,lab,mimic-iii,50911,unspecified,mimiciii.LABEVENTS,ng/mL,1.0,7.0041,378.0287,41559,structural: shared lab itemid space (label identical); LOINC=6773-6,bridge: m3_d_labitems x m4_d_labitems
+crp,lab,mimic-iii,50889,unspecified,mimiciii.LABEVENTS,mg/L,0.1619,23.8601,279.6337,1083,structural: shared lab itemid space (label identical); LOINC=1988-5,bridge: m3_d_labitems x m4_d_labitems
+d_dimer,lab,mimic-iii,51196,unspecified,mimiciii.LABEVENTS,ng/mL,199.1375,2706.8541,9945.8955,2302,structural: shared lab itemid space (label identical); LOINC=48065-7,bridge: m3_d_labitems x m4_d_labitems
+eosinophils,lab,mimic-iii,51200,unspecified,mimiciii.LABEVENTS,%,0.0,0.7603,11.4929,34929,structural: shared lab itemid space (label identical); LOINC=711-2,bridge: m3_d_labitems x m4_d_labitems
+fibrinogen,lab,mimic-iii,51214,unspecified,mimiciii.LABEVENTS,mg/dL,73.4,261.1798,918.2124,18997,structural: shared lab itemid space (label identical); LOINC=3255-7,bridge: m3_d_labitems x m4_d_labitems
+ggt,lab,mimic-iii,50927,unspecified,mimiciii.LABEVENTS,IU/L,13.14,217.0156,1970.3601,564,structural: shared lab itemid space (label identical); LOINC=2324-2,bridge: m3_d_labitems x m4_d_labitems
+globulin,lab,mimic-iii,50930,unspecified,mimiciii.LABEVENTS,g/dL,1.3907,2.7661,5.5738,721,structural: shared lab itemid space (label identical); LOINC=2336-6,bridge: m3_d_labitems x m4_d_labitems
+granulocytes_abs,lab,mimic-iii,51218,unspecified,mimiciii.LABEVENTS,#/uL,0.288,410.768,20556.0612,3296,structural: shared lab itemid space (label identical); LOINC=30394-1,bridge: m3_d_labitems x m4_d_labitems
+ld_ldh,lab,mimic-iii,50954,unspecified,mimiciii.LABEVENTS,IU/L,112.3535,291.8598,5440.7066,28471,structural: shared lab itemid space (label identical); LOINC=2532-0,bridge: m3_d_labitems x m4_d_labitems
+lymphocytes,lab,mimic-iii,51244,unspecified,mimiciii.LABEVENTS,%,0.4259,10.4127,58.0572,34931,structural: shared lab itemid space (label identical); LOINC=731-0,bridge: m3_d_labitems x m4_d_labitems
+lymphocytes,lab,mimic-iii,51245,unspecified,mimiciii.LABEVENTS,%,0.234,10.0,52.15,267,structural: shared lab itemid space (label identical); LOINC=26478-8,bridge: m3_d_labitems x m4_d_labitems
+lymphocytes_abs,lab,mimic-iii,51133,unspecified,mimiciii.LABEVENTS,#/uL,33.38,764.875,3792.3701,267,structural: shared lab itemid space (label identical); LOINC=26474-7,bridge: m3_d_labitems x m4_d_labitems
+mch,lab,mimic-iii,51248,unspecified,mimiciii.LABEVENTS,pg,23.648,30.338,36.0624,232672,structural: shared lab itemid space (label identical); LOINC=785-6,bridge: m3_d_labitems x m4_d_labitems
+mchc,lab,mimic-iii,51249,unspecified,mimiciii.LABEVENTS,%,30.0293,33.8424,37.023,232735,structural: shared lab itemid space (label identical); LOINC=786-4,bridge: m3_d_labitems x m4_d_labitems
+mcv,lab,mimic-iii,51250,unspecified,mimiciii.LABEVENTS,fL,74.4216,89.2047,106.9812,232672,structural: shared lab itemid space (label identical); LOINC=787-2,bridge: m3_d_labitems x m4_d_labitems
+metamyelocytes,lab,mimic-iii,51251,unspecified,mimiciii.LABEVENTS,%,0.0,0.0,10.5115,12653,structural: shared lab itemid space (label identical); LOINC=28541-1,bridge: m3_d_labitems x m4_d_labitems
+monocytes,lab,mimic-iii,51254,unspecified,mimiciii.LABEVENTS,%,0.0,4.1738,20.947,34931,structural: shared lab itemid space (label identical); LOINC=742-7,bridge: m3_d_labitems x m4_d_labitems
+neutrophils,lab,mimic-iii,51256,unspecified,mimiciii.LABEVENTS,%,9.3856,79.9244,96.3017,34931,structural: shared lab itemid space (label identical); LOINC=761-7,bridge: m3_d_labitems x m4_d_labitems
+nrbc,lab,mimic-iii,51257,unspecified,mimiciii.LABEVENTS,%,0.9891,2.0,139.4401,2170,structural: shared lab itemid space (label identical); LOINC=772-4,bridge: m3_d_labitems x m4_d_labitems
+ntprobnp,lab,mimic-iii,50963,unspecified,mimiciii.LABEVENTS,pg/mL,51.9667,4220.2074,56902.8637,1007,structural: shared lab itemid space (label identical); LOINC=33762-6,bridge: m3_d_labitems x m4_d_labitems
+rbc,lab,mimic-iii,51279,unspecified,mimiciii.LABEVENTS,m/uL,2.271,3.4082,5.1359,232673,structural: shared lab itemid space (label identical); LOINC=789-8,bridge: m3_d_labitems x m4_d_labitems
+rdw,lab,mimic-iii,51277,unspecified,mimiciii.LABEVENTS,%,12.2247,14.9812,23.0568,231898,structural: shared lab itemid space (label identical); LOINC=788-0,bridge: m3_d_labitems x m4_d_labitems
+thrombin,lab,mimic-iii,51297,unspecified,mimiciii.LABEVENTS,sec,13.787,26.0667,150.0,191,structural: shared lab itemid space (label identical); LOINC=3243-3,bridge: m3_d_labitems x m4_d_labitems
+total_protein,lab,mimic-iii,50976,unspecified,mimiciii.LABEVENTS,g/dL,3.4972,5.798,8.6228,1737,structural: shared lab itemid space (label identical); LOINC=2885-2,bridge: m3_d_labitems x m4_d_labitems
+troponin_t,lab,mimic-iii,51003,unspecified,mimiciii.LABEVENTS,ng/mL,0.01,0.1525,12.2261,26391,structural: shared lab itemid space (label identical); LOINC=6598-7,bridge: m3_d_labitems x m4_d_labitems
+rbc,lab,eicu,RBC,measured,eicu.infusionDrug,,,,,1,adjudicated:both_agree,eicu_00
+mcv,lab,eicu,MCV,measured,eicu.lab,fL,71.5968,90.2449,107.7318,777310,adjudicated:both_agree,eicu_00
+mchc,lab,eicu,MCHC,measured,eicu.lab,g/dL,28.9306,32.9789,36.0306,776967,adjudicated:both_agree,eicu_00
+mch,lab,eicu,MCH,measured,eicu.lab,pg,22.0838,29.8448,35.9007,742184,adjudicated:both_agree,eicu_00
+rdw,lab,eicu,RDW,measured,eicu.lab,%,12.1876,15.1877,24.8535,740729,adjudicated:both_agree,eicu_00
+lymphocytes,lab,eicu,-lymphs,measured,eicu.lab,%,0.9999,11.2622,50.5874,441455,adjudicated:both_agree,eicu_00
+monocytes,lab,eicu,-monos,measured,eicu.lab,%,0.704,7.6031,19.5925,438053,adjudicated:both_agree,eicu_00
+eosinophils,lab,eicu,-eos,measured,eicu.lab,%,0.0,1.0,10.5117,409984,adjudicated:both_agree,eicu_00
+basophils,lab,eicu,-basos,measured,eicu.lab,%,0.0,0.0368,1.9639,392183,adjudicated:both_agree,eicu_00
+neutrophils,lab,eicu,-polys,measured,eicu.lab,%,15.8337,76.8981,95.8455,390987,adjudicated:both_agree,eicu_00
+ast,lab,eicu,AST (SGOT),measured,eicu.lab,Units/L,7.9908,31.3706,2294.6243,306669,adjudicated:both_agree,eicu_00
+alt,lab,eicu,ALT (SGPT),measured,eicu.lab,Units/L,6.2226,28.9845,1782.6067,304916,adjudicated:both_agree,eicu_00
+total_protein,lab,eicu,total protein,measured,eicu.lab,g/dL,3.6802,5.9893,8.6301,303629,adjudicated:both_agree,eicu_00
+alkaline_phosphatase,lab,eicu,alkaline phos.,measured,eicu.lab,Units/L,30.8721,86.3236,603.8065,303220,adjudicated:both_agree,eicu_00
+fio2,respiratory_bloodgas,eicu,FiO2,unspecified,eicu.lab,%,0.2915,40.4836,100.0,278442,adjudicated:both_agree,eicu_00
+so2,respiratory_bloodgas,eicu,O2 Sat (%),measured,eicu.lab,%,59.8722,97.0,100.0,263112,adjudicated:both_agree,eicu_00
+temperature,vital,eicu,Temperature,measured,eicu.lab,&#176;C,33.7327,37.0,99.9595,89756,adjudicated:both_agree,eicu_00
+methemoglobin,respiratory_bloodgas,eicu,Methemoglobin,measured,eicu.lab,%,0.0,0.4,2.1401,81439,adjudicated:both_agree,eicu_00
+carboxyhemoglobin,respiratory_bloodgas,eicu,Carboxyhemoglobin,measured,eicu.lab,%,0.0,0.9994,4.1684,80148,adjudicated:both_agree,eicu_00
+ck_cpk,lab,eicu,CPK,measured,eicu.lab,Units/L,13.6406,159.0656,25066.2151,78079,adjudicated:both_agree,eicu_00
+tidal_volume,respiratory_bloodgas,eicu,TV,unspecified,eicu.lab,mls,219.1683,500.0,780.8053,76097,adjudicated:both_agree,eicu_00
+bilirubin_direct,lab,eicu,direct bilirubin,measured,eicu.lab,mg/dL,0.0,0.3013,17.7435,56325,adjudicated:both_agree,eicu_00
+base_deficit,respiratory_bloodgas,eicu,Base Deficit,measured,eicu.lab,mEq/L,0.0,3.7029,21.7074,53951,adjudicated:both_agree,eicu_00
+ck_mb,lab,eicu,CPK-MB,measured,eicu.lab,ng/mL,0.5016,4.581,353.062,47760,adjudicated:both_agree,eicu_00
+respiratory_rate,vital,eicu,Vent Rate,set,eicu.lab,/min,5.4801,16.0,436.7647,45578,adjudicated:both_agree,eicu_00
+respiratory_rate,vital,eicu,Respiratory Rate,measured,eicu.lab,/min,6.2699,18.0,38.7102,37222,adjudicated:both_agree,eicu_00
+fibrinogen,lab,eicu,fibrinogen,measured,eicu.lab,mg/dL,67.4447,282.8996,862.9118,30440,adjudicated:both_agree,eicu_00
+troponin_t,lab,eicu,troponin - T,measured,eicu.lab,ng/mL,0.01,0.1239,10.5155,25260,adjudicated:both_agree,eicu_00
+o2_flow,respiratory_bloodgas,eicu,LPM O2,unspecified,eicu.lab,L/min,0.995,4.0,73.6829,21824,adjudicated:both_agree,eicu_00
+ld_ldh,lab,eicu,LDH,measured,eicu.lab,Units/L,106.9609,288.722,4061.4264,15949,adjudicated:both_agree,eicu_00
+amylase,lab,eicu,amylase,measured,eicu.lab,Units/L,9.8451,56.0867,1115.5898,11996,adjudicated:both_agree,eicu_00
+mbp,vital,eicu,Vital Signs|Non-Invasive BP|Non-Invasive BP Mean,noninvasive,eicu.nurseCharting,,48.3898,79.8312,128.3062,8408076,adjudicated:both_agree,eicu_00
+temperature,vital,eicu,Vital Signs|Temperature|Temperature (F),measured,eicu.nurseCharting,,93.4436,98.4,102.6064,4591595,adjudicated:both_agree,eicu_00
+temperaturelocation,vital,eicu,Vital Signs|Temperature|Temperature Location,unspecified,eicu.nurseCharting,,1.0,1.0,103.0,2898825,adjudicated:both_agree,eicu_00
+gcs,unassigned,eicu,Scores|Glasgow coma score|GCS Total,unspecified,eicu.nurseCharting,,3.0,14.0198,15.0,2363928,adjudicated:both_agree,eicu_00
+mbp,vital,eicu,Vital Signs|Invasive BP|Invasive BP Mean,invasive,eicu.nurseCharting,,48.2233,77.2888,129.4355,2182995,adjudicated:both_agree,eicu_00
+gcs_eyes,vital,eicu,Scores|Glasgow coma score|Eyes,unspecified,eicu.nurseCharting,,1.0,4.0,4.0,1996612,adjudicated:both_agree,eicu_00
+gcs_motor,vital,eicu,Scores|Glasgow coma score|Motor,unspecified,eicu.nurseCharting,,1.0,6.0,6.0,1994837,adjudicated:both_agree,eicu_00
+gcs_verbal,vital,eicu,Scores|Glasgow coma score|Verbal,unspecified,eicu.nurseCharting,,1.0,4.9997,5.0,1990208,adjudicated:both_agree,eicu_00
+pain_score,vital,eicu,Scores|Pain Score/Goal|Pain Score,unspecified,eicu.nurseCharting,,-0.3421,0.0,10.0,1734121,adjudicated:both_agree,eicu_00
+sedation_scale,vital,eicu,Scores|Sedation Scale/Score/Goal|Sedation Scale,unspecified,eicu.nurseCharting,,,,,1122451,adjudicated:both_agree,eicu_00
+sedation_score,vital,eicu,Scores|Sedation Scale/Score/Goal|Sedation Score,unspecified,eicu.nurseCharting,,-5.0,0.0,4.0,1105241,adjudicated:both_agree,eicu_00
+o2_device,respiratory_bloodgas,eicu,Vital Signs|O2 Admin Device|O2 Admin Device,unspecified,eicu.nurseCharting,,0.344,95.0238,100.0,975703,adjudicated:both_agree,eicu_00
+glucose,lab,eicu,Vital Signs and Infusions|Bedside Glucose|Bedside Glucose,bedside,eicu.nurseCharting,,61.1991,136.4404,374.6108,870001,adjudicated:both_agree,eicu_00
+heart_rate,vital,eicu,Other Vital Signs and Infusions|Pulse|Value,measured,eicu.nurseCharting,,48.1158,84.2214,137.8362,803286,adjudicated:both_agree,eicu_00
+pain_goal,vital,eicu,Scores|Pain Score/Goal|Pain Goal,unspecified,eicu.nurseCharting,,0.0,0.0,5.0374,690965,adjudicated:both_agree,eicu_00
+sedation_goal,vital,eicu,Scores|Sedation Scale/Score/Goal|Sedation Goal,unspecified,eicu.nurseCharting,,-5.0,0.0,0.0062,413729,adjudicated:both_agree,eicu_00
+gcs_motor,vital,eicu,Other Vital Signs and Infusions|Best Motor Response|Value,unspecified,eicu.nurseCharting,,1.0,6.0,6.0,343941,adjudicated:both_agree,eicu_00
+gcs_verbal,vital,eicu,Other Vital Signs and Infusions|Best Verbal Response|Value,unspecified,eicu.nurseCharting,,1.0,4.0,5.0,343683,adjudicated:both_agree,eicu_00
+gcs_eyes,vital,eicu,Other Vital Signs and Infusions|Best Eye Response|Value,unspecified,eicu.nurseCharting,,1.0,4.0,4.0,299727,adjudicated:both_agree,eicu_00
+pain_goal,vital,eicu,Other Vital Signs and Infusions|Patient s Comfort/Function (Pain) GOAL At Rest|Value,unspecified,eicu.nurseCharting,,0.0,2.0,7.8428,262992,adjudicated:both_agree,eicu_00
+delirium_score,vital,eicu,Scores|Delirium Scale/Score|Delirium Score,unspecified,eicu.nurseCharting,,0.0,0.0,7.0,220689,adjudicated:both_agree,eicu_00
+delirium_scale,vital,eicu,Scores|Delirium Scale/Score|Delirium Scale,unspecified,eicu.nurseCharting,,,,,220630,adjudicated:both_agree,eicu_00
+gcs_eyes,vital,eicu,Other Vital Signs and Infusions|Eye Opening|Value,unspecified,eicu.nurseCharting,,1.0,4.0,4.0,188944,adjudicated:both_agree,eicu_00
+gcs_motor,vital,eicu,Other Vital Signs and Infusions|Motor Response|Value,unspecified,eicu.nurseCharting,,1.0,6.0,6.0,158513,adjudicated:both_agree,eicu_00
+gcs_verbal,vital,eicu,Other Vital Signs and Infusions|Verbal Response|Value,unspecified,eicu.nurseCharting,,1.0,5.0,5.0,158496,adjudicated:both_agree,eicu_00
+fio2,respiratory_bloodgas,eicu,respFlowSettings|FiO2,set,eicu.respiratoryCharting,,20.658,40.0,100.0,2304713,adjudicated:both_agree,eicu_00
+respiratory_rate,vital,eicu,respFlowPtVentData|RR (patient),measured,eicu.respiratoryCharting,,2.6881,19.0,37.0898,1736597,adjudicated:both_agree,eicu_00
+peep,respiratory_bloodgas,eicu,respFlowSettings|PEEP,set,eicu.respiratoryCharting,,1.1227,5.0,16.0874,1198212,adjudicated:both_agree,eicu_00
+respiratory_rate,vital,eicu,respFlowPtVentData|Total RR,measured,eicu.respiratoryCharting,,9.9995,18.6727,38.0525,970136,adjudicated:both_agree,eicu_00
+respiratory_rate,vital,eicu,respFlowSettings|Vent Rate,set,eicu.respiratoryCharting,,1.3848,15.9999,34.641,923783,adjudicated:both_agree,eicu_00
+tidal_volume,respiratory_bloodgas,eicu,respFlowSettings|Tidal Volume (set),set,eicu.respiratoryCharting,,3.4297,497.8677,721.6141,858278,adjudicated:both_agree,eicu_00
+o2_flow,respiratory_bloodgas,eicu,respFlowSettings|LPM O2,set,eicu.respiratoryCharting,,0.0,3.0,59.0801,678041,adjudicated:both_agree,eicu_00
+minute_volume,respiratory_bloodgas,eicu,respFlowPtVentData|Exhaled MV,measured,eicu.respiratoryCharting,,4.0096,9.6466,589.7777,443278,adjudicated:both_agree,eicu_00
+tidal_volume,respiratory_bloodgas,eicu,respFlowPtVentData|Exhaled TV (patient),measured,eicu.respiratoryCharting,,0.3958,500.0286,1010.6798,360218,adjudicated:both_agree,eicu_00
+tidal_volume,respiratory_bloodgas,eicu,respFlowPtVentData|Exhaled TV (machine),measured,eicu.respiratoryCharting,,36.6892,488.7201,952.2631,357188,adjudicated:both_agree,eicu_00
+spo2,vital,eicu,respFlowPtVentData|SaO2,noninvasive,eicu.respiratoryCharting,,87.3148,97.0,100.0,311461,adjudicated:adjudicated,eicu_00
+plateau_pressure,respiratory_bloodgas,eicu,respFlowPtVentData|Plateau Pressure,measured,eicu.respiratoryCharting,,0.0,19.9458,38.9282,275644,adjudicated:both_agree,eicu_01
+mbp,vital,eicu,noninvasivemean,noninvasive,eicu.vitalAperiodic,,46.2183,79.3182,131.7907,16955382,adjudicated:both_agree,eicu_01
+dbp,vital,eicu,noninvasivediastolic,noninvasive,eicu.vitalAperiodic,,33.0312,63.5837,111.8053,16864898,adjudicated:both_agree,eicu_01
+sbp,vital,eicu,noninvasivesystolic,noninvasive,eicu.vitalAperiodic,,72.2348,119.0556,186.1577,16863126,adjudicated:both_agree,eicu_01
+heart_rate,vital,eicu,heartrate,measured,eicu.vitalPeriodic,,49.9157,84.3658,132.9247,111948231,adjudicated:both_agree,eicu_01
+spo2,vital,eicu,sao2,noninvasive,eicu.vitalPeriodic,,86.1596,97.0,100.0,102444806,adjudicated:both_agree,eicu_01
+respiratory_rate,vital,eicu,respiration,measured,eicu.vitalPeriodic,,2.958,19.1434,40.044,98620481,adjudicated:both_agree,eicu_01
+mbp,vital,eicu,systemicmean,invasive,eicu.vitalPeriodic,,49.059,77.9652,136.3896,22354840,adjudicated:both_agree,eicu_01
+sbp,vital,eicu,systemicsystolic,invasive,eicu.vitalPeriodic,,71.128,120.8,191.0455,22178536,adjudicated:both_agree,eicu_01
+dbp,vital,eicu,systemicdiastolic,invasive,eicu.vitalPeriodic,,33.1266,57.9995,103.0329,22177450,adjudicated:both_agree,eicu_01
+temperature,vital,eicu,temperature,measured,eicu.vitalPeriodic,,33.0673,37.2986,99.7915,10833234,adjudicated:both_agree,eicu_01
+etco2,vital,eicu,etco2,measured,eicu.vitalPeriodic,,0.0,31.9736,58.3131,3733640,adjudicated:both_agree,eicu_01
+pamean,vital,eicu,pamean,invasive,eicu.vitalPeriodic,,9.9677,25.7658,54.8122,3339927,adjudicated:both_agree,eicu_01
+pasystolic,vital,eicu,pasystolic,invasive,eicu.vitalPeriodic,,16.3022,35.9999,80.6913,3318020,adjudicated:both_agree,eicu_01
+padiastolic,vital,eicu,padiastolic,invasive,eicu.vitalPeriodic,,4.8705,18.4753,41.2838,3317674,adjudicated:both_agree,eicu_01
+mbp,vital,mimic-iii,52,invasive,mimiciii.CHARTEVENTS,mmHg,49.7153,79.0756,131.5674,1561213,adjudicated:both_agree,mimiciii_00
+ectopy_frequency,vital,mimic-iii,159,unspecified,mimiciii.CHARTEVENTS,,,,,1786561,adjudicated:both_agree,mimiciii_00
+ectopy_type,vital,mimic-iii,161,unspecified,mimiciii.CHARTEVENTS,,,,,2299521,adjudicated:both_agree,mimiciii_00
+gcs_eyes,vital,mimic-iii,184,unspecified,mimiciii.CHARTEVENTS,,1.0,4.0,4.0,690169,adjudicated:both_agree,mimiciii_00
+fio2,respiratory_bloodgas,mimic-iii,190,set,mimiciii.CHARTEVENTS,torr,0.3,0.5,1.0,410870,adjudicated:both_agree,mimiciii_00
+gcs,unassigned,mimic-iii,198,unspecified,mimiciii.CHARTEVENTS,points,3.0,11.0,15.0,683960,adjudicated:both_agree,mimiciii_00
+minute_volume,respiratory_bloodgas,mimic-iii,450,measured,mimiciii.CHARTEVENTS,L/min,4.5559,9.9403,20.0732,293413,adjudicated:both_agree,mimiciii_00
+gcs_motor,vital,mimic-iii,454,unspecified,mimiciii.CHARTEVENTS,,1.0,6.0,6.0,687159,adjudicated:both_agree,mimiciii_00
+mbp,vital,mimic-iii,456,noninvasive,mimiciii.CHARTEVENTS,mmHg,47.1444,76.3734,119.7659,1033353,adjudicated:both_agree,mimiciii_00
+o2_device,respiratory_bloodgas,mimic-iii,467,unspecified,mimiciii.CHARTEVENTS,,,,,334549,adjudicated:both_agree,mimiciii_00
+o2_flow,respiratory_bloodgas,mimic-iii,470,unspecified,mimiciii.CHARTEVENTS,lpm,0.3261,4.0,15.0,266948,adjudicated:both_agree,mimiciii_00
+pasystolic,vital,mimic-iii,492,invasive,mimiciii.CHARTEVENTS,mmHg,17.62,38.8815,78.6677,394098,adjudicated:both_agree,mimiciii_00
+peep,respiratory_bloodgas,mimic-iii,506,set,mimiciii.CHARTEVENTS,cmH2O,0.0001,5.0,19.7112,309416,adjudicated:both_agree,mimiciii_00
+weight,vital,mimic-iii,581,measured,mimiciii.CHARTEVENTS,kg,43.2429,82.3012,162.7503,1169677,adjudicated:both_agree,mimiciii_00
+temperature_site,vital,mimic-iii,674,unspecified,mimiciii.CHARTEVENTS,,,,,763488,adjudicated:both_agree,mimiciii_00
+temperature,vital,mimic-iii,677,measured,mimiciii.CHARTEVENTS,Deg. C,35.0841,37.0539,39.2464,542931,adjudicated:both_agree,mimiciii_00
+temperature,vital,mimic-iii,679,measured,mimiciii.CHARTEVENTS,Deg. F,94.761,98.96,102.0799,303263,adjudicated:both_agree,mimiciii_00
+ventilator_mode,respiratory_bloodgas,mimic-iii,720,set,mimiciii.CHARTEVENTS,,,,,304291,adjudicated:both_agree,mimiciii_00
+ventilator_type,respiratory_bloodgas,mimic-iii,722,unspecified,mimiciii.CHARTEVENTS,,,,,352664,adjudicated:both_agree,mimiciii_00
+gcs_verbal,vital,mimic-iii,723,unspecified,mimiciii.CHARTEVENTS,,1.0,1.1829,5.0,688803,adjudicated:both_agree,mimiciii_00
+sedation_score,vital,mimic-iii,1337,unspecified,mimiciii.CHARTEVENTS,,,,,766018,adjudicated:adjudicated,mimiciii_00
+padiastolic,vital,mimic-iii,8448,invasive,mimiciii.CHARTEVENTS,mmHg,6.0356,20.0,38.8915,389331,adjudicated:both_agree,mimiciii_00
+co,vital,mimic-iii,90,invasive,mimiciii.CHARTEVENTS,L/min,2.5942,5.3844,12.7692,138738,adjudicated:both_agree,mimiciii_01
+ci,vital,mimic-iii,116,invasive,mimiciii.CHARTEVENTS,...,1.462,2.7097,6.0972,169451,adjudicated:both_agree,mimiciii_01
+pamean,vital,mimic-iii,491,invasive,mimiciii.CHARTEVENTS,mmHg,13.2339,29.9994,54.9196,198550,adjudicated:both_agree,mimiciii_01
+pain_score,vital,mimic-iii,524,unspecified,mimiciii.CHARTEVENTS,,,,,102445,adjudicated:both_agree,mimiciii_01
+plateau_pressure,respiratory_bloodgas,mimic-iii,543,measured,mimiciii.CHARTEVENTS,cmH2O,7.7737,21.9962,40.7634,130060,adjudicated:both_agree,mimiciii_01
+weight,vital,mimic-iii,580,unspecified,mimiciii.CHARTEVENTS,kg,30.025,82.1252,167.1026,105280,adjudicated:both_agree,mimiciii_01
+respiratory_rate,vital,mimic-iii,614,measured,mimiciii.CHARTEVENTS,BPM,0.0,0.0,24.1832,174057,adjudicated:both_agree,mimiciii_01
+respiratory_rate,vital,mimic-iii,619,set,mimiciii.CHARTEVENTS,BPM,0.0,14.6475,34.2548,185121,adjudicated:both_agree,mimiciii_01
+svr,vital,mimic-iii,626,invasive,mimiciii.CHARTEVENTS,...,349.3374,927.6851,2193.4919,160167,adjudicated:both_agree,mimiciii_01
+svri,vital,mimic-iii,627,invasive,mimiciii.CHARTEVENTS,...,725.0315,1822.1766,3823.2425,153897,adjudicated:both_agree,mimiciii_01
+sv,vital,mimic-iii,662,invasive,mimiciii.CHARTEVENTS,ml,27.3483,61.9044,155.152,134495,adjudicated:both_agree,mimiciii_01
+svo2,respiratory_bloodgas,mimic-iii,664,invasive,mimiciii.CHARTEVENTS,%,46.6581,68.9507,88.391,122224,adjudicated:both_agree,mimiciii_01
+tidal_volume,respiratory_bloodgas,mimic-iii,682,measured,mimiciii.CHARTEVENTS,ml/B,297.5849,551.0058,884.3475,182416,adjudicated:both_agree,mimiciii_01
+tidal_volume,respiratory_bloodgas,mimic-iii,683,set,mimiciii.CHARTEVENTS,ml/B,0.6847,550.0,807.7366,169707,adjudicated:both_agree,mimiciii_01
+tidal_volume,respiratory_bloodgas,mimic-iii,684,measured,mimiciii.CHARTEVENTS,ml/B,0.0,470.1777,952.1233,141135,adjudicated:both_agree,mimiciii_01
+base_excess,respiratory_bloodgas,mimic-iii,776,unspecified,mimiciii.CHARTEVENTS,,-12.7808,0.0,12.39,201038,adjudicated:both_agree,mimiciii_01
+bicarbonate,lab,mimic-iii,777,unspecified,mimiciii.CHARTEVENTS,,13.4412,25.8027,41.409,209248,adjudicated:both_agree,mimiciii_01
+pco2,respiratory_bloodgas,mimic-iii,778,unspecified,mimiciii.CHARTEVENTS,mmHg,23.971,40.0,73.2138,212489,adjudicated:both_agree,mimiciii_01
+po2,respiratory_bloodgas,mimic-iii,779,unspecified,mimiciii.CHARTEVENTS,mmHg,52.6298,111.9826,433.1613,212200,adjudicated:both_agree,mimiciii_01
+ph,respiratory_bloodgas,mimic-iii,780,unspecified,mimiciii.CHARTEVENTS,,7.1591,7.4,7.5359,212989,adjudicated:both_agree,mimiciii_01
+bun,lab,mimic-iii,781,unspecified,mimiciii.CHARTEVENTS,,4.2979,22.8075,121.2545,134580,adjudicated:both_agree,mimiciii_01
+calcium,lab,mimic-iii,786,unspecified,mimiciii.CHARTEVENTS,mg/dl,6.3625,8.2835,10.5715,106221,adjudicated:both_agree,mimiciii_01
+bicarbonate,lab,mimic-iii,787,unspecified,mimiciii.CHARTEVENTS,,12.6083,24.327,37.6207,132971,adjudicated:both_agree,mimiciii_01
+chloride,lab,mimic-iii,788,unspecified,mimiciii.CHARTEVENTS,,89.9491,105.237,120.6378,133215,adjudicated:both_agree,mimiciii_01
+creatinine,lab,mimic-iii,791,unspecified,mimiciii.CHARTEVENTS,,0.2989,0.9,7.6685,135261,adjudicated:both_agree,mimiciii_01
+hematocrit,lab,mimic-iii,813,unspecified,mimiciii.CHARTEVENTS,%,20.114,29.9441,43.5249,195490,adjudicated:both_agree,mimiciii_01
+hemoglobin,lab,mimic-iii,814,unspecified,mimiciii.CHARTEVENTS,gm/dl,7.0563,10.2181,14.9725,131293,adjudicated:both_agree,mimiciii_01
+ptt,lab,mimic-iii,825,unspecified,mimiciii.CHARTEVENTS,,21.1992,34.0379,150.0,101087,adjudicated:both_agree,mimiciii_01
+platelets,lab,mimic-iii,828,unspecified,mimiciii.CHARTEVENTS,,23.039,187.6201,720.3343,131344,adjudicated:both_agree,mimiciii_01
+potassium,lab,mimic-iii,829,unspecified,mimiciii.CHARTEVENTS,,2.9024,4.0026,6.1357,236291,adjudicated:both_agree,mimiciii_01
+rbc,lab,mimic-iii,833,unspecified,mimiciii.CHARTEVENTS,/mic l,2.2643,3.3735,5.0008,121983,adjudicated:both_agree,mimiciii_01
+sodium,lab,mimic-iii,837,unspecified,mimiciii.CHARTEVENTS,,126.279,139.0,152.8665,155424,adjudicated:both_agree,mimiciii_01
+wbc,lab,mimic-iii,861,unspecified,mimiciii.CHARTEVENTS,,1.9753,11.3781,36.7802,123348,adjudicated:both_agree,mimiciii_01
+pain_score,vital,mimic-iii,1044,unspecified,mimiciii.CHARTEVENTS,,,,,101730,adjudicated:both_agree,mimiciii_01
+ph,respiratory_bloodgas,mimic-iii,1126,unspecified,mimiciii.CHARTEVENTS,,7.1587,7.4,7.5359,198847,adjudicated:both_agree,mimiciii_01
+wbc,lab,mimic-iii,1127,unspecified,mimiciii.CHARTEVENTS,,1.9302,11.3713,36.8829,116680,adjudicated:both_agree,mimiciii_01
+bun,lab,mimic-iii,1162,unspecified,mimiciii.CHARTEVENTS,,4.3802,22.8685,120.194,101664,adjudicated:both_agree,mimiciii_01
+chloride,lab,mimic-iii,1523,unspecified,mimiciii.CHARTEVENTS,,90.0072,105.5994,120.6179,100844,adjudicated:both_agree,mimiciii_01
+creatinine,lab,mimic-iii,1525,unspecified,mimiciii.CHARTEVENTS,,0.2997,0.9529,7.6348,102180,adjudicated:both_agree,mimiciii_01
+potassium,lab,mimic-iii,1535,unspecified,mimiciii.CHARTEVENTS,,2.9026,4.0,6.113,173775,adjudicated:both_agree,mimiciii_01
+sodium,lab,mimic-iii,1536,unspecified,mimiciii.CHARTEVENTS,,126.4181,139.0,152.4895,117173,adjudicated:both_agree,mimiciii_01
+co,vital,mimic-iii,89,measured,mimiciii.CHARTEVENTS,L/min,2.6827,5.2405,12.7617,31812,adjudicated:both_agree,mimiciii_02
+o2_device,respiratory_bloodgas,mimic-iii,468,unspecified,mimiciii.CHARTEVENTS,,,,,39187,adjudicated:both_agree,mimiciii_02
+o2_flow_additional,respiratory_bloodgas,mimic-iii,471,unspecified,mimiciii.CHARTEVENTS,lpm,0.1822,4.979,22.3517,36314,adjudicated:adjudicated,mimiciii_02
+weight,vital,mimic-iii,763,measured,mimiciii.CHARTEVENTS,kg,43.3304,82.8566,160.7859,33368,adjudicated:both_agree,mimiciii_02
+inr,lab,mimic-iii,815,unspecified,mimiciii.CHARTEVENTS,,0.9,1.3,4.9695,93551,adjudicated:both_agree,mimiciii_02
+lactate,lab,mimic-iii,818,unspecified,mimiciii.CHARTEVENTS,,0.5994,1.8082,15.4723,52180,adjudicated:both_agree,mimiciii_02
+svo2,respiratory_bloodgas,mimic-iii,823,unspecified,mimiciii.CHARTEVENTS,,42.4378,65.13,87.0426,34230,adjudicated:both_agree,mimiciii_02
+pt,lab,mimic-iii,824,unspecified,mimiciii.CHARTEVENTS,,11.395,14.1303,35.5638,93282,adjudicated:both_agree,mimiciii_02
+so2,respiratory_bloodgas,mimic-iii,834,unspecified,mimiciii.CHARTEVENTS,%,85.0873,97.0,99.3223,68387,adjudicated:both_agree,mimiciii_02
+pain_score,vital,mimic-iii,1045,unspecified,mimiciii.CHARTEVENTS,,,,,36973,adjudicated:adjudicated,mimiciii_02
+pt,lab,mimic-iii,1286,unspecified,mimiciii.CHARTEVENTS,,11.2991,14.2173,37.8749,71061,adjudicated:both_agree,mimiciii_02
+calcium,lab,mimic-iii,1522,unspecified,mimiciii.CHARTEVENTS,mg/dl,6.419,8.299,10.5947,85464,adjudicated:both_agree,mimiciii_02
+inr,lab,mimic-iii,1530,unspecified,mimiciii.CHARTEVENTS,,0.9,1.3,5.0173,71232,adjudicated:both_agree,mimiciii_02
+lactate,lab,mimic-iii,1531,unspecified,mimiciii.CHARTEVENTS,,0.5986,1.7971,14.9317,44288,adjudicated:both_agree,mimiciii_02
+ptt,lab,mimic-iii,1533,unspecified,mimiciii.CHARTEVENTS,,20.9918,33.9611,150.0,76889,adjudicated:both_agree,mimiciii_02
+wbc,lab,mimic-iii,1542,unspecified,mimiciii.CHARTEVENTS,,1.7946,11.2926,37.5389,92990,adjudicated:both_agree,mimiciii_02
+paop,vital,mimic-iii,504,invasive,mimiciii.CHARTEVENTS,mmHg,4.7971,17.0,35.6511,20368,adjudicated:both_agree,mimiciii_03
+pvr,vital,mimic-iii,512,invasive,mimiciii.CHARTEVENTS,...,27.252,176.6401,643.5816,11529,adjudicated:both_agree,mimiciii_03
+pvri,vital,mimic-iii,513,invasive,mimiciii.CHARTEVENTS,...,53.8746,345.8572,1147.2136,10605,adjudicated:both_agree,mimiciii_03
+respiratory_rate,vital,mimic-iii,651,measured,mimiciii.CHARTEVENTS,BPM,8.683,24.0285,46.072,22419,adjudicated:both_agree,mimiciii_03
+tidal_volume,respiratory_bloodgas,mimic-iii,652,measured,mimiciii.CHARTEVENTS,L,0.1076,0.3619,0.8611,22476,adjudicated:both_agree,mimiciii_03
+admission_weight,demographic,mimic-iii,762,unspecified,mimiciii.CHARTEVENTS,kg,42.3267,78.8358,159.4041,28884,adjudicated:both_agree,mimiciii_03
+alt,lab,mimic-iii,769,unspecified,mimiciii.CHARTEVENTS,,5.5772,45.4984,4753.9235,27755,adjudicated:both_agree,mimiciii_03
+ast,lab,mimic-iii,770,unspecified,mimiciii.CHARTEVENTS,,10.8363,59.0152,6705.1052,27637,adjudicated:both_agree,mimiciii_03
+albumin,lab,mimic-iii,772,unspecified,mimiciii.CHARTEVENTS,,1.4004,2.7003,4.3388,20451,adjudicated:both_agree,mimiciii_03
+alkaline_phosphatase,lab,mimic-iii,773,unspecified,mimiciii.CHARTEVENTS,,31.9449,98.6585,757.4804,27032,adjudicated:both_agree,mimiciii_03
+amylase,lab,mimic-iii,775,unspecified,mimiciii.CHARTEVENTS,,10.2111,65.7365,1003.3825,14619,adjudicated:both_agree,mimiciii_03
+ck_cpk,lab,mimic-iii,784,unspecified,mimiciii.CHARTEVENTS,,12.237,207.751,18899.0237,27752,adjudicated:both_agree,mimiciii_03
+ck_mb,lab,mimic-iii,785,unspecified,mimiciii.CHARTEVENTS,,1.0,8.7457,433.4778,18201,adjudicated:both_agree,mimiciii_03
+basophils,lab,mimic-iii,796,unspecified,mimiciii.CHARTEVENTS,,0.0,0.1,1.7061,14188,adjudicated:both_agree,mimiciii_03
+eosinophils,lab,mimic-iii,797,unspecified,mimiciii.CHARTEVENTS,,0.0,0.4967,10.5731,14187,adjudicated:both_agree,mimiciii_03
+lymphocytes,lab,mimic-iii,798,unspecified,mimiciii.CHARTEVENTS,,0.0,8.9024,49.6553,14189,adjudicated:both_agree,mimiciii_03
+monocytes,lab,mimic-iii,799,unspecified,mimiciii.CHARTEVENTS,,0.0,4.0,18.0546,14188,adjudicated:both_agree,mimiciii_03
+neutrophils,lab,mimic-iii,800,unspecified,mimiciii.CHARTEVENTS,,10.9416,81.9102,96.5966,14189,adjudicated:both_agree,mimiciii_03
+fibrinogen,lab,mimic-iii,806,unspecified,mimiciii.CHARTEVENTS,,76.1959,254.9418,923.9014,13050,adjudicated:both_agree,mimiciii_03
+ld_ldh,lab,mimic-iii,817,unspecified,mimiciii.CHARTEVENTS,,118.1798,320.1364,7622.3902,15574,adjudicated:both_agree,mimiciii_03
+bilirubin,unassigned,mimic-iii,848,unspecified,mimiciii.CHARTEVENTS,,0.0626,1.186,39.8788,26831,adjudicated:both_agree,mimiciii_03
+admission_height,demographic,mimic-iii,920,unspecified,mimiciii.CHARTEVENTS,inches,54.9492,67.0,76.0573,28884,adjudicated:both_agree,mimiciii_03
+albumin,lab,mimic-iii,1521,unspecified,mimiciii.CHARTEVENTS,,1.4312,2.727,4.3661,15719,adjudicated:both_agree,mimiciii_03
+fibrinogen,lab,mimic-iii,1528,unspecified,mimiciii.CHARTEVENTS,,76.9397,250.7356,926.9303,10663,adjudicated:both_agree,mimiciii_03
+bilirubin,unassigned,mimic-iii,1538,unspecified,mimiciii.CHARTEVENTS,,0.006,1.1546,40.6385,20857,adjudicated:both_agree,mimiciii_03
+po2,respiratory_bloodgas,mimic-iii,220224,unspecified,mimiciii.CHARTEVENTS,mmHg,52.9244,110.4819,446.7518,13803,adjudicated:both_agree,mimiciii_03
+pco2,respiratory_bloodgas,mimic-iii,220235,unspecified,mimiciii.CHARTEVENTS,mmHg,24.0179,40.3039,74.7242,13803,adjudicated:both_agree,mimiciii_03
+hematocrit,lab,mimic-iii,220545,unspecified,mimiciii.CHARTEVENTS,%,20.4049,29.1045,44.0488,12651,adjudicated:both_agree,mimiciii_03
+chloride,lab,mimic-iii,220602,unspecified,mimiciii.CHARTEVENTS,mEq/L,92.1716,106.0,120.8353,10671,adjudicated:both_agree,mimiciii_03
+creatinine,lab,mimic-iii,220615,unspecified,mimiciii.CHARTEVENTS,mg/dL,0.3212,1.0,6.3461,10737,adjudicated:both_agree,mimiciii_03
+sodium,lab,mimic-iii,220645,unspecified,mimiciii.CHARTEVENTS,mEq/L,128.4892,139.4334,152.8064,10776,adjudicated:both_agree,mimiciii_03
+ph,respiratory_bloodgas,mimic-iii,223830,unspecified,mimiciii.CHARTEVENTS,units,7.1536,7.4,7.5441,14396,adjudicated:both_agree,mimiciii_03
+base_excess,respiratory_bloodgas,mimic-iii,224828,unspecified,mimiciii.CHARTEVENTS,mEq/L,-11.7706,0.0,12.7757,13804,adjudicated:both_agree,mimiciii_03
+bun,lab,mimic-iii,225624,unspecified,mimiciii.CHARTEVENTS,mg/dL,4.4998,22.0274,116.5158,10705,adjudicated:both_agree,mimiciii_03
+bicarbonate,lab,mimic-iii,225698,unspecified,mimiciii.CHARTEVENTS,mEq/L,14.3634,26.0,42.3467,13802,adjudicated:adjudicated,mimiciii_03
+potassium,lab,mimic-iii,227442,unspecified,mimiciii.CHARTEVENTS,mEq/L,2.9173,4.003,5.7884,11404,adjudicated:both_agree,mimiciii_03
+bicarbonate,lab,mimic-iii,227443,unspecified,mimiciii.CHARTEVENTS,mEq/L,13.0793,24.9734,37.944,10624,adjudicated:both_agree,mimiciii_03
+minute_volume,respiratory_bloodgas,mimic-iii,449,set,mimiciii.CHARTEVENTS,L/min,2.7456,11.4596,19.8036,6533,adjudicated:both_agree,mimiciii_04
+sedation_score,vital,mimic-iii,628,unspecified,mimiciii.CHARTEVENTS,,,,,7318,adjudicated:both_agree,mimiciii_04
+d_dimer,lab,mimic-iii,793,measured,mimiciii.CHARTEVENTS,,325.96,3069.1597,9945.3403,1494,adjudicated:both_agree,mimiciii_04
+bands,lab,mimic-iii,795,measured,mimiciii.CHARTEVENTS,,0.0,1.0,39.7263,9032,adjudicated:both_agree,mimiciii_04
+bilirubin_direct,lab,mimic-iii,803,measured,mimiciii.CHARTEVENTS,,0.1,2.2564,28.8185,2612,adjudicated:both_agree,mimiciii_04
+bicarbonate,lab,mimic-iii,857,measured,mimiciii.CHARTEVENTS,,10.9286,26.7712,48.1648,5750,adjudicated:both_agree,mimiciii_04
+pco2,respiratory_bloodgas,mimic-iii,858,measured,mimiciii.CHARTEVENTS,mmHg,25.6924,45.9338,87.0325,7084,adjudicated:both_agree,mimiciii_04
+po2,respiratory_bloodgas,mimic-iii,859,measured,mimiciii.CHARTEVENTS,mmHg,20.9239,41.0,90.7644,7002,adjudicated:both_agree,mimiciii_04
+ph,respiratory_bloodgas,mimic-iii,860,measured,mimiciii.CHARTEVENTS,pH,7.1456,7.3809,7.5125,7117,adjudicated:both_agree,mimiciii_04
+sedation_score,vital,mimic-iii,1090,unspecified,mimiciii.CHARTEVENTS,,,,,5586,adjudicated:adjudicated,mimiciii_04
+bilirubin_direct,lab,mimic-iii,1527,measured,mimiciii.CHARTEVENTS,,0.1,2.3148,28.7023,1953,adjudicated:both_agree,mimiciii_04
+aado2,respiratory_bloodgas,mimic-iii,50801,measured,mimiciii.LABEVENTS,mm Hg,160.5502,483.6205,646.5388,12501,adjudicated:both_agree,mimiciii_04
+intubated,respiratory_bloodgas,mimic-iii,50812,unspecified,mimiciii.LABEVENTS,,,,,105424,adjudicated:both_agree,mimiciii_04
+fio2,respiratory_bloodgas,mimic-iii,50816,unspecified,mimiciii.LABEVENTS,%,23.4313,50.0,100.0,67835,adjudicated:both_agree,mimiciii_04
+so2,respiratory_bloodgas,mimic-iii,50817,measured,mimiciii.LABEVENTS,%,47.3149,96.5215,99.0,101480,adjudicated:both_agree,mimiciii_04
+requiredo2,respiratory_bloodgas,mimic-iii,50823,unspecified,mimiciii.LABEVENTS,,35.973,80.507,100.0,12531,adjudicated:both_agree,mimiciii_04
+tidal_volume,respiratory_bloodgas,mimic-iii,50826,unspecified,mimiciii.LABEVENTS,,251.1668,550.0,891.201,50595,adjudicated:both_agree,mimiciii_04
+ventilator,respiratory_bloodgas,mimic-iii,50828,unspecified,mimiciii.LABEVENTS,,,,,40219,adjudicated:both_agree,mimiciii_04
+calcium,lab,mimic-iii,50893,measured,mimiciii.LABEVENTS,mg/dL,6.4966,8.3344,10.5586,188005,adjudicated:both_agree,mimiciii_04
+hemoglobin,lab,mimic-iii,220228,measured,mimiciii.CHARTEVENTS,g/dl,6.8405,9.9462,15.3566,9822,adjudicated:both_agree,mimiciii_04
+wbc,lab,mimic-iii,220546,measured,mimiciii.CHARTEVENTS,K/uL,3.134,11.1318,30.0393,9779,adjudicated:both_agree,mimiciii_04
+calcium,lab,mimic-iii,225625,measured,mimiciii.CHARTEVENTS,mg/dL,6.6642,8.3998,10.7038,9009,adjudicated:both_agree,mimiciii_04
+lactate,lab,mimic-iii,225668,measured,mimiciii.CHARTEVENTS,mmol/L,0.614,1.8,12.5902,4675,adjudicated:both_agree,mimiciii_04
+sex,demographic,mimic-iii,226228,unspecified,mimiciii.CHARTEVENTS,,1.0,1.0,2.0,1615,adjudicated:both_agree,mimiciii_04
+ethnicity,demographic,mimic-iii,226545,unspecified,mimiciii.CHARTEVENTS,,,,,1350,adjudicated:both_agree,mimiciii_04
+anion_gap,lab,mimic-iii,227073,measured,mimiciii.CHARTEVENTS,mEq/L,6.9522,13.0,24.3755,10037,adjudicated:both_agree,mimiciii_04
+platelets,lab,mimic-iii,227457,measured,mimiciii.CHARTEVENTS,K/uL,23.6082,205.2281,684.7899,10044,adjudicated:both_agree,mimiciii_04
+pt,lab,mimic-iii,227465,measured,mimiciii.CHARTEVENTS,sec,11.355,14.6508,43.6745,6980,adjudicated:both_agree,mimiciii_04
+ptt,lab,mimic-iii,227466,measured,mimiciii.CHARTEVENTS,sec,21.8577,36.5074,150.0,7714,adjudicated:both_agree,mimiciii_04
+inr,lab,mimic-iii,227467,measured,mimiciii.CHARTEVENTS,,0.9127,1.3,4.813,6985,adjudicated:both_agree,mimiciii_04
+aado2,respiratory_bloodgas,mimic-iv,50801,unspecified,mimiciv.hosp.labevents,mm Hg,175.4919,506.4842,642.0059,6021,adjudicated:both_agree,mimiciv_00
+intubated,respiratory_bloodgas,mimic-iv,50812,unspecified,mimiciv.hosp.labevents,,,,,78084,adjudicated:both_agree,mimiciv_00
+fio2,respiratory_bloodgas,mimic-iv,50816,set,mimiciv.hosp.labevents,%,20.5334,50.0,100.0,37491,adjudicated:both_agree,mimiciv_00
+so2,respiratory_bloodgas,mimic-iv,50817,measured,mimiciv.hosp.labevents,%,40.2065,94.5805,99.0,103057,adjudicated:both_agree,mimiciv_00
+requiredo2,respiratory_bloodgas,mimic-iv,50823,unspecified,mimiciv.hosp.labevents,,38.4259,84.723,100.0,6032,adjudicated:both_agree,mimiciv_00
+tidal_volume,respiratory_bloodgas,mimic-iv,50826,set,mimiciv.hosp.labevents,,156.5397,450.0,815.754,25965,adjudicated:both_agree,mimiciv_00
+respiratory_rate,vital,mimic-iv,50827,set,mimiciv.hosp.labevents,,,,,28724,adjudicated:adjudicated,mimiciv_00
+ventilator,respiratory_bloodgas,mimic-iv,50828,unspecified,mimiciv.hosp.labevents,,,,,34425,adjudicated:both_agree,mimiciv_00
+alt,lab,mimic-iv,50861,unspecified,mimiciv.hosp.labevents,IU/L,5.989,36.5511,2939.2804,148458,adjudicated:both_agree,mimiciv_00
+alkaline_phosphatase,lab,mimic-iv,50863,unspecified,mimiciv.hosp.labevents,IU/L,32.4105,103.2603,825.1698,145230,adjudicated:both_agree,mimiciv_00
+amylase,lab,mimic-iv,50867,unspecified,mimiciv.hosp.labevents,IU/L,9.727,64.321,855.4157,13994,adjudicated:both_agree,mimiciv_00
+ast,lab,mimic-iv,50878,unspecified,mimiciv.hosp.labevents,IU/L,9.6062,45.0132,4032.1997,148369,adjudicated:both_agree,mimiciv_00
+bilirubin_direct,lab,mimic-iv,50883,unspecified,mimiciv.hosp.labevents,mg/dL,0.1,2.0952,29.4412,9568,adjudicated:both_agree,mimiciv_00
+bilirubin_indirect,lab,mimic-iv,50884,unspecified,mimiciv.hosp.labevents,mg/dL,0.1,1.0943,13.845,8489,adjudicated:both_agree,mimiciv_00
+crp,lab,mimic-iv,50889,unspecified,mimiciv.hosp.labevents,mg/L,0.6299,66.4758,287.1596,7569,adjudicated:both_agree,mimiciv_00
+ck_cpk,lab,mimic-iv,50910,unspecified,mimiciv.hosp.labevents,IU/L,12.2373,202.9853,49975.7133,40308,adjudicated:both_agree,mimiciv_00
+ck_mb,lab,mimic-iv,50911,unspecified,mimiciv.hosp.labevents,ng/mL,1.0,5.0,284.6577,40493,adjudicated:both_agree,mimiciv_00
+ld_ldh,lab,mimic-iv,50954,unspecified,mimiciv.hosp.labevents,IU/L,117.2298,302.7552,5731.1245,79762,adjudicated:both_agree,mimiciv_00
+ntprobnp,lab,mimic-iv,50963,unspecified,mimiciv.hosp.labevents,pg/mL,35.2918,2730.2062,49531.4858,4948,adjudicated:both_agree,mimiciv_00
+troponin_t,lab,mimic-iv,51003,unspecified,mimiciv.hosp.labevents,ng/mL,0.01,0.1757,11.0712,46160,adjudicated:both_agree,mimiciv_00
+lymphocytes_abs,lab,mimic-iv,51133,unspecified,mimiciv.hosp.labevents,K/uL,0.0245,1.0549,8.1096,39263,adjudicated:both_agree,mimiciv_00
+atypical_lymphocytes,lab,mimic-iv,51143,unspecified,mimiciv.hosp.labevents,%,0.0,0.0,7.6269,19885,adjudicated:both_agree,mimiciv_00
+basophils,lab,mimic-iv,51146,unspecified,mimiciv.hosp.labevents,%,0.0,0.2,2.0441,67908,adjudicated:both_agree,mimiciv_00
+eosinophils,lab,mimic-iv,51200,unspecified,mimiciv.hosp.labevents,%,0.0,0.7111,13.6655,67908,adjudicated:both_agree,mimiciv_00
+fibrinogen,lab,mimic-iv,51214,unspecified,mimiciv.hosp.labevents,mg/dL,66.8645,236.6251,954.3574,44425,adjudicated:both_agree,mimiciv_00
+lymphocytes,lab,mimic-iv,51244,unspecified,mimiciv.hosp.labevents,%,0.4719,11.4235,96.9196,67908,adjudicated:both_agree,mimiciv_00
+mch,lab,mimic-iv,51248,unspecified,mimiciv.hosp.labevents,pg,22.5615,30.119,36.4162,475842,adjudicated:both_agree,mimiciv_00
+mchc,lab,mimic-iv,51249,unspecified,mimiciv.hosp.labevents,g/dL,28.7053,32.6884,36.5619,475892,adjudicated:both_agree,mimiciv_00
+mcv,lab,mimic-iv,51250,unspecified,mimiciv.hosp.labevents,fL,74.1567,91.9966,111.0084,475842,adjudicated:both_agree,mimiciv_00
+metamyelocytes,lab,mimic-iv,51251,unspecified,mimiciv.hosp.labevents,%,0.0,0.0,10.2783,21624,adjudicated:both_agree,mimiciv_00
+monocytes,lab,mimic-iv,51254,unspecified,mimiciv.hosp.labevents,%,0.0,5.6232,29.7097,67908,adjudicated:both_agree,mimiciv_00
+neutrophils,lab,mimic-iv,51256,unspecified,mimiciv.hosp.labevents,%,0.0,77.0774,96.0355,67908,adjudicated:both_agree,mimiciv_00
+nrbc,lab,mimic-iv,51257,unspecified,mimiciv.hosp.labevents,%,0.1,1.0,59.1678,11860,adjudicated:both_agree,mimiciv_00
+rdw,lab,mimic-iv,51277,unspecified,mimiciv.hosp.labevents,%,11.9942,15.2017,24.9771,475837,adjudicated:both_agree,mimiciv_00
+rbc,lab,mimic-iv,51279,unspecified,mimiciv.hosp.labevents,m/uL,2.0403,3.1714,5.2275,475843,adjudicated:both_agree,mimiciv_00
+basophils_abs,lab,mimic-iv,52069,unspecified,mimiciv.hosp.labevents,K/uL,0.0,0.02,0.2729,39263,adjudicated:both_agree,mimiciv_00
+eosinophils_abs,lab,mimic-iv,52073,unspecified,mimiciv.hosp.labevents,K/uL,0.0,0.0525,1.7326,39275,adjudicated:both_agree,mimiciv_00
+monocytes_abs,lab,mimic-iv,52074,unspecified,mimiciv.hosp.labevents,K/uL,0.0,0.6456,3.7893,39263,adjudicated:both_agree,mimiciv_00
+neutrophils_abs,lab,mimic-iv,52075,unspecified,mimiciv.hosp.labevents,K/uL,0.0043,7.7995,36.9711,39273,adjudicated:both_agree,mimiciv_00
+immature_granulocytes,lab,mimic-iv,52135,unspecified,mimiciv.hosp.labevents,%,0.2,0.8,4.6461,23568,adjudicated:both_agree,mimiciv_00
+total_protein,lab,mimic-iv,50976,unspecified,mimiciv.hosp.labevents,g/dL,3.605,5.7417,8.3538,3742,adjudicated:both_agree,mimiciv_01
+mbp,vital,mimic-iv,220052,invasive,mimiciv.icu.chartevents,mmHg,49.368,77.0425,128.3253,1529951,adjudicated:both_agree,mimiciv_01
+mbp,vital,mimic-iv,220181,noninvasive,mimiciv.icu.chartevents,mmHg,48.8589,78.3078,123.6146,2314564,adjudicated:both_agree,mimiciv_01
+gcs_eyes,vital,mimic-iv,220739,unspecified,mimiciv.icu.chartevents,,1.0,4.0,4.0,1040403,adjudicated:both_agree,mimiciv_01
+temperature,vital,mimic-iv,223761,unspecified,mimiciv.icu.chartevents,°F,95.9476,98.4996,102.2654,923344,adjudicated:both_agree,mimiciv_01
+pain_score,vital,mimic-iv,223791,unspecified,mimiciv.icu.chartevents,,0.0,3.0,10.0,521445,adjudicated:both_agree,mimiciv_01
+fio2,respiratory_bloodgas,mimic-iv,223835,set,mimiciv.icu.chartevents,,27.8941,40.7411,100.0,530319,adjudicated:both_agree,mimiciv_01
+gcs_verbal,vital,mimic-iv,223900,unspecified,mimiciv.icu.chartevents,,1.0,4.0,5.0,1038554,adjudicated:both_agree,mimiciv_01
+gcs_motor,vital,mimic-iv,223901,unspecified,mimiciv.icu.chartevents,,1.0,6.0,6.0,1035968,adjudicated:both_agree,mimiciv_01
+temperature_site,vital,mimic-iv,224642,unspecified,mimiciv.icu.chartevents,,,,,1144011,adjudicated:both_agree,mimiciv_01
+ectopy_type,vital,mimic-iv,224650,unspecified,mimiciv.icu.chartevents,,,,,3188979,adjudicated:both_agree,mimiciv_01
+o2_device,respiratory_bloodgas,mimic-iv,226732,unspecified,mimiciv.icu.chartevents,,,,,933372,adjudicated:both_agree,mimiciv_01
+sedation_score,vital,mimic-iv,228096,unspecified,mimiciv.icu.chartevents,,-5.0,0.0,2.7218,743091,adjudicated:both_agree,mimiciv_01
+sedation_goal,vital,mimic-iv,228299,unspecified,mimiciv.icu.chartevents,,0.0,0.0,5.0,617071,adjudicated:both_agree,mimiciv_01
+hemoglobin,lab,mimic-iv,220228,unspecified,mimiciv.icu.chartevents,g/dl,6.3437,9.6053,15.2917,271578,adjudicated:both_agree,mimiciv_02
+hematocrit,lab,mimic-iv,220545,unspecified,mimiciv.icu.chartevents,%,19.6926,29.055,45.9844,268790,adjudicated:both_agree,mimiciv_02
+chloride,lab,mimic-iv,220602,unspecified,mimiciv.icu.chartevents,mEq/L,86.6142,103.8044,122.6104,277818,adjudicated:both_agree,mimiciv_02
+creatinine,lab,mimic-iv,220615,unspecified,mimiciv.icu.chartevents,mg/dL,0.3,1.0,7.4904,265745,adjudicated:both_agree,mimiciv_02
+sodium,lab,mimic-iv,220645,unspecified,mimiciv.icu.chartevents,mEq/L,124.5178,139.0,156.5055,284105,adjudicated:both_agree,mimiciv_02
+ventilator_type,respiratory_bloodgas,mimic-iv,223848,unspecified,mimiciv.icu.chartevents,,1.0,1.0,3.896,366137,adjudicated:both_agree,mimiciv_02
+pain_score,vital,mimic-iv,224409,unspecified,mimiciv.icu.chartevents,,0.0,1.9906,9.0657,307948,adjudicated:adjudicated,mimiciv_02
+ectopy_frequency,vital,mimic-iv,224651,unspecified,mimiciv.icu.chartevents,,,,,481435,adjudicated:both_agree,mimiciv_02
+tidal_volume,respiratory_bloodgas,mimic-iv,224685,measured,mimiciv.icu.chartevents,mL,93.0569,448.7032,885.6575,394900,adjudicated:both_agree,mimiciv_02
+minute_volume,respiratory_bloodgas,mimic-iv,224687,measured,mimiciv.icu.chartevents,L/min,3.6485,8.941,18.0822,384300,adjudicated:both_agree,mimiciv_02
+bun,lab,mimic-iv,225624,unspecified,mimiciv.icu.chartevents,mg/dL,4.1684,22.3413,123.9623,264993,adjudicated:both_agree,mimiciv_02
+anion_gap,lab,mimic-iv,227073,unspecified,mimiciv.icu.chartevents,mEq/L,5.9978,13.0,27.4343,264598,adjudicated:both_agree,mimiciv_02
+potassium,lab,mimic-iv,227442,unspecified,mimiciv.icu.chartevents,mEq/L,2.9497,4.0542,6.1082,284327,adjudicated:both_agree,mimiciv_02
+bicarbonate,lab,mimic-iv,227443,unspecified,mimiciv.icu.chartevents,mEq/L,11.7594,23.9996,38.6175,266003,adjudicated:both_agree,mimiciv_02
+delirium_score,vital,mimic-iv,228332,unspecified,mimiciv.icu.chartevents,,,,,269486,adjudicated:adjudicated,mimiciv_02
+pasystolic,vital,mimic-iv,220059,invasive,mimiciv.icu.chartevents,mmHg,16.485,36.0456,80.4669,200718,adjudicated:both_agree,mimiciv_03
+padiastolic,vital,mimic-iv,220060,invasive,mimiciv.icu.chartevents,mmHg,5.4483,18.993,38.0981,200775,adjudicated:both_agree,mimiciv_03
+pamean,vital,mimic-iv,220061,invasive,mimiciv.icu.chartevents,mmHg,10.3703,25.1152,52.2792,197998,adjudicated:both_agree,mimiciv_03
+po2,respiratory_bloodgas,mimic-iv,220224,unspecified,mimiciv.icu.chartevents,mmHg,52.5183,109.3363,444.592,208525,adjudicated:both_agree,mimiciv_03
+pco2,respiratory_bloodgas,mimic-iv,220235,unspecified,mimiciv.icu.chartevents,mmHg,23.5273,40.3087,77.5851,208494,adjudicated:both_agree,mimiciv_03
+wbc,lab,mimic-iv,220546,unspecified,mimiciv.icu.chartevents,K/uL,1.7459,11.0975,41.2939,237864,adjudicated:both_agree,mimiciv_03
+sedation_score,vital,mimic-iv,223753,unspecified,mimiciv.icu.chartevents,,1.0,4.0,5.0,145906,adjudicated:both_agree,mimiciv_03
+temperature,vital,mimic-iv,223762,unspecified,mimiciv.icu.chartevents,°C,34.144,37.0,39.1562,193264,adjudicated:both_agree,mimiciv_03
+ph,respiratory_bloodgas,mimic-iv,223830,unspecified,mimiciv.icu.chartevents,units,7.1157,7.3872,7.5408,214880,adjudicated:both_agree,mimiciv_03
+ventilator_mode,respiratory_bloodgas,mimic-iv,223849,set,mimiciv.icu.chartevents,,2.0,12.4098,57.5119,229772,adjudicated:both_agree,mimiciv_03
+weight,vital,mimic-iv,224639,measured,mimiciv.icu.chartevents,kg,46.619,87.4513,173.5246,133382,adjudicated:both_agree,mimiciv_03
+tidal_volume,respiratory_bloodgas,mimic-iv,224684,set,mimiciv.icu.chartevents,mL,188.8438,450.0,604.3334,205768,adjudicated:both_agree,mimiciv_03
+tidal_volume,respiratory_bloodgas,mimic-iv,224686,measured,mimiciv.icu.chartevents,mL,0.2409,446.5169,1021.0231,202505,adjudicated:both_agree,mimiciv_03
+plateau_pressure,respiratory_bloodgas,mimic-iv,224696,measured,mimiciv.icu.chartevents,cmH2O,10.5376,19.9997,36.1665,139946,adjudicated:both_agree,mimiciv_03
+base_excess,respiratory_bloodgas,mimic-iv,224828,unspecified,mimiciv.icu.chartevents,mEq/L,-14.9769,0.0,13.7048,208485,adjudicated:both_agree,mimiciv_03
+mbp,vital,mimic-iv,225312,invasive,mimiciv.icu.chartevents,mmHg,43.8092,75.2319,127.5647,187170,adjudicated:both_agree,mimiciv_03
+calcium,lab,mimic-iv,225625,unspecified,mimiciv.icu.chartevents,mg/dL,6.5139,8.4,10.7232,241516,adjudicated:both_agree,mimiciv_03
+lactate,lab,mimic-iv,225668,unspecified,mimiciv.icu.chartevents,mmol/L,0.5991,1.7982,13.4216,148611,adjudicated:both_agree,mimiciv_03
+bicarbonate,lab,mimic-iv,225698,unspecified,mimiciv.icu.chartevents,mEq/L,12.3827,25.0,42.5308,208469,adjudicated:adjudicated,mimiciv_03
+platelets,lab,mimic-iv,227457,unspecified,mimiciv.icu.chartevents,K/uL,20.2042,175.5152,641.1702,242027,adjudicated:both_agree,mimiciv_03
+pt,lab,mimic-iv,227465,unspecified,mimiciv.icu.chartevents,sec,10.3664,14.1412,51.5843,164388,adjudicated:both_agree,mimiciv_03
+ptt,lab,mimic-iv,227466,unspecified,mimiciv.icu.chartevents,sec,21.6905,33.4745,150.0,179519,adjudicated:both_agree,mimiciv_03
+inr,lab,mimic-iv,227467,unspecified,mimiciv.icu.chartevents,,0.9421,1.3,4.9217,164406,adjudicated:both_agree,mimiciv_03
+ventilator_mode_hamilton,respiratory_bloodgas,mimic-iv,229314,set,mimiciv.icu.chartevents,,4.4034,9.0,13.6107,178477,adjudicated:both_agree,mimiciv_03
+so2,respiratory_bloodgas,mimic-iv,220227,invasive,mimiciv.icu.chartevents,%,81.2025,96.6986,99.0,57685,adjudicated:both_agree,mimiciv_04
+ast,lab,mimic-iv,220587,unspecified,mimiciv.icu.chartevents,IU/L,10.3537,56.9098,6553.7249,72198,adjudicated:both_agree,mimiciv_04
+alt,lab,mimic-iv,220644,unspecified,mimiciv.icu.chartevents,IU/L,5.0,41.8641,4321.0441,72243,adjudicated:both_agree,mimiciv_04
+svo2,respiratory_bloodgas,mimic-iv,223772,invasive,mimiciv.icu.chartevents,%,39.8934,65.4324,89.9417,109619,adjudicated:both_agree,mimiciv_04
+co,vital,mimic-iv,224842,invasive,mimiciv.icu.chartevents,L/min,2.3643,4.9135,10.7522,93674,adjudicated:both_agree,mimiciv_04
+alkaline_phosphatase,lab,mimic-iv,225612,unspecified,mimiciv.icu.chartevents,IU/L,29.985,94.1422,741.4914,70606,adjudicated:both_agree,mimiciv_04
+bilirubin,unassigned,mimic-iv,225690,unspecified,mimiciv.icu.chartevents,mg/dL,0.1995,0.8968,33.5569,71904,adjudicated:both_agree,mimiciv_04
+admission_weight,demographic,mimic-iv,226531,unspecified,mimiciv.icu.chartevents,,90.2179,174.8807,356.5397,61018,adjudicated:both_agree,mimiciv_04
+potassium,lab,mimic-iv,227464,bedside,mimiciv.icu.chartevents,mEq/L,2.8099,4.1,6.5272,87037,adjudicated:both_agree,mimiciv_04
+etco2,vital,mimic-iv,228640,measured,mimiciv.icu.chartevents,,18.6767,35.3548,60.1463,72885,adjudicated:both_agree,mimiciv_04
+ph,respiratory_bloodgas,mimic-iv,220274,measured,mimiciv.icu.chartevents,units,7.0942,7.37,7.5324,35762,adjudicated:both_agree,mimiciv_05
+ld_ldh,lab,mimic-iv,220632,measured,mimiciv.icu.chartevents,IU/L,122.0878,342.6343,7855.3318,40331,adjudicated:both_agree,mimiciv_05
+bicarbonate,lab,mimic-iv,223679,unspecified,mimiciv.icu.chartevents,mEq/L,10.0737,25.6534,48.0383,28032,adjudicated:adjudicated,mimiciv_05
+ck_cpk,lab,mimic-iv,225634,measured,mimiciv.icu.chartevents,IU/L,15.785,287.8886,62725.3431,28280,adjudicated:both_agree,mimiciv_05
+basophils,lab,mimic-iv,225639,measured,mimiciv.icu.chartevents,%,0.0,0.2,1.5529,31830,adjudicated:both_agree,mimiciv_05
+eosinophils,lab,mimic-iv,225640,measured,mimiciv.icu.chartevents,%,0.0,0.5856,11.3764,31830,adjudicated:both_agree,mimiciv_05
+lymphocytes,lab,mimic-iv,225641,measured,mimiciv.icu.chartevents,%,0.7581,10.0434,74.4359,31831,adjudicated:both_agree,mimiciv_05
+monocytes,lab,mimic-iv,225642,measured,mimiciv.icu.chartevents,%,0.0,4.9887,24.0732,31831,adjudicated:both_agree,mimiciv_05
+neutrophils,lab,mimic-iv,225643,measured,mimiciv.icu.chartevents,%,4.2823,79.7724,95.8767,31829,adjudicated:both_agree,mimiciv_05
+pco2,respiratory_bloodgas,mimic-iv,226062,measured,mimiciv.icu.chartevents,mmHg,21.8738,43.864,92.5311,28029,adjudicated:both_agree,mimiciv_05
+ectopy_type_secondary,vital,mimic-iv,226479,unspecified,mimiciv.icu.chartevents,,,,,32523,adjudicated:both_agree,mimiciv_05
+admission_weight,demographic,mimic-iv,226512,measured,mimiciv.icu.chartevents,kg,42.1593,79.0873,156.9247,35718,adjudicated:both_agree,mimiciv_05
+sodium,lab,mimic-iv,226534,measured,mimiciv.icu.chartevents,mEq/L,112.9464,135.9555,160.1156,37556,adjudicated:both_agree,mimiciv_05
+hematocrit,lab,mimic-iv,226540,measured,mimiciv.icu.chartevents,%,17.7187,29.0072,45.8429,38006,adjudicated:both_agree,mimiciv_05
+troponin_t,lab,mimic-iv,227429,measured,mimiciv.icu.chartevents,ng/mL,0.01,0.0852,11.2431,30427,adjudicated:both_agree,mimiciv_05
+albumin,lab,mimic-iv,227456,measured,mimiciv.icu.chartevents,g/dL,1.5537,2.9025,4.4806,35675,adjudicated:both_agree,mimiciv_05
+fibrinogen,lab,mimic-iv,227468,measured,mimiciv.icu.chartevents,mg/dL,66.7578,233.0776,972.0551,31403,adjudicated:both_agree,mimiciv_05
+co,vital,mimic-iv,220088,invasive,mimiciv.icu.chartevents,L/min,2.0614,4.8035,9.8942,16625,adjudicated:both_agree,mimiciv_06
+tidal_volume,respiratory_bloodgas,mimic-iv,224421,measured,mimiciv.icu.chartevents,mL,149.0483,409.5303,909.2167,23048,adjudicated:both_agree,mimiciv_06
+respiratory_rate,vital,mimic-iv,224422,measured,mimiciv.icu.chartevents,bpm,7.9122,20.9976,39.891,23057,adjudicated:both_agree,mimiciv_06
+bands,lab,mimic-iv,225638,unspecified,mimiciv.icu.chartevents,%,0.0,2.0,35.3706,9814,adjudicated:both_agree,mimiciv_06
+svo2,respiratory_bloodgas,mimic-iv,225674,unspecified,mimiciv.icu.chartevents,%,36.0343,63.6016,95.5412,22230,adjudicated:both_agree,mimiciv_06
+ectopy_frequency_secondary,vital,mimic-iv,226480,unspecified,mimiciv.icu.chartevents,,,,,19262,adjudicated:both_agree,mimiciv_06
+chloride,lab,mimic-iv,226536,unspecified,mimiciv.icu.chartevents,mEq/L,89.9972,106.013,121.9282,20241,adjudicated:both_agree,mimiciv_06
+admission_height,demographic,mimic-iv,226707,measured,mimiciv.icu.chartevents,Inch,56.1591,67.0,75.4039,20375,adjudicated:both_agree,mimiciv_06
+admission_height,demographic,mimic-iv,226730,measured,mimiciv.icu.chartevents,cm,142.5676,170.0,191.8587,20377,adjudicated:both_agree,mimiciv_06
+o2_flow_additional,respiratory_bloodgas,mimic-iv,227287,unspecified,mimiciv.icu.chartevents,L/min,0.0,4.0,42.7429,20674,adjudicated:both_agree,mimiciv_06
+ck_mb,lab,mimic-iv,227445,unspecified,mimiciv.icu.chartevents,ng/mL,1.0,6.0,332.3042,26491,adjudicated:both_agree,mimiciv_06
+immature_granulocytes,lab,mimic-iv,229356,unspecified,mimiciv.icu.chartevents,%,0.2,0.8,4.6334,11536,adjudicated:both_agree,mimiciv_06
+neutrophils_abs,lab,mimic-iv,229357,unspecified,mimiciv.icu.chartevents,K/uL,0.1943,9.4002,39.3155,17647,adjudicated:both_agree,mimiciv_06
+lymphocytes_abs,lab,mimic-iv,229358,unspecified,mimiciv.icu.chartevents,K/uL,0.0544,1.1842,7.8145,17640,adjudicated:both_agree,mimiciv_06
+monocytes_abs,lab,mimic-iv,229359,unspecified,mimiciv.icu.chartevents,K/uL,0.0,0.6784,3.8726,17639,adjudicated:both_agree,mimiciv_06
+eosinophils_abs,lab,mimic-iv,229360,unspecified,mimiciv.icu.chartevents,K/uL,0.0,0.0611,1.8892,17701,adjudicated:both_agree,mimiciv_06
+basophils_abs,lab,mimic-iv,229361,unspecified,mimiciv.icu.chartevents,K/uL,0.0,0.0202,0.2844,17640,adjudicated:both_agree,mimiciv_06
+amylase,lab,mimic-iv,220581,unspecified,mimiciv.icu.chartevents,IU/L,9.3784,65.7555,985.9869,8315,adjudicated:both_agree,mimiciv_07
+atypical_lymphocytes,lab,mimic-iv,225637,unspecified,mimiciv.icu.chartevents,%,0.0,0.0,5.565,8150,adjudicated:both_agree,mimiciv_07
+bilirubin_direct,lab,mimic-iv,225651,unspecified,mimiciv.icu.chartevents,mg/dL,0.1,2.0726,27.7199,5820,adjudicated:both_agree,mimiciv_07
+norepinephrine,medication,eicu,Norepinephrine (ml/hr),administration,eicu.infusionDrug,,0.0,13.1451,185.7254,185586,adjudicated:both_agree,eicu_00
+dopamine,medication,mimic-iii,30043,administration,mimiciii.INPUTEVENTS_CV,mcgkgmin,0.0,3.9966,20.0,114956,adjudicated:both_agree,mimiciii_00
+norepinephrine,medication,mimic-iii,30120,administration,mimiciii.INPUTEVENTS_CV,mcgkgmin,0.0,0.0802,0.8844,332718,adjudicated:both_agree,mimiciii_00
+phenylephrine,medication,mimic-iii,30128,administration,mimiciii.INPUTEVENTS_CV,mcgkgmin,0.0,0.7304,6.1769,425838,adjudicated:both_agree,mimiciii_00
+phenylephrine,medication,mimic-iv,PHENYLEPHrine,prescription,mimiciv.hosp.prescriptions,mg,6.0,50.0,240.0,19417,adjudicated:both_agree,mimiciv_00
+norepinephrine,medication,mimic-iv,NORepinephrine,prescription,mimiciv.hosp.prescriptions,mg,8.0,8.0,16.0,13793,adjudicated:both_agree,mimiciv_00
+phenylephrine,medication,mimic-iv,221749,administration,mimiciv.icu.inputevents,mcg/kg/min,0.102,0.8074,5.0401,106028,adjudicated:both_agree,mimiciv_01
+norepinephrine,medication,mimic-iv,221906,administration,mimiciv.icu.inputevents,mcg/kg/min,0.0114,0.1,0.5577,197273,adjudicated:both_agree,mimiciv_01
+vasopressin,medication,mimic-iv,222315,administration,mimiciv.icu.inputevents,units/hour,0.5977,2.4,4.3238,15564,adjudicated:both_agree,mimiciv_01
+vasopressin,medication,mimic-iv,Vasopressin,prescription,mimiciv.hosp.prescriptions,UNIT,20.0,40.0,100.0,5565,adjudicated:both_agree,mimiciv_01
+phenylephrine,medication,mimic-iv,Phenylephrine,prescription,mimiciv.hosp.prescriptions,mg,12.0,60.0,240.0,4419,adjudicated:both_agree,mimiciv_01
+epinephrine,medication,mimic-iv,EPINEPHrine,prescription,mimiciv.hosp.prescriptions,mg,1.1925,2.0,400.0,3398,adjudicated:both_agree,mimiciv_01
+carboxyhemoglobin,respiratory_bloodgas,mimic-iv,50805,measured,mimiciv.hosp.labevents,%,0.0,1.0,5.3275,776,adjudicated:both_agree,mimiciv_00
+methemoglobin,respiratory_bloodgas,mimic-iv,50814,measured,mimiciv.hosp.labevents,%,0.0,0.0,11.5178,732,adjudicated:both_agree,mimiciv_00
+d_dimer,lab,mimic-iv,50915,measured,mimiciv.hosp.labevents,ng/mL,205.8675,2664.2083,20036.2786,899,adjudicated:both_agree,mimiciv_00
+ggt,lab,mimic-iv,50927,measured,mimiciv.hosp.labevents,IU/L,7.745,131.6934,1734.2207,1051,adjudicated:both_agree,mimiciv_00
+globulin,lab,mimic-iv,50930,measured,mimiciv.hosp.labevents,g/dL,1.0467,2.4396,5.6507,1960,adjudicated:both_agree,mimiciv_00
+d_dimer,lab,mimic-iv,51196,measured,mimiciv.hosp.labevents,ng/mL FEU,304.785,1959.7035,19238.7522,3077,adjudicated:both_agree,mimiciv_00
+creatinine,lab,mimic-iv,52024,measured,mimiciv.hosp.labevents,mg/dL,0.4,1.3947,9.7248,1943,adjudicated:both_agree,mimiciv_00
+icp,vital,mimic-iv,220765,invasive,mimiciv.icu.chartevents,mmHg,-3.8201,8.6901,32.3602,136248,adjudicated:both_agree,mimiciv_01
+mbp,vital,mimic-iv,224322,invasive,mimiciv.icu.chartevents,mmHg,50.1658,79.8954,127.7458,21459,adjudicated:both_agree,mimiciv_01
+temperature,vital,mimic-iv,226329,invasive,mimiciv.icu.chartevents,°C,34.7462,37.1,38.7865,88711,adjudicated:both_agree,mimiciv_01
+cpp,vital,mimic-iv,227066,measured,mimiciv.icu.chartevents,mmHg,45.6218,80.5306,129.2657,101229,adjudicated:both_agree,mimiciv_01
+temperature,vital,mimic-iv,227627,set,mimiciv.icu.chartevents,°C,33.0,37.0,37.3337,25587,adjudicated:both_agree,mimiciv_01
+temperature_site,vital,mimic-iv,227630,unspecified,mimiciv.icu.chartevents,,,,,37189,adjudicated:adjudicated,mimiciv_01
+temperature_site,vital,mimic-iv,227631,unspecified,mimiciv.icu.chartevents,,,,,34619,adjudicated:adjudicated,mimiciv_01
+temperature,vital,mimic-iv,227632,measured,mimiciv.icu.chartevents,°C,32.4029,36.644,38.7343,34790,adjudicated:both_agree,mimiciv_01
+temperature,vital,mimic-iv,227634,measured,mimiciv.icu.chartevents,°C,32.4113,36.6366,38.6518,32514,adjudicated:both_agree,mimiciv_01
+sbp,vital,mimic-iv,224652,invasive,mimiciv.icu.chartevents,mmHg,59.9095,94.3021,158.1495,21164,adjudicated:adjudicated,mimiciv_02
+dbp,vital,mimic-iv,224654,invasive,mimiciv.icu.chartevents,mmHg,26.0898,52.7522,91.6126,21126,adjudicated:adjudicated,mimiciv_02
+iap,vital,mimic-iv,223763,invasive,mimiciv.icu.chartevents,mmHg,4.8578,16.9189,37.2699,4769,adjudicated:both_agree,mimiciv_03
+paop,vital,mimic-iv,223771,invasive,mimiciv.icu.chartevents,mmHg,6.4768,18.0,43.3415,3643,adjudicated:both_agree,mimiciv_03
+d_dimer,lab,mimic-iv,225636,measured,mimiciv.icu.chartevents,ng/mL,215.0,2097.5989,20727.912,2693,adjudicated:both_agree,mimiciv_03
+crp,lab,mimic-iv,227444,measured,mimiciv.icu.chartevents,mg/L,0.7196,85.2605,299.9765,3206,adjudicated:both_agree,mimiciv_03
+ventilator_mode,respiratory_bloodgas,mimic-iv,227577,noninvasive,mimiciv.icu.chartevents,,,,,5027,adjudicated:adjudicated,mimiciv_03
+peep,respiratory_bloodgas,mimic-iv,227579,set,mimiciv.icu.chartevents,cmH2O,4.0,6.0,17.9241,5000,adjudicated:both_agree,mimiciv_03
+o2_flow,respiratory_bloodgas,mimic-iv,227582,set,mimiciv.icu.chartevents,L/min,0.0366,6.0,36.1106,4082,adjudicated:both_agree,mimiciv_03
+svo2,respiratory_bloodgas,mimic-iv,227686,invasive,mimiciv.icu.chartevents,%,32.9257,69.7119,97.0,2689,adjudicated:adjudicated,mimiciv_03
+ci,vital,mimic-iv,228368,noninvasive,mimiciv.icu.chartevents,L/min/m2,1.379,2.9084,6.5007,5939,adjudicated:both_agree,mimiciv_03
+co,vital,mimic-iv,228369,noninvasive,mimiciv.icu.chartevents,L/min,2.3223,5.5327,12.9332,5027,adjudicated:both_agree,mimiciv_03
+sv,vital,mimic-iv,228374,noninvasive,mimiciv.icu.chartevents,mL/beat,19.3682,60.2753,150.0844,4679,adjudicated:both_agree,mimiciv_03
+total_protein,lab,mimic-iv,220650,measured,mimiciv.icu.chartevents,g/dL,3.45,5.6442,8.1628,1598,adjudicated:both_agree,mimiciv_04
+sbp,vital,mimic-iv,224167,noninvasive,mimiciv.icu.chartevents,mmHg,71.495,115.95,192.0267,699,adjudicated:both_agree,mimiciv_04
+dbp,vital,mimic-iv,224643,noninvasive,mimiciv.icu.chartevents,mmHg,36.3833,62.0,109.4,665,adjudicated:both_agree,mimiciv_04
+dbp,vital,mimic-iv,227242,noninvasive,mimiciv.icu.chartevents,mmHg,37.0,63.1641,104.75,525,adjudicated:both_agree,mimiciv_04
+sbp,vital,mimic-iv,227243,noninvasive,mimiciv.icu.chartevents,mmHg,75.0,119.8824,202.62,573,adjudicated:both_agree,mimiciv_04
+creatinine,lab,mimic-iv,229761,bedside,mimiciv.icu.chartevents,mg/dL,0.4172,1.4684,10.0119,1406,adjudicated:both_agree,mimiciv_04
+cpp,vital,mimic-iii,92,invasive,mimiciii.CHARTEVENTS,mmHg,39.2004,80.8512,134.7352,78192,adjudicated:both_agree,mimiciii_00
+ectopy_type_secondary,vital,mimic-iii,162,unspecified,mimiciii.CHARTEVENTS,,,,,7396,adjudicated:both_agree,mimiciii_00
+mbp,vital,mimic-iii,224,invasive,mimiciii.CHARTEVENTS,mmHg,50.9773,79.304,122.2972,26770,adjudicated:both_agree,mimiciii_00
+icp,vital,mimic-iii,226,invasive,mimiciii.CHARTEVENTS,mmHg,0.2743,9.9709,47.3814,90226,adjudicated:both_agree,mimiciii_00
+svo2,respiratory_bloodgas,mimic-iii,1624,invasive,mimiciii.CHARTEVENTS,%,49.2951,75.1126,93.2833,9952,adjudicated:both_agree,mimiciii_00
+mbp,vital,mimic-iii,6702,invasive,mimiciii.CHARTEVENTS,mmHg,46.9159,75.9743,126.1078,14998,adjudicated:both_agree,mimiciii_00
+sbp,vital,mimic-iii,5,noninvasive,mimiciii.CHARTEVENTS,mmHg,63.16,104.0556,164.2,455,adjudicated:adjudicated,mimiciii_01
+aado2,respiratory_bloodgas,mimic-iii,26,measured,mimiciii.CHARTEVENTS,mmHg,20.26,202.2219,616.0,1056,adjudicated:both_agree,mimiciii_01
+peep,respiratory_bloodgas,mimic-iii,64,set,mimiciii.CHARTEVENTS,cmH2O,3.3467,7.0,20.994,1768,adjudicated:adjudicated,mimiciii_01
+o2_flow,respiratory_bloodgas,mimic-iii,67,set,mimiciii.CHARTEVENTS,lpm,0.2132,5.0,15.0,1549,adjudicated:both_agree,mimiciii_01
+ectopy_frequency_secondary,vital,mimic-iii,160,bedside,mimiciii.CHARTEVENTS,,,,,6368,adjudicated:both_agree,mimiciii_01
+fio2,respiratory_bloodgas,mimic-iii,189,measured,mimiciii.CHARTEVENTS,torr,0.3,0.5,1.0,6454,adjudicated:both_agree,mimiciii_01
+mbp,vital,mimic-iii,443,noninvasive,mimiciii.CHARTEVENTS,mmHg,48.9944,82.2486,125.72,1615,adjudicated:both_agree,mimiciii_01
+peep,respiratory_bloodgas,mimic-iii,686,measured,mimiciii.CHARTEVENTS,cmH2O,0.0,12.2892,28.6376,3567,adjudicated:both_agree,mimiciii_01
+svo2,respiratory_bloodgas,mimic-iii,838,invasive,mimiciii.CHARTEVENTS,%,36.9667,69.85,98.2695,1411,adjudicated:both_agree,mimiciii_01
+total_protein,lab,mimic-iii,849,measured,mimiciii.CHARTEVENTS,,3.3555,5.4298,8.6725,715,adjudicated:both_agree,mimiciii_01
+iap,vital,mimic-iii,1411,invasive,mimiciii.CHARTEVENTS,mmHg,5.0912,17.0,38.2802,2951,adjudicated:both_agree,mimiciii_01
+d_dimer,lab,mimic-iii,1526,measured,mimiciii.CHARTEVENTS,,325.96,3069.1597,9945.3403,905,adjudicated:both_agree,mimiciii_01
+total_protein,lab,mimic-iii,1539,measured,mimiciii.CHARTEVENTS,,3.4,5.5,8.984,523,adjudicated:both_agree,mimiciii_01
+so2,respiratory_bloodgas,mimic-iii,220227,invasive,mimiciii.CHARTEVENTS,%,84.8575,97.0,99.0,4686,adjudicated:both_agree,mimiciii_01
+ph,respiratory_bloodgas,mimic-iii,220274,measured,mimiciii.CHARTEVENTS,units,7.16,7.39,7.53,550,adjudicated:both_agree,mimiciii_01
+amylase,lab,mimic-iii,220581,measured,mimiciii.CHARTEVENTS,IU/L,14.585,60.2852,1125.3403,1067,adjudicated:both_agree,mimiciii_01
+ast,lab,mimic-iii,220587,measured,mimiciii.CHARTEVENTS,IU/L,12.5,56.2285,4136.2047,2140,adjudicated:both_agree,mimiciii_01
+ld_ldh,lab,mimic-iii,220632,measured,mimiciii.CHARTEVENTS,IU/L,120.82,303.7582,4077.3186,1312,adjudicated:both_agree,mimiciii_01
+alt,lab,mimic-iii,220644,measured,mimiciii.CHARTEVENTS,IU/L,8.0,40.8719,3083.5964,2144,adjudicated:both_agree,mimiciii_01
+alkaline_phosphatase,lab,mimic-iii,225612,measured,mimiciii.CHARTEVENTS,IU/L,29.6048,86.4385,742.3137,2084,adjudicated:both_agree,mimiciii_01
+ck_cpk,lab,mimic-iii,225634,measured,mimiciii.CHARTEVENTS,IU/L,13.7353,250.8527,26669.3632,1977,adjudicated:both_agree,mimiciii_01
+atypical_lymphocytes,lab,mimic-iii,225637,measured,mimiciii.CHARTEVENTS,%,0.0,0.0,6.0,315,adjudicated:both_agree,mimiciii_01
+bands,lab,mimic-iii,225638,measured,mimiciii.CHARTEVENTS,%,0.0,0.0,36.0,536,adjudicated:both_agree,mimiciii_01
+basophils,lab,mimic-iii,225639,measured,mimiciii.CHARTEVENTS,%,0.0,0.1,1.0458,1039,adjudicated:both_agree,mimiciii_01
+eosinophils,lab,mimic-iii,225640,measured,mimiciii.CHARTEVENTS,%,0.0,0.592,10.092,1039,adjudicated:both_agree,mimiciii_01
+lymphocytes,lab,mimic-iii,225641,measured,mimiciii.CHARTEVENTS,%,0.6373,9.6892,36.8419,1039,adjudicated:both_agree,mimiciii_01
+monocytes,lab,mimic-iii,225642,measured,mimiciii.CHARTEVENTS,%,0.0,4.0,11.211,1039,adjudicated:both_agree,mimiciii_01
+neutrophils,lab,mimic-iii,225643,measured,mimiciii.CHARTEVENTS,%,50.5273,82.5713,95.8747,1039,adjudicated:both_agree,mimiciii_01
+svo2,respiratory_bloodgas,mimic-iii,225674,invasive,mimiciii.CHARTEVENTS,%,38.654,63.6984,93.005,933,adjudicated:both_agree,mimiciii_01
+bilirubin,unassigned,mimic-iii,225690,measured,mimiciii.CHARTEVENTS,mg/dL,0.2,1.0645,38.5502,2143,adjudicated:both_agree,mimiciii_01
+sodium,lab,mimic-iii,226534,measured,mimiciii.CHARTEVENTS,mEq/L,126.0915,136.0,148.3522,1633,adjudicated:both_agree,mimiciii_01
+chloride,lab,mimic-iii,226536,measured,mimiciii.CHARTEVENTS,mEq/L,90.308,106.3605,119.384,1131,adjudicated:both_agree,mimiciii_01
+hematocrit,lab,mimic-iii,226540,measured,mimiciii.CHARTEVENTS,%,17.117,29.0,44.6175,1917,adjudicated:both_agree,mimiciii_01
+troponin_t,lab,mimic-iii,227429,measured,mimiciii.CHARTEVENTS,ng/mL,0.01,0.0755,15.5253,1618,adjudicated:both_agree,mimiciii_01
+ck_mb,lab,mimic-iii,227445,measured,mimiciii.CHARTEVENTS,ng/mL,2.0,10.0,361.9126,1320,adjudicated:both_agree,mimiciii_01
+albumin,lab,mimic-iii,227456,measured,mimiciii.CHARTEVENTS,g/dL,1.5267,2.8103,4.4,1700,adjudicated:both_agree,mimiciii_01
+potassium,lab,mimic-iii,227464,measured,mimiciii.CHARTEVENTS,mEq/L,2.8907,4.076,6.3274,6109,adjudicated:both_agree,mimiciii_01
+fibrinogen,lab,mimic-iii,227468,measured,mimiciii.CHARTEVENTS,mg/dL,76.195,227.2692,934.5901,842,adjudicated:both_agree,mimiciii_01
+carboxyhemoglobin,respiratory_bloodgas,mimic-iii,50805,measured,mimiciii.LABEVENTS,%,0.0,1.0,7.0,819,adjudicated:both_agree,mimiciii_02
+methemoglobin,respiratory_bloodgas,mimic-iii,50814,measured,mimiciii.LABEVENTS,%,0.0,0.6,34.0,852,adjudicated:both_agree,mimiciii_02
+crp,lab,eicu,CRP,unspecified,eicu.lab,mg/dL,0.1516,10.2095,2558.3111,8833,adjudicated:both_agree,eicu_00
+respiratory_rate,vital,eicu,Spontaneous Rate,measured,eicu.lab,/min,0.0,19.0157,49.9063,7862,adjudicated:both_agree,eicu_00
+mbp,vital,eicu,Other Vital Signs and Infusions|MAP (mmHg)|Value,unspecified,eicu.nurseCharting,,53.3152,85.9089,137.8494,491447,adjudicated:both_agree,eicu_00
+mbp,vital,eicu,Other Vital Signs and Infusions|Arterial Line MAP (mmHg)|Value,invasive,eicu.nurseCharting,,48.6859,77.3463,128.2318,429465,adjudicated:both_agree,eicu_00
+sedation_score,vital,eicu,Other Vital Signs and Infusions|RASS|Value,bedside,eicu.nurseCharting,,-5.0,0.0,2.0,271697,adjudicated:both_agree,eicu_00
+spo2,vital,eicu,Other Vital Signs and Infusions|SpO2|Value,noninvasive,eicu.nurseCharting,,86.3041,98.0,100.0,214678,adjudicated:both_agree,eicu_00
+gcs,unassigned,eicu,Other Vital Signs and Infusions|Score (Glasgow Coma Scale)|Value,bedside,eicu.nurseCharting,,3.0,14.0,15.0,205976,adjudicated:both_agree,eicu_00
+padiastolic,vital,eicu,Invasive|PA|PA Diastolic,invasive,eicu.nurseCharting,,4.861,18.3247,40.8265,193676,adjudicated:both_agree,eicu_00
+pasystolic,vital,eicu,Invasive|PA|PA Systolic,invasive,eicu.nurseCharting,,16.9874,35.9962,80.6672,193531,adjudicated:both_agree,eicu_00
+pamean,vital,eicu,Invasive|PA|PA Mean,invasive,eicu.nurseCharting,,10.4209,25.2298,52.4693,181703,adjudicated:both_agree,eicu_00
+etco2,vital,eicu,Vital Signs|End Tidal CO2|End Tidal CO2,measured,eicu.nurseCharting,,1.6121,31.0692,57.1741,158788,adjudicated:both_agree,eicu_00
+ci,vital,eicu,Invasive|CI|CI,invasive,eicu.nurseCharting,,1.2607,2.5157,5.1168,143771,adjudicated:both_agree,eicu_00
+sedation_score,vital,eicu,Other Vital Signs and Infusions|SEDATION SCORE|Value,bedside,eicu.nurseCharting,,-5.0,-1.0,2.0,129960,adjudicated:both_agree,eicu_00
+svr,vital,eicu,Invasive|SVR|SVR,invasive,eicu.nurseCharting,,383.5343,999.7765,2565.4657,77829,adjudicated:both_agree,eicu_00
+co,vital,eicu,Invasive|CO|CO,invasive,eicu.nurseCharting,,2.2027,5.0405,11.6272,75050,adjudicated:both_agree,eicu_00
+svo2,respiratory_bloodgas,eicu,SVO2|SVO2|SVO2,invasive,eicu.nurseCharting,,32.3948,64.8495,90.7613,61493,adjudicated:both_agree,eicu_00
+pamean,vital,eicu,Vital Signs|PA|PA Mean,invasive,eicu.nurseCharting,,10.553,24.6988,51.8894,26828,adjudicated:both_agree,eicu_00
+padiastolic,vital,eicu,Vital Signs|PA|PA Diastolic,invasive,eicu.nurseCharting,,5.6858,18.0,39.455,26675,adjudicated:both_agree,eicu_00
+pasystolic,vital,eicu,Vital Signs|PA|PA Systolic,invasive,eicu.nurseCharting,,16.3962,34.9577,80.1377,26640,adjudicated:both_agree,eicu_00
+sv,vital,eicu,Vital Signs|SV|SV,unspecified,eicu.nurseCharting,,27.0354,61.5026,128.9792,12148,adjudicated:both_agree,eicu_00
+o2_device,respiratory_bloodgas,eicu,respFlowCareData|O2 Device,unspecified,eicu.respiratoryCharting,,,,,376970,adjudicated:both_agree,eicu_00
+fio2,respiratory_bloodgas,eicu,respFlowCareData|FIO2 (%),set,eicu.respiratoryCharting,,22.0312,40.0,100.0,115003,adjudicated:both_agree,eicu_00
+peep,respiratory_bloodgas,eicu,respFlowSettings|PEEP/CPAP,set,eicu.respiratoryCharting,,4.9603,5.0,15.2509,104183,adjudicated:both_agree,eicu_00
+tidal_volume,respiratory_bloodgas,eicu,respFlowCareData|Tidal Volume Observed (VT),measured,eicu.respiratoryCharting,,223.7028,450.1936,841.4172,41623,adjudicated:both_agree,eicu_00
+peep,respiratory_bloodgas,eicu,respFlowSettings|CPAP,set,eicu.respiratoryCharting,,3.4691,5.0,15.9747,20181,adjudicated:adjudicated,eicu_00
+svr,vital,eicu,svr,unspecified,eicu.vitalAperiodic,,375.0269,980.0439,2312.2227,1334428,adjudicated:both_agree,eicu_00
+co,vital,eicu,cardiacoutput,unspecified,eicu.vitalAperiodic,,0.0,4.4949,9.3881,1056392,adjudicated:both_agree,eicu_00
+svri,vital,eicu,svri,unspecified,eicu.vitalAperiodic,,340.9791,1819.2876,4368.0767,197887,adjudicated:both_agree,eicu_00
+paop,vital,eicu,paop,invasive,eicu.vitalAperiodic,,5.0,17.0,40.0,30155,adjudicated:both_agree,eicu_00
+pvr,vital,eicu,pvr,invasive,eicu.vitalAperiodic,,-62.7517,110.2925,649.0336,16010,adjudicated:both_agree,eicu_00
+pvri,vital,eicu,pvri,invasive,eicu.vitalAperiodic,,-126.2134,216.4736,1057.6875,15916,adjudicated:both_agree,eicu_00
+icp,vital,eicu,icp,invasive,eicu.vitalPeriodic,,-10.4272,7.0,35.6748,2326951,adjudicated:both_agree,eicu_00

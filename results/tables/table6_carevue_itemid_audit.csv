@@ -1,0 +1,4 @@
+subset,n_fields,n_positive,Recall@1,Precision,AUROC_base,AUROC_ours,delta,paired_CI_lo,paired_CI_hi,boot_p
+all CareVue fields,696,296,97.3,72.0,87.93,93.57,5.65,4.04,7.25,0.0
+CareVue-era chartevents only,635,235,96.6,66.96,87.76,92.98,5.21,3.68,6.88,0.0
+fields whose key also exists in MIMIC-IV,160,140,98.57,93.24,76.82,94.75,17.93,5.98,30.09,0.001

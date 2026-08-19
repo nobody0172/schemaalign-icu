@@ -1,0 +1,17 @@
+db,path,n_rows
+eicu,data/gold/worksheets/chunks/eicu_00.csv,120
+eicu,data/gold/worksheets/chunks/eicu_01.csv,24
+mimic-iii,data/gold/worksheets/chunks/mimiciii_00.csv,120
+mimic-iii,data/gold/worksheets/chunks/mimiciii_01.csv,120
+mimic-iii,data/gold/worksheets/chunks/mimiciii_02.csv,120
+mimic-iii,data/gold/worksheets/chunks/mimiciii_03.csv,120
+mimic-iii,data/gold/worksheets/chunks/mimiciii_04.csv,120
+mimic-iii,data/gold/worksheets/chunks/mimiciii_05.csv,51
+mimic-iv,data/gold/worksheets/chunks/mimiciv_00.csv,120
+mimic-iv,data/gold/worksheets/chunks/mimiciv_01.csv,120
+mimic-iv,data/gold/worksheets/chunks/mimiciv_02.csv,120
+mimic-iv,data/gold/worksheets/chunks/mimiciv_03.csv,120
+mimic-iv,data/gold/worksheets/chunks/mimiciv_04.csv,120
+mimic-iv,data/gold/worksheets/chunks/mimiciv_05.csv,120
+mimic-iv,data/gold/worksheets/chunks/mimiciv_06.csv,120
+mimic-iv,data/gold/worksheets/chunks/mimiciv_07.csv,52

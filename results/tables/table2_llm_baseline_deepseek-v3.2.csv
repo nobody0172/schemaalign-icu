@@ -1,0 +1,5 @@
+method,domain,Recall@1,Precision,Recall,F1,Coverage,OpenSet_AUROC,n_fields,n_positive,n_unknown,prompt_sha,prompt_tokens,completion_tokens
+Direct LLM JSON matching (deepseek-v3.2),mimic-iv,100.0,63.16,100.0,77.42,61.29,81.58,62,24,38,b4c100e71d3dbf0e,4855,2659
+Direct LLM JSON matching (deepseek-v3.2),mimic-iv,95.92,60.26,95.92,74.02,59.09,82.53,132,49,83,b4c100e71d3dbf0e,9996,5977
+Direct LLM JSON matching (deepseek-v3.2),mimic-iii,97.97,68.88,97.97,80.89,60.49,84.38,696,296,400,b4c100e71d3dbf0e,45997,33336
+Direct LLM JSON matching (deepseek-v3.2),eicu,88.16,68.37,88.16,77.01,80.33,69.11,244,152,92,b4c100e71d3dbf0e,16914,9766

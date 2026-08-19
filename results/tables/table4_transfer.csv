@@ -1,0 +1,11 @@
+domain,alignment,AUROC_mean,AUROC_sd,AUROC_ensemble,AUPRC_ensemble,channels_filled,n_stays,n_seeds,mortality_rate,CI_lo,CI_hi,equivalence_margin,equivalent
+mimic-iii,oracle,74.54,1.34,76.64,30.15,24,19112,5,11.57,,,,
+mimic-iii,exact,58.33,0.68,58.73,17.9,17,19112,5,11.57,,,,
+mimic-iii,llm,74.39,1.13,76.3,29.63,24,19112,5,11.57,,,,
+mimic-iii,llm_abstain,74.43,1.15,76.36,29.93,20,19112,5,11.57,,,,
+mimic-iii,abstain vs llm (paired),0.061,,,,,19112,5,,-0.046,0.176,1.0,True
+eicu,oracle,70.37,0.5,71.14,16.8,20,110257,5,8.7,,,,
+eicu,exact,62.68,4.14,64.35,17.97,12,110257,5,8.7,,,,
+eicu,llm,66.38,1.56,67.36,16.08,21,110257,5,8.7,,,,
+eicu,llm_abstain,66.38,1.55,67.35,16.1,20,110257,5,8.7,,,,
+eicu,abstain vs llm (paired),-0.004,,,,,110257,5,,-0.063,0.048,1.0,True

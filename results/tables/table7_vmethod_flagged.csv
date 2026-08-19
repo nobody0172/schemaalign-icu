@@ -1,0 +1,40 @@
+db,field,concept,method_detected,reason
+mimic-iv,Total PEEP Level,peep,measured,V_method: 冲突 — 测量方式不同 (measured vs set)
+mimic-iv,Respiratory Rate (spontaneous),respiratory_rate,measured,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"
+mimic-iv,Total Protein,total_protein,measured,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"
+mimic-iii,Arterial BP [Diastolic],dbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+mimic-iii,Arterial BP #2 [Diastolic],dbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+mimic-iii,Fingerstick Glucose,glucose,bedside,"V_method: 冲突 — 字段带显式方式修饰 (bedside), 概念目录无对应变体"
+mimic-iii,Glucose finger stick,glucose,bedside,"V_method: 冲突 — 字段带显式方式修饰 (bedside), 概念目录无对应变体"
+mimic-iii,Arterial BP [Systolic],sbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+mimic-iii,Arterial BP #2 [Systolic],sbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+mimic-iii,Arterial BP Mean,mbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+mimic-iii,FiO2 Set,fio2,set,"V_method: 冲突 — 字段带显式方式修饰 (set), 概念目录无对应变体"
+mimic-iii,Respiratory Rate Set,respiratory_rate,set,"V_method: 冲突 — 字段带显式方式修饰 (set), 概念目录无对应变体"
+mimic-iii,Tidal Volume (Set),tidal_volume,set,V_method: 冲突 — 测量方式不同 (set vs measured)
+mimic-iii,SaO2,so2,bloodgas_sat,"V_method: 冲突 — 字段带显式方式修饰 (bloodgas_sat), 概念目录无对应变体"
+mimic-iii,Total Bili (0-1.5),bilirubin,measured,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"
+mimic-iii,Total Bili,bilirubin,measured,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"
+mimic-iii,Minute Volume (Set),minute_volume,set,"V_method: 冲突 — 字段带显式方式修饰 (set), 概念目录无对应变体"
+mimic-iii,Arterial BP Mean #2,mbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+mimic-iii,Total PEEP Level,peep,measured,V_method: 冲突 — 测量方式不同 (measured vs set)
+mimic-iii,Total Protein(6.5-8),total_protein,measured,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"
+mimic-iii,Total Protein,total_protein,measured,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"
+mimic-iii,Arterial O2 Saturation,so2,bloodgas_sat,"V_method: 冲突 — 字段带显式方式修饰 (bloodgas_sat), 概念目录无对应变体"
+mimic-iii,Total Bilirubin,bilirubin,measured,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"
+eicu,Total CO2,bicarbonate,measured,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"
+eicu,total bilirubin,bilirubin,measured,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"
+eicu,Vital Signs|Invasive BP|Invasive BP Diastolic,dbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+eicu,bedside glucose,glucose,bedside,"V_method: 冲突 — 字段带显式方式修饰 (bedside), 概念目录无对应变体"
+eicu,Vital Signs|Invasive BP|Invasive BP Systolic,sbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+eicu,total protein,total_protein,measured,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"
+eicu,Vital Signs|Invasive BP|Invasive BP Mean,mbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+eicu,Vital Signs and Infusions|Bedside Glucose|Bedsid,glucose,bedside,"V_method: 冲突 — 字段带显式方式修饰 (bedside), 概念目录无对应变体"
+eicu,respFlowPtVentData|Total RR,respiratory_rate,,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"
+eicu,respFlowSettings|Tidal Volume (set),tidal_volume,set,V_method: 冲突 — 测量方式不同 (set vs measured)
+eicu,respFlowPtVentData|SaO2,spo2,bloodgas_sat,V_method: 冲突 — 测量方式不同 (bloodgas_sat vs pulse_oximetry)
+eicu,sao2,spo2,bloodgas_sat,V_method: 冲突 — 测量方式不同 (bloodgas_sat vs pulse_oximetry)
+eicu,systemicmean,mbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+eicu,systemicsystolic,sbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+eicu,systemicdiastolic,dbp,invasive,V_method: 冲突 — 测量方式不同 (invasive vs noninvasive)
+eicu,Spontaneous Rate,respiratory_rate,measured,"V_method: 冲突 — 字段带显式方式修饰 (measured), 概念目录无对应变体"

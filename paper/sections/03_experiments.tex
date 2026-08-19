@@ -1,0 +1,177 @@
+\section{Experiments}
+\label{sec:exp}
+
+\input{tables/tab_main}
+
+\subsection{Datasets and implementation details}
+\label{sec:data}
+
+\noindent\textbf{Databases.}
+We align fields from MIMIC-IV v3.1~\cite{mimiciv}, the CareVue subset of
+MIMIC-III v1.4~\cite{mimiciii} and eICU-CRD v2.0~\cite{eicu}, each restricted to a
+patient's first ICU stay of at least $24$\,h ($51{,}838$, $19{,}112$ and $110{,}257$
+stays). MIMIC-IV is the source domain on which every statistic and threshold is fitted.
+We use the CareVue subset rather than all of MIMIC-III to limit identity-level
+correspondence with MIMIC-IV; $661$ of its $3{,}545$ \texttt{chartevents} fields
+nonetheless carry MIMIC-IV-range identifiers, and restricting the evaluation to
+CareVue-era identifiers leaves the main effect at $+5.2$ AUROC ($95\%$ CI
+$[+3.7,+6.9]$) against $+5.7$ on the full set, so shared identifiers are not carrying the
+result. eICU is the hardest of the three: no item dictionary, no declared types, and no
+unit column in four of its tables.
+
+\noindent\textbf{Reference standard.}
+Two independently prompted model instances, given a concept-first and a
+conservative-first protocol, labelled every field recorded for at least $5\%$ of stays;
+disagreements went to a third arbitrating instance. This yields $710$ field--concept
+pairs ($246$/$304$/$160$ by database) covering $135$ of the $138$ catalogue concepts,
+$86$ of them present in all three databases, and $2{,}428$ fields adjudicated
+\textsc{unknown}; three catalogue concepts have no field in any database. Agreement
+between the two instances is $0.9855$ ($\kappa{=}0.967$), but they share a pretraining
+prior, so that measures protocol reproducibility rather than label validity; for validity
+we rely on the blinded human review of Sec.~\ref{sec:expert}. Each pair carries its
+evidence provenance: $217$ ($31\%$) rest on evidence not involving a language model,
+$159$ of them from agreement among three public expert mappings. Of the $1{,}685$
+high-coverage fields reviewed in the first round, $368$ ($21.8\%$) received a concept,
+$1{,}299$ ($77.1\%$) were adjudicated \textsc{unknown} and $18$ remained unsure; the
+negatives are therefore real schema entries, not constructed distractors.
+
+\noindent\textbf{Evaluation sets and metrics.}
+Fields are split by a hash of the field key into train, validation and test, so
+calibration and reporting never share one. Each evaluation set holds that database's mappable fields plus
+up to its $400$ highest-volume \textsc{unknown} fields, giving $132/49$, $696/296$ and
+$244/152$ fields\,/\,mappable after the split. Each concept is represented by the
+MIMIC-IV field with the most observations, so representatives come only from the source
+domain. Recall@1 is computed over mappable fields only and is \emph{blind to the
+abstention decision}: a method changing only the abstention score leaves it unchanged by
+construction, so it measures what abstention costs the candidate ranking, not what it
+costs end to end. Open-set AUROC ranks all fields by the abstention score. Thresholds are
+fitted per method on the MIMIC-IV validation split.
+
+\noindent\textbf{Matchers.}
+The frozen LLM matcher is \texttt{gpt-4.1} at temperature $0$, prompted with the LLMatch
+column-matching template verbatim (SHA-256 prefix \texttt{b4c100e7}) and queried in
+August 2026; the adjudicating annotators are Claude instances, a distinct family. We
+additionally run \texttt{deepseek-v3.2} and \texttt{gemini-2.5-pro} under an identical
+prompt, temperature and abstention configuration. Every model alias, endpoint, query
+date, prompt and completion is released.
+
+\subsection{Comparison with baselines and across model families}
+
+Table~\ref{tab:main} reports all matchers on identical field sets. Exact name matching
+reaches $36.7$--$44.1$ Recall@1 but fires on only $13.6$--$27.9\%$ of fields;
+ontology-only matching through recovered LOINC codes~\cite{loinc} returns \emph{exactly}
+zero on eICU, which carries no standard vocabulary codes. A biomedical
+encoder~\cite{sapbert} beats a general one~\cite{cpack} at equal size.
+
+Adding the checks as abstention evidence leaves the matcher's decisions untouched and
+raises open-set AUROC from $90.96$ to $96.64$ on MIMIC-IV, $87.93$ to $93.57$ on CareVue
+and $84.39$ to $85.04$ on eICU. Because both scores come from the same fields, the
+appropriate test is a paired bootstrap over field indices, not a comparison of marginal
+intervals: over $B{=}2000$ resamples the paired $95\%$ CIs exclude zero on the first two
+($\hat p(\Delta\le 0)<10^{-3}$) and not the third. A biomedical encoder's cosine is itself
+a competitive detector despite ranking the correct concept first far less often; our score
+is highest on all three but its margin over that encoder falls inside the marginal
+intervals on two, so we defend the paired within-matcher gain.
+
+Across the nine (model, database) cells, Recall@1 is essentially invariant on the two
+MIMIC databases ($95.9$ for all three families on MIMIC-IV, $97.3$--$98.0$ on CareVue),
+and seven of the nine cells are individually significant. Descriptively the gain tracks
+the matcher's precision (Pearson $r{=}-0.92$), from $+9.5$ at precision $60.3$ to $+0.7$
+at $85.4$; nine post-hoc, non-independent cells cannot establish that relation and we
+offer it as exploratory. It is nonetheless consistent with a reading of the eICU result
+other than absent metadata: there \texttt{gpt-4.1} attains its \emph{highest} precision
+($85.4$), leaving little to correct, whereas \texttt{deepseek-v3.2} on the same database
+and the same absent metadata reaches precision $68.4$ and gains $+3.97$ ($p{=}0.005$).
+
+\subsection{Ablation studies}
+\label{sec:ablation}
+
+\input{tables/tab_ablate}
+
+\noindent\textbf{Where the penalty is consumed.}
+Table~\ref{tab:ablate}(a) holds the penalty $w\sum_d V_d$, its weight, the dimensions,
+the candidates and the calibration split fixed and varies only what consumes it, so the
+comparison isolates placement rather than confounding it with a switch from a graded
+penalty to a binary veto. Reordering the candidates by the penalty---removing
+nothing---already costs $2.6$--$4.1$ Recall@1 points and moves detection by at most half a
+point; thresholding it to reject candidates costs $5.3$--$10.2$ points and helps detection
+on one database only; also rejecting on the undecidable value $V_d{=}\tfrac12$ removes
+$69$--$81$ points, since ``we cannot tell'' is the common case in these schemas. The same
+numbers, read as evidence about a match left in place, gain $5.7$ points twice.
+
+\noindent\textbf{Which dimensions matter.}
+Used alone, unit dominates on MIMIC-IV, data type on CareVue and specimen on eICU, while
+provenance alone harms all three (Table~\ref{tab:ablate}b); the selected subset excluding
+it beats all four together everywhere. Applying the same evidence to the biomedical
+encoder, whose cosine is already graded, changes AUROC by $-0.0$, $-1.9$ and $-1.2$ even
+after re-selecting $\mathcal{D}$ and $w$ for it on the same validation split: the evidence
+pays where the matcher supplies no confidence of its own, and not elsewhere.
+
+\noindent\textbf{Operating point.}
+At a threshold locked per method on the validation split, detection of unmappable fields
+improves on all three ($81.9\to 86.8$, $78.0\to 90.3$, $79.4\to 81.5$) while mapping
+$F_1$ improves on CareVue and declines on the other two: the method trades recall on
+mappable fields for detection of unmappable ones.
+
+\noindent\textbf{Controls.}
+Adding the raw item identifier to the card leaves Recall@1 unchanged to the digit while
+precision \emph{falls} by $4.7$ and $2.7$ points, so the matcher is not retrieving a
+memorised crosswalk. Recall@1 on reference pairs that never involved a language model
+($100.0$, $98.0$, $100.0$) exceeds that on adjudicated pairs ($94.6$, $96.9$, $84.3$),
+where contamination would predict the reverse.
+
+\subsection{Blinded expert validation}
+\label{sec:expert}
+
+Two independent human annotators---an intensive-care clinician and a clinical-data
+engineer---relabelled a blinded sample of $198$ fields carrying no model answer, stratum
+label or identifier, over-sampling failure-prone regions: \textsc{unknown} verdicts on
+high-coverage fields ($70$), positives from model adjudication only ($50$), arbitrated
+disagreements ($30$), check-flagged positives ($28$), non-model-evidence positives ($20$).
+Between them Cohen's $\kappa$ is $0.952$ ($n{=}196$, chance agreement $0.260$), and
+$0.939$ for the mappable-versus-\textsc{unknown} decision alone. Counting an error only
+where \emph{both} contradict the reference standard, the stratum-weighted error rate over
+the $1{,}877$ fields these strata cover---not over the standard as a whole---is $3.96\%$
+($95\%$ CI $2.0$--$7.7$); the \textsc{unknown} verdicts on which the $77.1\%$ figure rests
+are disputed in $1$ of $70$ cases, the fields on which our checks fire in $0$ of $28$.
+Rebuilding the standard with every correction applied leaves the result intact
+($\Delta$AUROC $+5.68$, $+5.47$, $+0.65$).
+
+Two findings run against expectation. The stratum we treated as the trustworthy
+control---positives inherited from three public expert mappings---is the \emph{least}
+reliable ($20\%$ disputed), because those mappings themselves conflate point-of-care with
+laboratory glucose. And six of the nine confirmed errors are measurement-method confusions
+(point-of-care versus laboratory glucose, ventilator set rate versus measured respiratory
+rate, arterial \textsc{sao}$_2$ versus pulse oximetry): the distinction
+$V_{\mathrm{prov}}$ was meant to capture, discarded because our table-family
+implementation reduced detection. A deterministic method predicate flags all six but also
+fires on $8\%$ of correct pairs, because the catalogue is method-agnostic---one
+\texttt{sbp}, not an invasive and a cuff variant---so our validation split never selects
+it. The residual errors are a property of the target vocabulary's granularity, not of the
+matcher. All six are cases where the matcher assigned a concept to a field the experts
+call \textsc{unknown}: over-assignment, confirmed blind.
+
+\subsection{Downstream cross-database transfer}
+\label{sec:transfer}
+
+\input{tables/tab_transfer}
+
+Recall@1 and AUROC score the alignment, not its consequence. We therefore train a
+$24$-channel physiological time-series model on MIMIC-IV and transfer it unchanged; its
+channels are continuously monitored signals---heart rate, \textsc{spo}$_2$, invasive and
+non-invasive pressures, PEEP, tidal volume, \textsc{fio}$_2$, pH, temperature,
+respiratory rate---binned hourly over the first $24$\,h, anchored for MIMIC at each stay's
+earliest charted event rather than the recorded admission timestamp, with missingness as
+a mask. A 1D convolutional encoder and a GRU predict in-hospital mortality (validation
+AUROC $84.20\pm0.12$ over five seeds), applied zero-shot, varying only which field feeds
+which channel.
+
+The choice is not cosmetic. Exact-name matching costs $16.2$ and $7.7$ AUROC points
+against the reference alignment, while the frozen LLM recovers essentially all of the
+reference result on CareVue and about half the gap on eICU---the same ordering as the
+alignment metrics. Abstention empties four channels on CareVue and one on eICU; a
+patient-level paired bootstrap puts the change at $+0.06$ $[-0.05,+0.18]$ and $-0.00$
+$[-0.06,+0.05]$ AUROC, inside a $\pm1$-point band chosen as the smallest difference we
+would treat as practically relevant. Abstention therefore does not measurably degrade this
+task, though task-insensitivity and redundancy among channels are alternative explanations
+to the removed matches being spurious.

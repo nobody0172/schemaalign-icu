@@ -1,0 +1,67 @@
+% ICASSP 2027 submission. Built with the official ICASSP paper kit:
+%   spconf.sty  (ICASSP/ICIP LaTeX style)  +  IEEEbib.bst  (IEEE bibliography style)
+% Page budget: 4 pages of technical content INCLUDING figures and references;
+% an optional 5th page may hold references, funding acknowledgements and the
+% Compliance with Ethical Standards statement only.
+\documentclass{article}
+\usepackage{spconf,amsmath,amssymb,graphicx,booktabs,microtype,enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,backgrounds,calc}
+\usepackage[hidelinks]{hyperref}
+
+\title{Knowing When Not to Match:\\Open-Set Field Alignment across ICU Databases}
+
+\name{Anonymous submission}
+\address{Affiliation withheld for anonymous review}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+Deploying a physiological monitoring model across hospitals requires aligning the
+signal channels of one intensive-care database to those of another, a step still done
+by hand. We show that a frozen language model reading only data dictionaries and
+training-split aggregate statistics---never patient trajectories---ranks the correct
+target concept first for $88$--$97\%$ of mappable fields across three ICU databases.
+The binding constraint is elsewhere: among fields recorded for at least $5\%$ of stays,
+$77\%$ match no concept in a $138$-concept catalogue, and over-assignment accounts for
+$90.5\%$ and $93.0\%$ of errors on two of three databases. We therefore read
+deterministic unit, type and specimen compatibility as \emph{abstention evidence}
+rather than as a re-ranking filter. Holding the penalty, its weight, the candidates, the
+calibration split and the test fields fixed and varying only what consumes the signal,
+re-ranking and rejection cost $2.6$--$10.2$ Recall@1 points for no consistent detection
+gain, whereas abstention improves open-set AUROC by $5.7$ points on two databases
+(paired bootstrap $95\%$ CI excluding zero) and $0.7$ on the third. Two blinded
+independent experts ($\kappa{=}0.952$) put the error rate of the strata they reviewed at
+$3.96\%$, and applying every correction leaves the result intact. We release $710$ field--concept pairs over $135$ concepts with per-pair
+evidence provenance and $2{,}428$ adjudicated \textsc{unknown} fields.
+\end{abstract}
+
+\begin{keywords}
+schema alignment, open-set recognition, selective prediction, physiological time
+series, clinical databases
+\end{keywords}
+
+\input{sections/01_intro}
+\input{sections/02_method}
+\input{sections/03_experiments}
+\input{sections/04_conclusions}
+
+\section{Acknowledgements}
+We thank an intensive-care clinician and a clinical-data engineer for the blinded
+relabelling of Sec.~\ref{sec:expert}.
+
+\section{Compliance with ethical standards}
+This is a computational study on the public MIMIC-IV, MIMIC-III and eICU-CRD databases,
+accessed under the PhysioNet credentialed data use agreement; ethical approval was not
+required, as confirmed by the licences attached to those databases. The alignment method
+itself reads no patient-level record---its inputs are dictionary entries and
+training-split aggregates---while the downstream transfer study of
+Sec.~\ref{sec:transfer} necessarily uses de-identified patient time series and outcome
+labels from the same databases.
+
+\bibliographystyle{IEEEbib}
+\bibliography{references}
+
+\end{document}

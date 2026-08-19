@@ -1,0 +1,13 @@
+stratum,description,n_sampled,n_errors,stratum_error_rate_%,population_N,CI_lo_%,CI_hi_%
+S1,UNKNOWN judgements (high coverage),70,1,1.43,600,,
+S2,"positives, LLM-only evidence",50,2,4.0,473,,
+S3,arbitrated after disagreement,30,2,6.67,52,,
+S4,positives where a check fires,28,0,0.0,535,,
+S5,"positives, non-LLM evidence",20,4,20.0,217,,
+WEIGHTED TOTAL,stratified estimate,198,9,3.96,1877,2.01,7.67
+ERROR TYPE,measurement method: point-of-care vs laboratory,,3,,,,
+ERROR TYPE,measurement method: ventilator setting vs measured,,2,,,,
+ERROR TYPE,insufficient metadata to decide,,1,,,,
+ERROR TYPE,"model abstained, experts assigned",,1,,,,
+ERROR TYPE,concept naming granularity,,1,,,,
+ERROR TYPE,measurement method: arterial SaO2 vs pulse oximetry,,1,,,,

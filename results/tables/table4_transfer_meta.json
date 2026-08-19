@@ -1,0 +1,33 @@
+{
+  "channels": [
+    "temperature",
+    "dbp",
+    "respiratory_rate",
+    "sbp",
+    "tidal_volume",
+    "peep",
+    "mbp",
+    "o2_flow",
+    "pco2",
+    "ph",
+    "temperature_site",
+    "svo2",
+    "co",
+    "base_excess",
+    "po2",
+    "fio2",
+    "so2",
+    "pain_score",
+    "sedation_score",
+    "ventilator_mode",
+    "heart_rate",
+    "spo2",
+    "aado2",
+    "intubated"
+  ],
+  "val_auroc_mean": 84.19551361572417,
+  "val_auroc_sd": 0.12063761663930107,
+  "seeds": 5,
+  "equivalence_margin": 1.0,
+  "n_boot": 2000
+}

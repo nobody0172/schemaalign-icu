@@ -1,0 +1,4 @@
+src_table,field_key,label,unit_observed,dtype_inferred,p01,p50,p99,n_rows,n_keys,coverage,concept,method,note
+mimiciv.icu.inputevents,225835,Na Phos,,categorical,,,,3689,2143,0.059,,,
+mimiciv.icu.inputevents,225911,Ranitidine (Prophylaxis),,categorical,,,,3583,2032,0.0559,,,
+mimiciv.icu.inputevents,226368,OR Packed RBC Intake,,categorical,,,,2844,2551,0.0702,,,

@@ -1,0 +1,4 @@
+domain,correct,over_assignment (UNKNOWN given a concept),"wrong_concept (mappable, wrong target)","missed (mappable, abstained)",over_share_of_errors_%,n_fields
+mimic-iv,47,19,2,0,90.5,132
+mimic-iii,288,107,5,3,93.0,696
+eicu,134,19,4,14,51.4,244

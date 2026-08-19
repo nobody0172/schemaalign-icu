@@ -1,0 +1,261 @@
+db,field_key,base_concept,method,concept_raw,src_table,unit_observed,unit_recovery_rate,dtype_inferred,p01,p50,p99,n_rows,n_keys,coverage,src_file,pattern
+eicu,albumin,albumin,unspecified,albumin,eicu.lab,g/dL,1.0,numeric,1.2592,2.7544,4.5111,356149,88604,0.8036,pivoted/pivoted-lab.sql,P4
+eicu,albumin,albumin,unspecified,albumin,eicu.lab,g/dL,1.0,numeric,1.2592,2.7544,4.5111,356149,88604,0.8036,concepts/labsfirstday.sql,P4
+mimic-iii,50862,albumin,unspecified,albumin,mimiciii.LABEVENTS,g/dL,0.9999,numeric,1.4605,2.8029,4.4957,40212,12089,0.6325,firstday/labs_first_day.sql,P3
+mimic-iii,50862,albumin,unspecified,albumin,mimiciii.LABEVENTS,g/dL,0.9999,numeric,1.4605,2.8029,4.4957,40212,12089,0.6325,pivot/pivoted_lab.sql,P3
+mimic-iv,50862,albumin,unspecified,albumin,mimiciv.hosp.labevents,g/dL,1.0,numeric,1.5911,2.9995,4.5893,76215,21264,0.5851,measurement/chemistry.sql,P1
+eicu,anion gap,anion_gap,unspecified,anion_gap,eicu.lab,,0.0,numeric,2.0278,10.0,25.0793,726026,87344,0.7922,pivoted/pivoted-bg.sql,P4
+eicu,anion gap,anion_gap,unspecified,anion_gap,eicu.lab,,0.0,numeric,2.0278,10.0,25.0793,726026,87344,0.7922,concepts/labsfirstday.sql,P4
+mimic-iii,50868,anion_gap,unspecified,anion_gap,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,6.9897,13.0,26.1242,239038,18856,0.9866,firstday/labs_first_day.sql,P3
+mimic-iii,50868,anion_gap,unspecified,anion_gap,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,6.9897,13.0,26.1242,239038,18856,0.9866,pivot/pivoted_lab.sql,P3
+mimic-iv,50868,anion_gap,unspecified,anion_gap,mimiciv.hosp.labevents,mEq/L,1.0,numeric,6.0,13.0,25.9025,513101,36216,0.9966,measurement/chemistry.sql,P1
+eicu,-bands,bands,unspecified,bands,eicu.lab,%,1.0,numeric,0.0,5.0107,64.2471,52541,17586,0.1595,pivoted/pivoted-lab.sql,P4
+eicu,-bands,bands,unspecified,bands,eicu.lab,%,1.0,numeric,0.0,5.0107,64.2471,52541,17586,0.1595,concepts/labsfirstday.sql,P4
+mimic-iii,51144,bands,unspecified,bands,mimiciii.LABEVENTS,%,0.9998,numeric,0.0,0.5211,36.6254,19225,8143,0.4261,firstday/labs_first_day.sql,P3
+mimic-iii,51144,bands,unspecified,bands,mimiciii.LABEVENTS,%,0.9998,numeric,0.0,0.5211,36.6254,19225,8143,0.4261,pivot/pivoted_lab.sql,P3
+mimic-iv,51144,bands,unspecified,bands,mimiciv.hosp.labevents,%,1.0,numeric,0.0,1.0,27.9378,23254,6501,0.1789,measurement/blood_differential.sql,P1
+eicu,Base Excess,base_excess,unspecified,base_excess,eicu.lab,mEq/L,1.0,numeric,-17.5952,0.2391,17.8522,255811,47784,0.4334,pivoted/pivoted-bg.sql,P4
+mimic-iii,50802,base_excess,unspecified,base_excess,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,-13.2814,0.0,12.3974,253395,14989,0.7843,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50802,base_excess,unspecified,base_excess,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,-13.2814,0.0,12.3974,253395,14989,0.7843,pivot/pivoted_bg.sql,P3
+mimic-iv,50802,base_excess,unspecified,base_excess,mimiciv.hosp.labevents,mEq/L,1.0,numeric,-15.3365,0.0,14.6018,298887,26111,0.7185,measurement/bg.sql,P1
+eicu,bicarbonate,bicarbonate,unspecified,bicarbonate,eicu.lab,mmol/L,1.0,numeric,11.933,25.0,40.0217,845083,103031,0.9345,pivoted/pivoted-lab.sql,P4
+eicu,Total CO2,bicarbonate,unspecified,bicarbonate,eicu.lab,,0.0,numeric,10.7141,25.5211,68.872,145400,25310,0.2296,pivoted/pivoted-lab.sql,P4
+eicu,bicarbonate,bicarbonate,unspecified,bicarbonate,eicu.lab,mmol/L,1.0,numeric,11.933,25.0,40.0217,845083,103031,0.9345,concepts/labsfirstday.sql,P4
+eicu,HCO3,bicarbonate,unspecified,bicarbonate,eicu.infusionDrug,,0.0,categorical,,,,1,1,0.0,concepts/labsfirstday.sql,P4
+mimic-iii,50803,bicarbonate,unspecified,bicarbonate,mimiciii.LABEVENTS,mEq/L,1.0,numeric,9.3714,24.0,38.1989,3441,2686,0.1405,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50804,bicarbonate,unspecified,bicarbonate,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,13.3676,25.9887,41.9703,253384,14990,0.7843,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50882,bicarbonate,unspecified,bicarbonate,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,13.1294,25.0,37.7126,245803,18860,0.9868,firstday/labs_first_day.sql,P3
+mimic-iii,50803,bicarbonate,unspecified,bicarbonate,mimiciii.LABEVENTS,mEq/L,1.0,numeric,9.3714,24.0,38.1989,3441,2686,0.1405,pivot/pivoted_bg.sql,P3
+mimic-iii,50804,bicarbonate,unspecified,bicarbonate,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,13.3676,25.9887,41.9703,253384,14990,0.7843,pivot/pivoted_bg.sql,P3
+mimic-iii,50882,bicarbonate,unspecified,bicarbonate,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,13.1294,25.0,37.7126,245803,18860,0.9868,pivot/pivoted_lab.sql,P3
+mimic-iv,50803,bicarbonate,unspecified,bicarbonate,mimiciv.hosp.labevents,mEq/L,1.0,numeric,9.1135,23.0,38.4765,3459,2399,0.066,measurement/bg.sql,P1
+mimic-iv,50804,bicarbonate,unspecified,bicarbonate,mimiciv.hosp.labevents,mEq/L,1.0,numeric,12.1322,25.0,44.0635,298876,26107,0.7184,measurement/bg.sql,P1
+mimic-iv,50882,bicarbonate,unspecified,bicarbonate,mimiciv.hosp.labevents,mEq/L,1.0,numeric,12.7172,24.9857,38.3853,514940,36216,0.9966,measurement/chemistry.sql,P1
+eicu,total bilirubin,bilirubin,total,bilirubin_total,eicu.lab,mg/dL,1.0,numeric,0.197,0.6718,20.3888,299538,84422,0.7657,pivoted/pivoted-lab.sql,P4
+eicu,total bilirubin,bilirubin,total,bilirubin_total,eicu.lab,mg/dL,1.0,numeric,0.197,0.6718,20.3888,299538,84422,0.7657,concepts/labsfirstday.sql,P4
+mimic-iii,50885,bilirubin,total,bilirubin_total,mimiciii.LABEVENTS,mg/dL,1.0,numeric,0.1808,0.9748,36.48,56168,12539,0.6561,firstday/labs_first_day.sql,P3
+mimic-iii,50885,bilirubin,total,bilirubin_total,mimiciii.LABEVENTS,mg/dL,1.0,numeric,0.1808,0.9748,36.48,56168,12539,0.6561,pivot/pivoted_lab.sql,P3
+mimic-iv,50885,bilirubin,total,bilirubin_total,mimiciv.hosp.labevents,mg/dL,1.0,numeric,0.1997,0.8892,37.2838,147713,24697,0.6796,measurement/enzyme.sql,P1
+eicu,BUN,bun,unspecified,bun,eicu.lab,mg/dL,1.0,numeric,3.765,21.6393,112.0977,896094,109131,0.9898,pivoted/pivoted-lab.sql,P4
+eicu,BUN,bun,unspecified,bun,eicu.lab,mg/dL,1.0,numeric,3.765,21.6393,112.0977,896094,109131,0.9898,concepts/labsfirstday.sql,P4
+mimic-iii,51006,bun,unspecified,bun,mimiciii.LABEVENTS,mg/dL,0.9999,numeric,4.1392,21.9738,115.4788,252171,18877,0.9877,firstday/labs_first_day.sql,P3
+mimic-iii,51006,bun,unspecified,bun,mimiciii.LABEVENTS,mg/dL,0.9999,numeric,4.1392,21.9738,115.4788,252171,18877,0.9877,pivot/pivoted_lab.sql,P3
+mimic-iv,51006,bun,unspecified,bun,mimiciv.hosp.labevents,mg/dL,1.0,numeric,4.0608,21.669,117.8934,518206,36216,0.9966,measurement/chemistry.sql,P1
+eicu,calcium,calcium,unspecified,calcium,eicu.lab,mg/dL,1.0,numeric,6.2988,8.4,10.4039,861453,107122,0.9716,pivoted/pivoted-lab.sql,P4
+mimic-iii,50808,calcium,unspecified,calcium,mimiciii.LABEVENTS,mmol/L,0.9999,numeric,0.8293,1.1375,1.4266,135655,12462,0.6521,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50808,calcium,unspecified,calcium,mimiciii.LABEVENTS,mmol/L,0.9999,numeric,0.8293,1.1375,1.4266,135655,12462,0.6521,pivot/pivoted_bg.sql,P3
+mimic-iv,50808,calcium,unspecified,calcium,mimiciv.hosp.labevents,mmol/L,1.0,numeric,0.8491,1.1214,1.446,174600,20877,0.5745,measurement/bg.sql,P1
+mimic-iv,50893,calcium,unspecified,calcium,mimiciv.hosp.labevents,mg/dL,1.0,numeric,6.6616,8.4988,10.6788,450306,35469,0.976,measurement/chemistry.sql,P1
+eicu,chloride,chloride,unspecified,chloride,eicu.lab,mmol/L,1.0,numeric,85.4034,103.9999,122.1991,907279,108688,0.9858,pivoted/pivoted-lab.sql,P4
+eicu,chloride,chloride,unspecified,chloride,eicu.lab,mmol/L,1.0,numeric,85.4034,103.9999,122.1991,907279,108688,0.9858,concepts/labsfirstday.sql,P4
+mimic-iii,50806,chloride,unspecified,chloride,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,91.0241,106.0215,120.4892,18864,7529,0.3939,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50806,chloride,unspecified,chloride,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,91.0241,106.0215,120.4892,18864,7529,0.3939,firstday/labs_first_day.sql,P3
+mimic-iii,50902,chloride,unspecified,chloride,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,89.3084,104.0,119.3542,245887,18859,0.9868,firstday/labs_first_day.sql,P3
+mimic-iii,50806,chloride,unspecified,chloride,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,91.0241,106.0215,120.4892,18864,7529,0.3939,pivot/pivoted_bg.sql,P3
+mimic-iii,50806,chloride,unspecified,chloride,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,91.0241,106.0215,120.4892,18864,7529,0.3939,pivot/pivoted_lab.sql,P3
+mimic-iii,50902,chloride,unspecified,chloride,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,89.3084,104.0,119.3542,245887,18859,0.9868,pivot/pivoted_lab.sql,P3
+mimic-iv,50806,chloride,unspecified,chloride,mimiciv.hosp.labevents,mEq/L,1.0,numeric,90.0138,105.4734,119.794,33536,13524,0.3722,measurement/bg.sql,P1
+mimic-iv,50902,chloride,unspecified,chloride,mimiciv.hosp.labevents,mEq/L,1.0,numeric,86.3456,102.5774,119.9748,533138,36217,0.9966,measurement/chemistry.sql,P1
+eicu,creatinine,creatinine,unspecified,creatinine,eicu.lab,mg/dL,1.0,numeric,0.3128,1.0085,8.5351,901029,109168,0.9901,pivoted/pivoted-lab.sql,P4
+eicu,creatinine,creatinine,unspecified,creatinine,eicu.lab,mg/dL,1.0,numeric,0.3128,1.0085,8.5351,901029,109168,0.9901,concepts/labsfirstday.sql,P4
+mimic-iii,50912,creatinine,unspecified,creatinine,mimiciii.LABEVENTS,mg/dL,0.9999,numeric,0.2997,0.9483,7.8685,253176,18877,0.9877,firstday/labs_first_day.sql,P3
+mimic-iii,50912,creatinine,unspecified,creatinine,mimiciii.LABEVENTS,mg/dL,0.9999,numeric,0.2997,0.9483,7.8685,253176,18877,0.9877,pivot/pivoted_lab.sql,P3
+mimic-iv,50912,creatinine,unspecified,creatinine,mimiciv.hosp.labevents,mg/dL,1.0,numeric,0.3,0.9979,7.5883,519789,36218,0.9966,measurement/chemistry.sql,P1
+eicu,Vital Signs|Non-Invasive BP|Non-Invasive BP Diastolic,dbp,noninvasive,dbp_noninvasive,eicu.nurseCharting,,0.0,numeric,34.5525,64.7758,108.6732,9992144,101833,0.9236,pivoted/pivoted-vital.sql,P5
+eicu,Vital Signs|Invasive BP|Invasive BP Diastolic,dbp,invasive,dbp_invasive,eicu.nurseCharting,,0.0,numeric,32.8682,57.8081,100.6106,2592898,29455,0.2671,pivoted/pivoted-vital.sql,P5
+mimic-iii,8368,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,33.1663,58.9391,100.2529,1570955,12274,0.6422,firstday/vitals_first_day.sql,P2
+mimic-iii,8440,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,31.13,61.7837,99.0367,1489,400,0.0209,firstday/vitals_first_day.sql,P2
+mimic-iii,8441,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,26.7487,57.0563,98.8023,1045799,18286,0.9568,firstday/vitals_first_day.sql,P2
+mimic-iii,8555,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,28.8136,57.1763,96.2427,14845,375,0.0196,firstday/vitals_first_day.sql,P2
+mimic-iii,220180,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,34.91,66.0954,101.471,1523,14,0.0007,firstday/vitals_first_day.sql,P2
+mimic-iii,220051,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,36.3222,59.9912,96.3778,1240,7,0.0004,firstday/vitals_first_day.sql,P2
+mimic-iii,8368,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,33.1663,58.9391,100.2529,1570955,12274,0.6422,pivot/pivoted_vital.sql,P1
+mimic-iii,8440,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,31.13,61.7837,99.0367,1489,400,0.0209,pivot/pivoted_vital.sql,P1
+mimic-iii,8441,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,26.7487,57.0563,98.8023,1045799,18286,0.9568,pivot/pivoted_vital.sql,P1
+mimic-iii,8555,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,28.8136,57.1763,96.2427,14845,375,0.0196,pivot/pivoted_vital.sql,P1
+mimic-iii,220180,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,34.91,66.0954,101.471,1523,14,0.0007,pivot/pivoted_vital.sql,P1
+mimic-iii,220051,dbp,unspecified,dbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,36.3222,59.9912,96.3778,1240,7,0.0004,pivot/pivoted_vital.sql,P1
+mimic-iv,220180,dbp,unspecified,dbp,mimiciv.icu.chartevents,mmHg,1.0,numeric,35.2368,64.5765,110.345,2317959,36011,0.9909,measurement/vitalsign.sql,P1
+mimic-iv,220051,dbp,unspecified,dbp,mimiciv.icu.chartevents,mmHg,1.0,numeric,34.2917,57.7372,98.5245,1526345,17615,0.4847,measurement/vitalsign.sql,P1
+mimic-iv,225310,dbp,unspecified,dbp,mimiciv.icu.chartevents,mmHg,1.0,numeric,29.7264,56.8551,98.0818,185986,3296,0.0907,measurement/vitalsign.sql,P1
+mimic-iv,220180,dbp,noninvasive,dbp_ni,mimiciv.icu.chartevents,mmHg,1.0,numeric,35.2368,64.5765,110.345,2317959,36011,0.9909,measurement/vitalsign.sql,P1
+eicu,bedside glucose,glucose,unspecified,glucose,eicu.lab,mg/dL,1.0,numeric,60.0165,138.1475,373.9323,2275585,77974,0.7072,pivoted/pivoted-lab.sql,P4
+eicu,glucose,glucose,unspecified,glucose,eicu.lab,mg/dL,1.0,numeric,64.3387,124.5849,427.0305,934056,108820,0.987,pivoted/pivoted-lab.sql,P4
+eicu,glucose,glucose,unspecified,glucose,eicu.lab,mg/dL,1.0,numeric,64.3387,124.5849,427.0305,934056,108820,0.987,concepts/labsfirstday.sql,P4
+mimic-iii,50809,glucose,unspecified,glucose,mimiciii.LABEVENTS,mg/dL,1.0,numeric,60.9899,130.1471,329.2384,110647,11690,0.6117,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50809,glucose,unspecified,glucose,mimiciii.LABEVENTS,mg/dL,1.0,numeric,60.9899,130.1471,329.2384,110647,11690,0.6117,firstday/labs_first_day.sql,P3
+mimic-iii,50931,glucose,unspecified,glucose,mimiciii.LABEVENTS,mg/dL,0.9999,numeric,58.7913,119.256,339.7565,243060,18856,0.9866,firstday/labs_first_day.sql,P3
+mimic-iii,807,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,,0.0,numeric,61.0412,130.143,332.2447,305034,13665,0.715,firstday/vitals_first_day.sql,P2
+mimic-iii,811,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,,0.0,numeric,60.9541,125.7254,317.8038,279109,18725,0.9798,firstday/vitals_first_day.sql,P2
+mimic-iii,1529,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,,0.0,numeric,60.2054,123.4376,312.7063,203899,14047,0.735,firstday/vitals_first_day.sql,P2
+mimic-iii,225664,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,,0.0,numeric,55.07,149.84,307.65,357,12,0.0006,firstday/vitals_first_day.sql,P2
+mimic-iii,220621,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,mg/dL,0.9993,numeric,61.3212,124.1664,325.3244,10219,1636,0.0856,firstday/vitals_first_day.sql,P2
+mimic-iii,226537,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,mg/dL,1.0,numeric,60.0094,121.2454,276.4306,6362,775,0.0406,firstday/vitals_first_day.sql,P2
+mimic-iii,50809,glucose,unspecified,glucose,mimiciii.LABEVENTS,mg/dL,1.0,numeric,60.9899,130.1471,329.2384,110647,11690,0.6117,pivot/pivoted_bg.sql,P3
+mimic-iii,50809,glucose,unspecified,glucose,mimiciii.LABEVENTS,mg/dL,1.0,numeric,60.9899,130.1471,329.2384,110647,11690,0.6117,pivot/pivoted_lab.sql,P3
+mimic-iii,50931,glucose,unspecified,glucose,mimiciii.LABEVENTS,mg/dL,0.9999,numeric,58.7913,119.256,339.7565,243060,18856,0.9866,pivot/pivoted_lab.sql,P3
+mimic-iii,807,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,,0.0,numeric,61.0412,130.143,332.2447,305034,13665,0.715,pivot/pivoted_vital.sql,P1
+mimic-iii,811,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,,0.0,numeric,60.9541,125.7254,317.8038,279109,18725,0.9798,pivot/pivoted_vital.sql,P1
+mimic-iii,1529,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,,0.0,numeric,60.2054,123.4376,312.7063,203899,14047,0.735,pivot/pivoted_vital.sql,P1
+mimic-iii,225664,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,,0.0,numeric,55.07,149.84,307.65,357,12,0.0006,pivot/pivoted_vital.sql,P1
+mimic-iii,220621,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,mg/dL,0.9993,numeric,61.3212,124.1664,325.3244,10219,1636,0.0856,pivot/pivoted_vital.sql,P1
+mimic-iii,226537,glucose,unspecified,glucose,mimiciii.CHARTEVENTS,mg/dL,1.0,numeric,60.0094,121.2454,276.4306,6362,775,0.0406,pivot/pivoted_vital.sql,P1
+mimic-iv,50809,glucose,unspecified,glucose,mimiciv.hosp.labevents,mg/dL,1.0,numeric,67.8184,133.3099,317.0065,119727,16631,0.4576,measurement/bg.sql,P1
+mimic-iv,50931,glucose,unspecified,glucose,mimiciv.hosp.labevents,mg/dL,1.0,numeric,65.4862,121.7652,346.9996,505890,36215,0.9966,measurement/chemistry.sql,P1
+mimic-iv,225664,glucose,unspecified,glucose,mimiciv.icu.chartevents,,0.0,numeric,65.0865,137.6317,365.8524,466121,29046,0.7993,measurement/vitalsign.sql,P1
+mimic-iv,220621,glucose,unspecified,glucose,mimiciv.icu.chartevents,mg/dL,0.9886,numeric,66.8886,128.7272,358.5033,261758,36138,0.9944,measurement/vitalsign.sql,P1
+mimic-iv,226537,glucose,unspecified,glucose,mimiciv.icu.chartevents,mg/dL,0.9078,numeric,67.0733,133.2107,323.0977,104415,14349,0.3949,measurement/vitalsign.sql,P1
+eicu,Vital Signs|Heart Rate|Heart Rate,heart_rate,unspecified,heart_rate,eicu.nurseCharting,,0.0,numeric,49.5509,84.9941,136.6683,12850933,102895,0.9332,pivoted/pivoted-vital.sql,P5
+mimic-iii,211,heart_rate,unspecified,heart_rate,mimiciii.CHARTEVENTS,BPM,1.0,numeric,51.4583,85.7331,135.1195,2476111,18815,0.9845,firstday/vitals_first_day.sql,P2
+mimic-iii,220045,heart_rate,unspecified,heart_rate,mimiciii.CHARTEVENTS,bpm,1.0,numeric,49.3636,84.7848,138.7857,2650,13,0.0007,firstday/vitals_first_day.sql,P2
+mimic-iii,211,heart_rate,unspecified,heart_rate,mimiciii.CHARTEVENTS,BPM,1.0,numeric,51.4583,85.7331,135.1195,2476111,18815,0.9845,pivot/pivoted_vital.sql,P1
+mimic-iii,220045,heart_rate,unspecified,heart_rate,mimiciii.CHARTEVENTS,bpm,1.0,numeric,49.3636,84.7848,138.7857,2650,13,0.0007,pivot/pivoted_vital.sql,P1
+mimic-iv,220045,heart_rate,unspecified,heart_rate,mimiciv.icu.chartevents,bpm,1.0,numeric,49.1024,84.3441,135.3071,3947601,36339,1.0,measurement/vitalsign.sql,P1
+eicu,Hct,hematocrit,unspecified,hematocrit,eicu.lab,%,1.0,numeric,19.1072,30.5224,48.4893,905005,109054,0.9891,pivoted/pivoted-lab.sql,P4
+eicu,Hct,hematocrit,unspecified,hematocrit,eicu.lab,%,1.0,numeric,19.1072,30.5224,48.4893,905005,109054,0.9891,concepts/labsfirstday.sql,P4
+mimic-iii,50810,hematocrit,unspecified,hematocrit,mimiciii.LABEVENTS,%,1.0,numeric,18.1268,30.9853,46.714,47335,10950,0.5729,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50810,hematocrit,unspecified,hematocrit,mimiciii.LABEVENTS,%,1.0,numeric,18.1268,30.9853,46.714,47335,10950,0.5729,firstday/labs_first_day.sql,P3
+mimic-iii,51221,hematocrit,unspecified,hematocrit,mimiciii.LABEVENTS,%,0.9999,numeric,20.8924,30.2299,44.421,289976,18876,0.9877,firstday/labs_first_day.sql,P3
+mimic-iii,50810,hematocrit,unspecified,hematocrit,mimiciii.LABEVENTS,%,1.0,numeric,18.1268,30.9853,46.714,47335,10950,0.5729,pivot/pivoted_bg.sql,P3
+mimic-iii,50810,hematocrit,unspecified,hematocrit,mimiciii.LABEVENTS,%,1.0,numeric,18.1268,30.9853,46.714,47335,10950,0.5729,pivot/pivoted_lab.sql,P3
+mimic-iii,51221,hematocrit,unspecified,hematocrit,mimiciii.LABEVENTS,%,0.9999,numeric,20.8924,30.2299,44.421,289976,18876,0.9877,pivot/pivoted_lab.sql,P3
+mimic-iv,50810,hematocrit,unspecified,hematocrit,mimiciv.hosp.labevents,%,1.0,numeric,17.9576,29.9971,46.5548,55919,14086,0.3876,measurement/bg.sql,P1
+mimic-iv,51221,hematocrit,unspecified,hematocrit,mimiciv.hosp.labevents,%,1.0,numeric,19.746,28.8475,45.9256,519688,36206,0.9963,measurement/complete_blood_count.sql,P1
+eicu,Hgb,hemoglobin,unspecified,hemoglobin,eicu.lab,g/dL,1.0,numeric,6.3321,9.9772,16.2097,920579,108574,0.9847,pivoted/pivoted-lab.sql,P4
+eicu,Hgb,hemoglobin,unspecified,hemoglobin,eicu.lab,g/dL,1.0,numeric,6.3321,9.9772,16.2097,920579,108574,0.9847,concepts/labsfirstday.sql,P4
+mimic-iii,50811,hemoglobin,unspecified,hemoglobin,mimiciii.LABEVENTS,g/dL,1.0,numeric,6.036,10.2566,15.5185,47333,10950,0.5729,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50811,hemoglobin,unspecified,hemoglobin,mimiciii.LABEVENTS,g/dL,1.0,numeric,6.036,10.2566,15.5185,47333,10950,0.5729,firstday/labs_first_day.sql,P3
+mimic-iii,51222,hemoglobin,unspecified,hemoglobin,mimiciii.LABEVENTS,g/dL,0.9999,numeric,7.0461,10.269,15.3498,234246,18868,0.9872,firstday/labs_first_day.sql,P3
+mimic-iii,50811,hemoglobin,unspecified,hemoglobin,mimiciii.LABEVENTS,g/dL,1.0,numeric,6.036,10.2566,15.5185,47333,10950,0.5729,pivot/pivoted_bg.sql,P3
+mimic-iii,50811,hemoglobin,unspecified,hemoglobin,mimiciii.LABEVENTS,g/dL,1.0,numeric,6.036,10.2566,15.5185,47333,10950,0.5729,pivot/pivoted_lab.sql,P3
+mimic-iii,51222,hemoglobin,unspecified,hemoglobin,mimiciii.LABEVENTS,g/dL,0.9999,numeric,7.0461,10.269,15.3498,234246,18868,0.9872,pivot/pivoted_lab.sql,P3
+mimic-iv,50811,hemoglobin,unspecified,hemoglobin,mimiciv.hosp.labevents,g/dL,1.0,numeric,5.9561,9.9096,15.3762,55916,14085,0.3876,measurement/bg.sql,P1
+mimic-iv,51222,hemoglobin,unspecified,hemoglobin,mimiciv.hosp.labevents,g/dL,1.0,numeric,6.4361,9.4326,15.282,481938,36201,0.9962,measurement/complete_blood_count.sql,P1
+eicu,PT - INR,inr,unspecified,inr,eicu.lab,ratio,1.0,numeric,0.9,1.3,5.866,285576,80596,0.731,pivoted/pivoted-lab.sql,P4
+eicu,PT - INR,inr,unspecified,inr,eicu.lab,ratio,1.0,numeric,0.9,1.3,5.866,285576,80596,0.731,concepts/labsfirstday.sql,P4
+mimic-iii,51237,inr,unspecified,inr,mimiciii.LABEVENTS,,0.0,numeric,0.9,1.3,5.2181,163049,18333,0.9592,firstday/labs_first_day.sql,P3
+mimic-iii,51237,inr,unspecified,inr,mimiciii.LABEVENTS,,0.0,numeric,0.9,1.3,5.2181,163049,18333,0.9592,pivot/pivoted_lab.sql,P3
+mimic-iv,51237,inr,unspecified,inr,mimiciv.hosp.labevents,,0.0,numeric,0.9001,1.3,4.7233,291819,34390,0.9463,measurement/coagulation.sql,P1
+eicu,lactate,lactate,unspecified,lactate,eicu.lab,mmol/L,1.0,numeric,0.4974,1.7945,14.7338,154120,48584,0.4406,pivoted/pivoted-lab.sql,P4
+eicu,lactate,lactate,unspecified,lactate,eicu.lab,mmol/L,1.0,numeric,0.4974,1.7945,14.7338,154120,48584,0.4406,concepts/labsfirstday.sql,P4
+mimic-iii,50813,lactate,unspecified,lactate,mimiciii.LABEVENTS,mmol/L,1.0,numeric,0.6053,1.8429,14.8203,70422,12172,0.6369,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50813,lactate,unspecified,lactate,mimiciii.LABEVENTS,mmol/L,1.0,numeric,0.6053,1.8429,14.8203,70422,12172,0.6369,firstday/labs_first_day.sql,P3
+mimic-iii,50813,lactate,unspecified,lactate,mimiciii.LABEVENTS,mmol/L,1.0,numeric,0.6053,1.8429,14.8203,70422,12172,0.6369,pivot/pivoted_bg.sql,P3
+mimic-iii,50813,lactate,unspecified,lactate,mimiciii.LABEVENTS,mmol/L,1.0,numeric,0.6053,1.8429,14.8203,70422,12172,0.6369,pivot/pivoted_lab.sql,P3
+mimic-iv,50813,lactate,unspecified,lactate,mimiciv.hosp.labevents,mmol/L,1.0,numeric,0.6,1.7895,13.1361,188290,26479,0.7286,measurement/bg.sql,P1
+eicu,Vital Signs|O2 L/%|O2 L/%,o2_flow,unspecified,o2_flow,eicu.nurseCharting,,0.0,numeric,0.6618,4.0,100.0,1438199,46020,0.4174,pivoted/pivoted-o2.sql,P5
+mimic-iii,50815,o2_flow,unspecified,o2_flow,mimiciii.LABEVENTS,L/min,1.0,numeric,0.6175,4.0,100.0,6342,3800,0.1988,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50815,o2_flow,unspecified,o2_flow,mimiciii.LABEVENTS,L/min,1.0,numeric,0.6175,4.0,100.0,6342,3800,0.1988,pivot/pivoted_bg.sql,P3
+mimic-iv,50815,o2_flow,unspecified,o2_flow,mimiciv.hosp.labevents,L/min,1.0,numeric,0.6696,4.0,100.0,3929,2730,0.0751,measurement/bg.sql,P1
+mimic-iv,223834,o2_flow,unspecified,o2_flow,mimiciv.icu.chartevents,L/min,1.0,numeric,1.0,4.0,57.9582,338199,28692,0.7895,measurement/oxygen_delivery.sql,P1
+eicu,paCO2,pco2,unspecified,pco2,eicu.lab,mm Hg,1.0,numeric,20.8372,40.7146,95.0292,324889,58549,0.531,pivoted/pivoted-bg.sql,P4
+mimic-iii,50818,pco2,unspecified,pco2,mimiciii.LABEVENTS,mm Hg,0.9999,numeric,23.959,40.0,77.685,253360,14987,0.7842,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50818,pco2,unspecified,pco2,mimiciii.LABEVENTS,mm Hg,0.9999,numeric,23.959,40.0,77.685,253360,14987,0.7842,pivot/pivoted_bg.sql,P3
+mimic-iv,50818,pco2,unspecified,pco2,mimiciv.hosp.labevents,mm Hg,1.0,numeric,23.3508,40.9803,81.652,298835,26105,0.7184,measurement/bg.sql,P1
+eicu,PEEP,peep,unspecified,peep,eicu.lab,cm H2O,1.0,numeric,3.2533,5.0,19.2835,90757,18491,0.1677,pivoted/pivoted-bg.sql,P4
+mimic-iii,50819,peep,unspecified,peep,mimiciii.LABEVENTS,,0.0,numeric,1.4679,5.0,21.972,47609,6213,0.3251,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50819,peep,unspecified,peep,mimiciii.LABEVENTS,,0.0,numeric,1.4679,5.0,21.972,47609,6213,0.3251,pivot/pivoted_bg.sql,P3
+mimic-iv,50819,peep,unspecified,peep,mimiciv.hosp.labevents,,0.0,numeric,0.3495,8.0,22.3011,32654,7483,0.2059,measurement/bg.sql,P1
+mimic-iv,220339,peep,unspecified,peep,mimiciv.icu.chartevents,cmH2O,1.0,numeric,0.0,5.0,18.1914,407008,18503,0.5092,measurement/ventilator_setting.sql,P1
+mimic-iv,224700,peep,unspecified,peep,mimiciv.icu.chartevents,cmH2O,1.0,numeric,4.9993,8.0,21.2517,122081,14513,0.3994,measurement/ventilator_setting.sql,P1
+eicu,pH,ph,unspecified,ph,eicu.lab,,0.0,numeric,7.0473,7.3805,7.5621,322260,57966,0.5257,pivoted/pivoted-bg.sql,P4
+mimic-iii,50820,ph,unspecified,ph,mimiciii.LABEVENTS,units,0.9999,numeric,7.1453,7.3982,7.536,275962,15442,0.808,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50820,ph,unspecified,ph,mimiciii.LABEVENTS,units,0.9999,numeric,7.1453,7.3982,7.536,275962,15442,0.808,pivot/pivoted_bg.sql,P3
+mimic-iv,50820,ph,unspecified,ph,mimiciv.hosp.labevents,units,1.0,numeric,7.1113,7.385,7.5414,320795,26738,0.7358,measurement/bg.sql,P1
+eicu,platelets x 1000,platelets,unspecified,platelets,eicu.lab,K/mcL,1.0,numeric,22.0151,194.1101,614.3356,809530,108465,0.9837,pivoted/pivoted-lab.sql,P4
+eicu,platelets x 1000,platelets,unspecified,platelets,eicu.lab,K/mcL,1.0,numeric,22.0151,194.1101,614.3356,809530,108465,0.9837,concepts/labsfirstday.sql,P4
+mimic-iii,51265,platelets,unspecified,platelets,mimiciii.LABEVENTS,K/uL,0.9999,numeric,20.75,209.2022,759.8632,246006,18876,0.9877,firstday/labs_first_day.sql,P3
+mimic-iii,51265,platelets,unspecified,platelets,mimiciii.LABEVENTS,K/uL,0.9999,numeric,20.75,209.2022,759.8632,246006,18876,0.9877,pivot/pivoted_lab.sql,P3
+mimic-iv,51265,platelets,unspecified,platelets,mimiciv.hosp.labevents,K/uL,1.0,numeric,15.6695,192.3568,697.6281,485164,36202,0.9962,measurement/complete_blood_count.sql,P1
+eicu,paO2,po2,unspecified,po2,eicu.lab,mm Hg,1.0,numeric,36.0044,96.1547,486.0152,328557,59148,0.5365,pivoted/pivoted-bg.sql,P4
+mimic-iii,50821,po2,unspecified,po2,mimiciii.LABEVENTS,mm Hg,0.9999,numeric,32.512,111.5229,465.4954,253363,14988,0.7842,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50821,po2,unspecified,po2,mimiciii.LABEVENTS,mm Hg,0.9999,numeric,32.512,111.5229,465.4954,253363,14988,0.7842,pivot/pivoted_bg.sql,P3
+mimic-iv,50821,po2,unspecified,po2,mimiciv.hosp.labevents,mm Hg,1.0,numeric,29.2346,103.3243,450.9593,298962,26108,0.7184,measurement/bg.sql,P1
+eicu,potassium,potassium,unspecified,potassium,eicu.lab,mmol/L,1.0,numeric,2.7566,3.9997,6.0829,1065018,108812,0.9869,pivoted/pivoted-lab.sql,P4
+eicu,potassium,potassium,unspecified,potassium,eicu.lab,mmol/L,1.0,numeric,2.7566,3.9997,6.0829,1065018,108812,0.9869,concepts/labsfirstday.sql,P4
+mimic-iii,50822,potassium,unspecified,potassium,mimiciii.LABEVENTS,mEq/L,1.0,numeric,2.8603,4.1,6.4853,106969,12573,0.6579,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50822,potassium,unspecified,potassium,mimiciii.LABEVENTS,mEq/L,1.0,numeric,2.8603,4.1,6.4853,106969,12573,0.6579,firstday/labs_first_day.sql,P3
+mimic-iii,50971,potassium,unspecified,potassium,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,2.9094,4.0093,6.0143,269392,18865,0.9871,firstday/labs_first_day.sql,P3
+mimic-iii,50822,potassium,unspecified,potassium,mimiciii.LABEVENTS,mEq/L,1.0,numeric,2.8603,4.1,6.4853,106969,12573,0.6579,pivot/pivoted_bg.sql,P3
+mimic-iii,50822,potassium,unspecified,potassium,mimiciii.LABEVENTS,mEq/L,1.0,numeric,2.8603,4.1,6.4853,106969,12573,0.6579,pivot/pivoted_lab.sql,P3
+mimic-iii,50971,potassium,unspecified,potassium,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,2.9094,4.0093,6.0143,269392,18865,0.9871,pivot/pivoted_lab.sql,P3
+mimic-iv,50822,potassium,unspecified,potassium,mimiciv.hosp.labevents,mEq/L,1.0,numeric,2.8174,4.1,6.4814,112379,17573,0.4836,measurement/bg.sql,P1
+mimic-iv,50971,potassium,unspecified,potassium,mimiciv.hosp.labevents,mEq/L,1.0,numeric,2.9754,4.0877,5.9721,545228,36218,0.9966,measurement/chemistry.sql,P1
+eicu,PT,pt,unspecified,pt,eicu.lab,sec,1.0,numeric,10.0624,15.5228,58.5596,275975,78537,0.7123,concepts/labsfirstday.sql,P4
+mimic-iii,51274,pt,unspecified,pt,mimiciii.LABEVENTS,sec,0.9999,numeric,11.3595,14.151,37.9495,162797,18329,0.959,firstday/labs_first_day.sql,P3
+mimic-iii,51274,pt,unspecified,pt,mimiciii.LABEVENTS,sec,0.9999,numeric,11.3595,14.151,37.9495,162797,18329,0.959,pivot/pivoted_lab.sql,P3
+mimic-iv,51274,pt,unspecified,pt,mimiciv.hosp.labevents,sec,1.0,numeric,10.2948,14.318,49.601,291808,34390,0.9463,measurement/coagulation.sql,P1
+eicu,PTT,ptt,unspecified,ptt,eicu.lab,sec,1.0,numeric,21.4065,37.1388,147.7286,207733,62738,0.569,pivoted/pivoted-lab.sql,P4
+eicu,PTT,ptt,unspecified,ptt,eicu.lab,sec,1.0,numeric,21.4065,37.1388,147.7286,207733,62738,0.569,concepts/labsfirstday.sql,P4
+mimic-iii,51275,ptt,unspecified,ptt,mimiciii.LABEVENTS,sec,0.9999,numeric,21.0658,34.5991,150.0,176157,18288,0.9569,firstday/labs_first_day.sql,P3
+mimic-iii,51275,ptt,unspecified,ptt,mimiciii.LABEVENTS,sec,0.9999,numeric,21.0658,34.5991,150.0,176157,18288,0.9569,pivot/pivoted_lab.sql,P3
+mimic-iv,51275,ptt,unspecified,ptt,mimiciv.hosp.labevents,sec,1.0,numeric,21.8782,35.2411,150.0,321337,34274,0.9431,measurement/coagulation.sql,P1
+eicu,Vital Signs|Respiratory Rate|Respiratory Rate,respiratory_rate,unspecified,respiratory_rate,eicu.nurseCharting,,0.0,numeric,8.5324,19.0,38.6526,11914385,99733,0.9046,pivoted/pivoted-vital.sql,P5
+mimic-iii,50827,respiratory_rate,set,respiratory_rate_set,mimiciii.LABEVENTS,,0.0,categorical,,,,52471,8290,0.4338,firstday/blood_gas_first_day.sql,P3
+mimic-iii,615,respiratory_rate,unspecified,respiratory_rate,mimiciii.CHARTEVENTS,BPM,0.9893,numeric,8.6671,20.0,37.612,301373,10987,0.5749,firstday/vitals_first_day.sql,P2
+mimic-iii,618,respiratory_rate,unspecified,respiratory_rate,mimiciii.CHARTEVENTS,BPM,1.0,numeric,7.8177,19.6875,37.7512,2408175,18803,0.9838,firstday/vitals_first_day.sql,P2
+mimic-iii,220210,respiratory_rate,unspecified,respiratory_rate,mimiciii.CHARTEVENTS,insp/min,1.0,numeric,9.0,20.0,40.782,2659,13,0.0007,firstday/vitals_first_day.sql,P2
+mimic-iii,224690,respiratory_rate,unspecified,respiratory_rate,mimiciii.CHARTEVENTS,insp/min,1.0,numeric,11.42,23.0,42.16,192,10,0.0005,firstday/vitals_first_day.sql,P2
+mimic-iii,50827,respiratory_rate,set,respiratory_rate_set,mimiciii.LABEVENTS,,0.0,categorical,,,,52471,8290,0.4338,pivot/pivoted_bg.sql,P3
+mimic-iii,615,respiratory_rate,unspecified,respiratory_rate,mimiciii.CHARTEVENTS,BPM,0.9893,numeric,8.6671,20.0,37.612,301373,10987,0.5749,pivot/pivoted_vital.sql,P1
+mimic-iii,618,respiratory_rate,unspecified,respiratory_rate,mimiciii.CHARTEVENTS,BPM,1.0,numeric,7.8177,19.6875,37.7512,2408175,18803,0.9838,pivot/pivoted_vital.sql,P1
+mimic-iii,220210,respiratory_rate,unspecified,respiratory_rate,mimiciii.CHARTEVENTS,insp/min,1.0,numeric,9.0,20.0,40.782,2659,13,0.0007,pivot/pivoted_vital.sql,P1
+mimic-iii,224690,respiratory_rate,unspecified,respiratory_rate,mimiciii.CHARTEVENTS,insp/min,1.0,numeric,11.42,23.0,42.16,192,10,0.0005,pivot/pivoted_vital.sql,P1
+mimic-iv,224688,respiratory_rate,set,respiratory_rate_set,mimiciv.icu.chartevents,insp/min,1.0,numeric,6.2135,18.0,34.7526,216448,17518,0.4821,measurement/ventilator_setting.sql,P1
+mimic-iv,224690,respiratory_rate,total,respiratory_rate_total,mimiciv.icu.chartevents,insp/min,1.0,numeric,8.9994,20.6372,37.8789,358253,18338,0.5046,measurement/ventilator_setting.sql,P1
+mimic-iv,224689,respiratory_rate,spontaneous,respiratory_rate_spontaneous,mimiciv.icu.chartevents,insp/min,1.0,numeric,0.0,9.1335,36.6942,375569,18348,0.5049,measurement/ventilator_setting.sql,P1
+mimic-iv,220210,respiratory_rate,unspecified,respiratory_rate,mimiciv.icu.chartevents,insp/min,1.0,numeric,8.0762,19.5389,36.7446,3891517,36307,0.9991,measurement/vitalsign.sql,P1
+mimic-iv,224690,respiratory_rate,unspecified,respiratory_rate,mimiciv.icu.chartevents,insp/min,1.0,numeric,8.9994,20.6372,37.8789,358253,18338,0.5046,measurement/vitalsign.sql,P1
+eicu,Vital Signs|Non-Invasive BP|Non-Invasive BP Systolic,sbp,noninvasive,sbp_noninvasive,eicu.nurseCharting,,0.0,numeric,75.9669,120.8976,186.8126,9992195,101825,0.9235,pivoted/pivoted-vital.sql,P5
+eicu,Vital Signs|Invasive BP|Invasive BP Systolic,sbp,invasive,sbp_invasive,eicu.nurseCharting,,0.0,numeric,71.0943,119.7567,190.4254,2592192,29473,0.2673,pivoted/pivoted-vital.sql,P5
+mimic-iii,51,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,0.9963,numeric,69.2983,120.5858,189.8377,1578805,12836,0.6716,firstday/vitals_first_day.sql,P2
+mimic-iii,442,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,0.9088,mixed,69.6121,120.5458,189.2413,1754,434,0.0227,firstday/vitals_first_day.sql,P2
+mimic-iii,455,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,0.9982,numeric,75.3966,118.9683,181.2962,1050200,18324,0.9588,firstday/vitals_first_day.sql,P2
+mimic-iii,6701,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,0.9811,numeric,50.9037,108.6144,180.9568,15175,375,0.0196,firstday/vitals_first_day.sql,P2
+mimic-iii,220179,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,77.873,125.0435,187.6825,1527,14,0.0007,firstday/vitals_first_day.sql,P2
+mimic-iii,220050,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,70.2756,132.1667,208.3111,1242,7,0.0004,firstday/vitals_first_day.sql,P2
+mimic-iii,51,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,0.9963,numeric,69.2983,120.5858,189.8377,1578805,12836,0.6716,pivot/pivoted_vital.sql,P1
+mimic-iii,442,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,0.9088,mixed,69.6121,120.5458,189.2413,1754,434,0.0227,pivot/pivoted_vital.sql,P1
+mimic-iii,455,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,0.9982,numeric,75.3966,118.9683,181.2962,1050200,18324,0.9588,pivot/pivoted_vital.sql,P1
+mimic-iii,6701,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,0.9811,numeric,50.9037,108.6144,180.9568,15175,375,0.0196,pivot/pivoted_vital.sql,P1
+mimic-iii,220179,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,77.873,125.0435,187.6825,1527,14,0.0007,pivot/pivoted_vital.sql,P1
+mimic-iii,220050,sbp,unspecified,sbp,mimiciii.CHARTEVENTS,mmHg,1.0,numeric,70.2756,132.1667,208.3111,1242,7,0.0004,pivot/pivoted_vital.sql,P1
+mimic-iv,220179,sbp,unspecified,sbp,mimiciv.icu.chartevents,mmHg,1.0,numeric,77.8832,118.6456,178.5178,2318386,36011,0.9909,measurement/vitalsign.sql,P1
+mimic-iv,220050,sbp,unspecified,sbp,mimiciv.icu.chartevents,mmHg,1.0,numeric,74.3972,117.4358,184.0858,1526547,17610,0.4846,measurement/vitalsign.sql,P1
+mimic-iv,225309,sbp,unspecified,sbp,mimiciv.icu.chartevents,mmHg,1.0,numeric,65.5376,112.1252,180.9812,186034,3309,0.0911,measurement/vitalsign.sql,P1
+mimic-iv,220179,sbp,noninvasive,sbp_ni,mimiciv.icu.chartevents,mmHg,1.0,numeric,77.8832,118.6456,178.5178,2318386,36011,0.9909,measurement/vitalsign.sql,P1
+eicu,sodium,sodium,unspecified,sodium,eicu.lab,mmol/L,1.0,numeric,121.8855,138.8239,155.3377,991978,109166,0.9901,pivoted/pivoted-lab.sql,P4
+eicu,sodium,sodium,unspecified,sodium,eicu.lab,mmol/L,1.0,numeric,121.8855,138.8239,155.3377,991978,109166,0.9901,concepts/labsfirstday.sql,P4
+mimic-iii,50824,sodium,unspecified,sodium,mimiciii.LABEVENTS,mEq/L,1.0,numeric,124.8915,137.0,150.1363,34565,10235,0.5355,firstday/blood_gas_first_day.sql,P3
+mimic-iii,50824,sodium,unspecified,sodium,mimiciii.LABEVENTS,mEq/L,1.0,numeric,124.8915,137.0,150.1363,34565,10235,0.5355,firstday/labs_first_day.sql,P3
+mimic-iii,50983,sodium,unspecified,sodium,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,125.9601,139.0,151.7003,251898,18858,0.9867,firstday/labs_first_day.sql,P3
+mimic-iii,50824,sodium,unspecified,sodium,mimiciii.LABEVENTS,mEq/L,1.0,numeric,124.8915,137.0,150.1363,34565,10235,0.5355,pivot/pivoted_bg.sql,P3
+mimic-iii,50824,sodium,unspecified,sodium,mimiciii.LABEVENTS,mEq/L,1.0,numeric,124.8915,137.0,150.1363,34565,10235,0.5355,pivot/pivoted_lab.sql,P3
+mimic-iii,50983,sodium,unspecified,sodium,mimiciii.LABEVENTS,mEq/L,0.9999,numeric,125.9601,139.0,151.7003,251898,18858,0.9867,pivot/pivoted_lab.sql,P3
+mimic-iv,50824,sodium,unspecified,sodium,mimiciv.hosp.labevents,mEq/L,1.0,numeric,114.5935,136.0,157.148,53714,14947,0.4113,measurement/bg.sql,P1
+mimic-iv,50983,sodium,unspecified,sodium,mimiciv.hosp.labevents,mEq/L,1.0,numeric,125.0425,138.6111,154.2462,541967,36218,0.9966,measurement/chemistry.sql,P1
+eicu,Vital Signs|O2 Saturation|O2 Saturation,spo2,unspecified,spo2,eicu.nurseCharting,,0.0,numeric,86.3225,97.0,100.0,10590118,92423,0.8383,pivoted/pivoted-vital.sql,P5
+mimic-iii,646,spo2,unspecified,spo2,mimiciii.CHARTEVENTS,%,1.0,numeric,87.2615,98.0,100.0,2439167,18814,0.9844,firstday/vitals_first_day.sql,P2
+mimic-iii,220277,spo2,unspecified,spo2,mimiciii.CHARTEVENTS,%,1.0,numeric,86.0,98.0,100.0,2737,13,0.0007,firstday/vitals_first_day.sql,P2
+mimic-iii,646,spo2,unspecified,spo2,mimiciii.CHARTEVENTS,%,1.0,numeric,87.2615,98.0,100.0,2439167,18814,0.9844,pivot/pivoted_vital.sql,P1
+mimic-iii,220277,spo2,unspecified,spo2,mimiciii.CHARTEVENTS,%,1.0,numeric,86.0,98.0,100.0,2737,13,0.0007,pivot/pivoted_vital.sql,P1
+mimic-iv,220277,spo2,unspecified,spo2,mimiciv.icu.chartevents,%,1.0,numeric,87.4732,97.0,100.0,3870472,36331,0.9998,measurement/vitalsign.sql,P1
+eicu,Vital Signs|Temperature|Temperature (C),temperature,unspecified,temperature,eicu.nurseCharting,,0.0,numeric,34.1314,36.9,39.2333,4591818,106510,0.966,pivoted/pivoted-vital.sql,P5
+mimic-iii,50825,temperature,unspecified,temperature,mimiciii.LABEVENTS,,0.0,numeric,34.9363,37.231,39.4875,72009,8959,0.4688,firstday/blood_gas_first_day.sql,P3
+mimic-iii,223761,temperature,unspecified,temperature,mimiciii.CHARTEVENTS,?F,1.0,numeric,95.8,98.9302,102.736,582,12,0.0006,firstday/vitals_first_day.sql,P2
+mimic-iii,678,temperature,unspecified,temperature,mimiciii.CHARTEVENTS,Deg. F,0.9995,numeric,95.1193,98.7111,102.6414,544102,18432,0.9644,firstday/vitals_first_day.sql,P2
+mimic-iii,223762,temperature,unspecified,temperature,mimiciii.CHARTEVENTS,?C,1.0,numeric,33.7,38.9444,41.654,196,2,0.0001,firstday/vitals_first_day.sql,P2
+mimic-iii,676,temperature,unspecified,temperature,mimiciii.CHARTEVENTS,Deg. C,0.9863,numeric,34.8576,37.2,38.936,304958,6465,0.3383,firstday/vitals_first_day.sql,P2
+mimic-iii,50825,temperature,unspecified,temperature,mimiciii.LABEVENTS,,0.0,numeric,34.9363,37.231,39.4875,72009,8959,0.4688,pivot/pivoted_bg.sql,P3
+mimic-iii,223761,temperature,unspecified,temperature,mimiciii.CHARTEVENTS,?F,1.0,numeric,95.8,98.9302,102.736,582,12,0.0006,pivot/pivoted_vital.sql,P1
+mimic-iii,678,temperature,unspecified,temperature,mimiciii.CHARTEVENTS,Deg. F,0.9995,numeric,95.1193,98.7111,102.6414,544102,18432,0.9644,pivot/pivoted_vital.sql,P1
+mimic-iv,50825,temperature,unspecified,temperature,mimiciv.hosp.labevents,,0.0,mixed,33.7245,37.0,39.3628,55536,11210,0.3085,measurement/bg.sql,P1
+eicu,WBC x 1000,wbc,unspecified,wbc,eicu.lab,K/mcL,1.0,numeric,1.7849,10.1944,35.9186,798155,108901,0.9877,pivoted/pivoted-lab.sql,P4
+eicu,WBC x 1000,wbc,unspecified,wbc,eicu.lab,K/mcL,1.0,numeric,1.7849,10.1944,35.9186,798155,108901,0.9877,concepts/labsfirstday.sql,P4
+mimic-iii,51300,wbc,unspecified,wbc,mimiciii.LABEVENTS,K/uL,1.0,numeric,1.316,8.0438,35.64,266,182,0.0095,firstday/labs_first_day.sql,P3
+mimic-iii,51301,wbc,unspecified,wbc,mimiciii.LABEVENTS,K/uL,0.9999,numeric,1.0638,10.5046,35.3234,235183,18869,0.9873,firstday/labs_first_day.sql,P3
+mimic-iii,51300,wbc,unspecified,wbc,mimiciii.LABEVENTS,K/uL,1.0,numeric,1.316,8.0438,35.64,266,182,0.0095,pivot/pivoted_lab.sql,P3
+mimic-iii,51301,wbc,unspecified,wbc,mimiciii.LABEVENTS,K/uL,0.9999,numeric,1.0638,10.5046,35.3234,235183,18869,0.9873,pivot/pivoted_lab.sql,P3
+mimic-iv,51300,wbc,unspecified,wbc,mimiciv.hosp.labevents,K/uL,1.0,numeric,0.533,7.0188,35.436,283,247,0.0068,measurement/blood_differential.sql,P1
+mimic-iv,51301,wbc,unspecified,wbc,mimiciv.hosp.labevents,K/uL,1.0,numeric,0.7495,10.0514,38.0509,476740,36201,0.9962,measurement/blood_differential.sql,P1
+mimic-iv,51301,wbc,unspecified,wbc,mimiciv.hosp.labevents,K/uL,1.0,numeric,0.7495,10.0514,38.0509,476740,36201,0.9962,measurement/complete_blood_count.sql,P1

@@ -1,0 +1,5 @@
+method,domain,Recall@1,Precision,Recall,F1,Coverage,OpenSet_AUROC,n_fields,n_positive,n_unknown,prompt_sha,prompt_tokens,completion_tokens
+Direct LLM JSON matching (gemini-2.5-pro),mimic-iv,100.0,58.54,100.0,73.85,66.13,77.63,62,24,38,b4c100e71d3dbf0e,4865,12688
+Direct LLM JSON matching (gemini-2.5-pro),mimic-iv,95.92,65.28,95.92,77.69,54.55,86.14,132,49,83,b4c100e71d3dbf0e,10054,20837
+Direct LLM JSON matching (gemini-2.5-pro),mimic-iii,97.64,70.15,97.64,81.64,59.2,85.5,696,296,400,b4c100e71d3dbf0e,45883,105875
+Direct LLM JSON matching (gemini-2.5-pro),eicu,73.03,79.86,73.03,76.29,56.97,79.15,244,152,92,b4c100e71d3dbf0e,16981,31373

@@ -1,0 +1,312 @@
+{
+  "dims": [
+    "unit",
+    "type",
+    "specimen"
+  ],
+  "w": 0.1,
+  "tuned_on": "mimic-iv val split (C4)",
+  "val_auroc": 99.34,
+  "grid": [
+    {
+      "dims": "unit",
+      "w": 0.1,
+      "val_AUROC": 98.68
+    },
+    {
+      "dims": "unit",
+      "w": 0.2,
+      "val_AUROC": 98.68
+    },
+    {
+      "dims": "unit",
+      "w": 0.3,
+      "val_AUROC": 98.68
+    },
+    {
+      "dims": "unit",
+      "w": 0.5,
+      "val_AUROC": 98.68
+    },
+    {
+      "dims": "type",
+      "w": 0.1,
+      "val_AUROC": 97.92
+    },
+    {
+      "dims": "type",
+      "w": 0.2,
+      "val_AUROC": 97.92
+    },
+    {
+      "dims": "type",
+      "w": 0.3,
+      "val_AUROC": 97.92
+    },
+    {
+      "dims": "type",
+      "w": 0.5,
+      "val_AUROC": 97.81
+    },
+    {
+      "dims": "specimen",
+      "w": 0.1,
+      "val_AUROC": 94.74
+    },
+    {
+      "dims": "specimen",
+      "w": 0.2,
+      "val_AUROC": 94.74
+    },
+    {
+      "dims": "specimen",
+      "w": 0.3,
+      "val_AUROC": 94.74
+    },
+    {
+      "dims": "specimen",
+      "w": 0.5,
+      "val_AUROC": 94.74
+    },
+    {
+      "dims": "provenance",
+      "w": 0.1,
+      "val_AUROC": 93.09
+    },
+    {
+      "dims": "provenance",
+      "w": 0.2,
+      "val_AUROC": 93.09
+    },
+    {
+      "dims": "provenance",
+      "w": 0.3,
+      "val_AUROC": 93.09
+    },
+    {
+      "dims": "provenance",
+      "w": 0.5,
+      "val_AUROC": 93.09
+    },
+    {
+      "dims": "unit+type",
+      "w": 0.1,
+      "val_AUROC": 99.12
+    },
+    {
+      "dims": "unit+type",
+      "w": 0.2,
+      "val_AUROC": 99.12
+    },
+    {
+      "dims": "unit+type",
+      "w": 0.3,
+      "val_AUROC": 99.01
+    },
+    {
+      "dims": "unit+type",
+      "w": 0.5,
+      "val_AUROC": 98.9
+    },
+    {
+      "dims": "unit+specimen",
+      "w": 0.1,
+      "val_AUROC": 99.01
+    },
+    {
+      "dims": "unit+specimen",
+      "w": 0.2,
+      "val_AUROC": 99.01
+    },
+    {
+      "dims": "unit+specimen",
+      "w": 0.3,
+      "val_AUROC": 99.01
+    },
+    {
+      "dims": "unit+specimen",
+      "w": 0.5,
+      "val_AUROC": 98.68
+    },
+    {
+      "dims": "unit+provenance",
+      "w": 0.1,
+      "val_AUROC": 98.03
+    },
+    {
+      "dims": "unit+provenance",
+      "w": 0.2,
+      "val_AUROC": 98.03
+    },
+    {
+      "dims": "unit+provenance",
+      "w": 0.3,
+      "val_AUROC": 98.03
+    },
+    {
+      "dims": "unit+provenance",
+      "w": 0.5,
+      "val_AUROC": 98.03
+    },
+    {
+      "dims": "type+specimen",
+      "w": 0.1,
+      "val_AUROC": 98.57
+    },
+    {
+      "dims": "type+specimen",
+      "w": 0.2,
+      "val_AUROC": 98.57
+    },
+    {
+      "dims": "type+specimen",
+      "w": 0.3,
+      "val_AUROC": 98.46
+    },
+    {
+      "dims": "type+specimen",
+      "w": 0.5,
+      "val_AUROC": 98.46
+    },
+    {
+      "dims": "type+provenance",
+      "w": 0.1,
+      "val_AUROC": 97.97
+    },
+    {
+      "dims": "type+provenance",
+      "w": 0.2,
+      "val_AUROC": 97.97
+    },
+    {
+      "dims": "type+provenance",
+      "w": 0.3,
+      "val_AUROC": 97.97
+    },
+    {
+      "dims": "type+provenance",
+      "w": 0.5,
+      "val_AUROC": 97.86
+    },
+    {
+      "dims": "specimen+provenance",
+      "w": 0.1,
+      "val_AUROC": 94.85
+    },
+    {
+      "dims": "specimen+provenance",
+      "w": 0.2,
+      "val_AUROC": 94.85
+    },
+    {
+      "dims": "specimen+provenance",
+      "w": 0.3,
+      "val_AUROC": 94.85
+    },
+    {
+      "dims": "specimen+provenance",
+      "w": 0.5,
+      "val_AUROC": 94.3
+    },
+    {
+      "dims": "unit+type+specimen",
+      "w": 0.1,
+      "val_AUROC": 99.34
+    },
+    {
+      "dims": "unit+type+specimen",
+      "w": 0.2,
+      "val_AUROC": 99.29
+    },
+    {
+      "dims": "unit+type+specimen",
+      "w": 0.3,
+      "val_AUROC": 99.23
+    },
+    {
+      "dims": "unit+type+specimen",
+      "w": 0.5,
+      "val_AUROC": 97.2
+    },
+    {
+      "dims": "unit+type+provenance",
+      "w": 0.1,
+      "val_AUROC": 99.07
+    },
+    {
+      "dims": "unit+type+provenance",
+      "w": 0.2,
+      "val_AUROC": 99.07
+    },
+    {
+      "dims": "unit+type+provenance",
+      "w": 0.3,
+      "val_AUROC": 98.96
+    },
+    {
+      "dims": "unit+type+provenance",
+      "w": 0.5,
+      "val_AUROC": 98.85
+    },
+    {
+      "dims": "unit+specimen+provenance",
+      "w": 0.1,
+      "val_AUROC": 98.25
+    },
+    {
+      "dims": "unit+specimen+provenance",
+      "w": 0.2,
+      "val_AUROC": 98.25
+    },
+    {
+      "dims": "unit+specimen+provenance",
+      "w": 0.3,
+      "val_AUROC": 98.25
+    },
+    {
+      "dims": "unit+specimen+provenance",
+      "w": 0.5,
+      "val_AUROC": 97.37
+    },
+    {
+      "dims": "type+specimen+provenance",
+      "w": 0.1,
+      "val_AUROC": 98.41
+    },
+    {
+      "dims": "type+specimen+provenance",
+      "w": 0.2,
+      "val_AUROC": 98.41
+    },
+    {
+      "dims": "type+specimen+provenance",
+      "w": 0.3,
+      "val_AUROC": 98.3
+    },
+    {
+      "dims": "type+specimen+provenance",
+      "w": 0.5,
+      "val_AUROC": 97.75
+    },
+    {
+      "dims": "unit+type+specimen+provenance",
+      "w": 0.1,
+      "val_AUROC": 99.18
+    },
+    {
+      "dims": "unit+type+specimen+provenance",
+      "w": 0.2,
+      "val_AUROC": 99.12
+    },
+    {
+      "dims": "unit+type+specimen+provenance",
+      "w": 0.3,
+      "val_AUROC": 99.07
+    },
+    {
+      "dims": "unit+type+specimen+provenance",
+      "w": 0.5,
+      "val_AUROC": 96.49
+    }
+  ]
+}

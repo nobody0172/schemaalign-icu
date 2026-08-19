@@ -1,0 +1,9 @@
+comparison,stratum,n,Po,Pe,kappa,clinician_agree_%,data_eng_agree_%,both_agree_%
+clinician vs data engineer (human-human),all,196,0.9643,0.2599,0.9517,,,
+clinician vs data engineer (mappable vs UNKNOWN),all,196,0.9694,0.5,0.9388,,,
+human vs model,S1 (判 UNKNOWN 的高覆盖字段),70,,,,98.6,98.6,98.6
+human vs model,S2 (正例·仅 LLM 证据),50,,,,92.0,94.0,92.0
+human vs model,S3 (两标注者分歧经仲裁),30,,,,86.7,86.7,80.0
+human vs model,S4 (检查报冲突的正例),28,,,,100.0,96.4,96.4
+human vs model,S5 (正例·非 LLM 证据),20,,,,80.0,75.0,75.0
+human vs model,ALL (all),198,,,,93.4,92.9,91.4

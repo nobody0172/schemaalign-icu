@@ -1,0 +1,4 @@
+domain,gold_version,n_fields,n_positive,Recall@1,Precision,AUROC_base,AUROC_ours,delta,paired_CI_lo,paired_CI_hi,boot_p_delta_le_0
+mimic-iv,expert-corrected,132,49,95.92,69.12,90.96,96.64,5.68,2.7,8.99,0.0
+mimic-iii,expert-corrected,693,293,97.61,72.04,87.92,93.39,5.47,3.96,7.03,0.0
+eicu,expert-corrected,244,151,89.4,85.99,84.8,85.46,0.65,-1.45,2.79,0.279

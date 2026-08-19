@@ -1,0 +1,16 @@
+method,domain,theta,Recall@1,Recall@5,Recall@10,Precision,Recall,F1,Coverage,UnitViolRate,OpenSet_AUROC,OpenSet_AUPRC,n_fields,n_positive,n_unknown
+Exact / normalized name,mimic-iv,,36.73,36.73,36.73,100.0,36.73,53.73,13.64,0.0,68.37,100.0,132,49,83
+Ontology only (LOINC),mimic-iv,,26.53,26.53,26.53,100.0,26.53,41.94,9.85,0.0,63.27,100.0,132,49,83
+Name embedding (frozen),mimic-iv,0.64,48.98,53.06,53.06,82.76,48.98,61.54,21.97,0.0,76.35,97.73,132,49,83
+"FieldCard embedding, no gate",mimic-iv,0.84,53.06,55.1,55.1,61.9,53.06,57.14,31.82,0.0,70.14,88.53,132,49,83
+Semantic recall + gate (T5a),mimic-iv,0.94,42.86,44.9,44.9,67.74,42.86,52.5,23.48,0.0,73.52,94.41,132,49,83
+Exact / normalized name,mimic-iii,,37.16,37.16,37.16,94.02,37.16,53.27,16.81,0.9,68.29,98.41,696,296,400
+Ontology only (LOINC),mimic-iii,,24.66,24.66,24.66,100.0,24.66,39.57,10.49,2.74,62.33,100.0,696,296,400
+Name embedding (frozen),mimic-iii,0.64,62.16,64.53,64.53,86.79,62.16,72.44,30.46,0.99,79.93,97.31,696,296,400
+"FieldCard embedding, no gate",mimic-iii,0.84,51.35,57.43,60.14,35.93,51.35,42.28,60.78,3.13,52.68,82.19,696,296,400
+Semantic recall + gate (T5a),mimic-iii,0.94,31.42,34.8,34.8,68.89,31.42,43.16,19.4,0.0,66.04,93.33,696,296,400
+Exact / normalized name,eicu,,44.08,44.08,44.08,98.53,44.08,60.91,27.87,0.0,72.37,100.0,244,152,92
+Ontology only (LOINC),eicu,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,nan,50.0,100.0,244,152,92
+Name embedding (frozen),eicu,0.64,44.08,49.34,49.34,75.28,44.08,55.6,36.48,3.66,67.06,94.28,244,152,92
+"FieldCard embedding, no gate",eicu,0.84,33.55,38.82,38.82,59.3,33.55,42.86,35.25,7.69,55.61,87.61,244,152,92
+Semantic recall + gate (T5a),eicu,0.94,24.34,25.66,25.66,68.52,24.34,35.92,22.13,0.0,55.55,89.71,244,152,92

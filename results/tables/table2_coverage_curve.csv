@@ -1,0 +1,16 @@
+domain,method,curve_auc,P@Cov10,P@Cov20,P@Cov30,P@Cov40,P@Cov50
+mimic-iv,Name embedding (frozen),52.54,100.0,84.0,70.27,52.0,41.94
+mimic-iv,"FieldCard embedding, no gate",49.63,100.0,72.0,64.86,50.0,40.32
+mimic-iv,Semantic recall + gate (T5a),48.66,92.31,68.0,64.86,50.0,40.32
+mimic-iv,"Facet (T5b, no gate)",41.78,61.54,64.0,59.46,48.0,38.71
+mimic-iv,SchemaAlign-ICU (T5b + gate),44.78,76.92,76.0,62.16,48.0,38.71
+mimic-iii,Name embedding (frozen),60.27,94.12,93.13,83.59,68.46,56.13
+mimic-iii,"FieldCard embedding, no gate",45.93,86.57,60.77,47.45,41.22,36.31
+mimic-iii,Semantic recall + gate (T5a),42.99,82.09,68.46,48.98,37.4,31.69
+mimic-iii,"Facet (T5b, no gate)",58.89,92.54,87.69,76.02,62.21,52.62
+mimic-iii,SchemaAlign-ICU (T5b + gate),53.58,97.01,86.15,61.22,48.47,41.54
+eicu,Name embedding (frozen),70.41,100.0,100.0,87.27,75.68,69.57
+eicu,"FieldCard embedding, no gate",62.69,89.47,83.78,74.55,60.81,56.52
+eicu,Semantic recall + gate (T5a),54.76,100.0,81.08,67.27,52.7,44.57
+eicu,"Facet (T5b, no gate)",64.59,100.0,89.19,78.18,64.86,55.43
+eicu,SchemaAlign-ICU (T5b + gate),65.09,100.0,91.89,76.36,63.51,58.7

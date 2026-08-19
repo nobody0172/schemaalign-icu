@@ -1,0 +1,5 @@
+domain,fieldcard,Recall@1,Precision,Recall,F1,Coverage,n_fields,n_positive
+mimic-iv,no itemid (ours),95.92,69.12,95.92,80.34,51.52,132,49
+mimic-iv,with itemid,95.92,64.38,95.92,77.05,55.3,132,49
+mimic-iii,no itemid (ours),97.3,70.76,97.3,81.93,58.48,696,296
+mimic-iii,with itemid,97.3,68.09,97.3,80.11,60.78,696,296

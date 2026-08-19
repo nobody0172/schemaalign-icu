@@ -1,0 +1,9 @@
+base_concept,group,mimic-iv,mimic-iii,eicu,note
+age,demographic,hosp/patients.anchor_age,PATIENTS.DOB+ICUSTAYS.INTIME,patient.age,"表内显式列, 三库映射无歧义"
+sex,demographic,hosp/patients.gender,PATIENTS.GENDER,patient.gender,"表内显式列, 三库映射无歧义"
+admission_weight,demographic,icu/chartevents:Admission Weight,CHARTEVENTS:Admit Wt,patient.admissionweight,"表内显式列, 三库映射无歧义"
+admission_height,demographic,icu/chartevents:Height,CHARTEVENTS:Height,patient.admissionheight,"表内显式列, 三库映射无歧义"
+ethnicity,demographic,hosp/admissions.race,ADMISSIONS.ETHNICITY,patient.ethnicity,"表内显式列, 三库映射无歧义"
+admission_type,demographic,hosp/admissions.admission_type,ADMISSIONS.ADMISSION_TYPE,patient.unitadmitsource,"表内显式列, 三库映射无歧义"
+first_careunit,demographic,icu/icustays.first_careunit,ICUSTAYS.FIRST_CAREUNIT,patient.unittype,"表内显式列, 三库映射无歧义"
+hospital_los,demographic,hosp/admissions(dis-adm),ADMISSIONS(DIS-ADM),patient.hospitaldischargeoffset,"表内显式列, 三库映射无歧义"

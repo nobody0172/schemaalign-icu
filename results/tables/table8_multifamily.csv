@@ -1,0 +1,10 @@
+model,family,domain,Recall@1,Precision,Coverage,over_assignment_share_of_errors_%,AUROC_base,AUROC_ours,delta,paired_CI_lo,paired_CI_hi,boot_p,n_fields,n_positive
+gpt-4.1,OpenAI,mimic-iv,95.92,69.12,51.52,90.5,90.96,96.64,5.68,2.7,8.99,0.0,132,49
+gpt-4.1,OpenAI,mimic-iii,97.3,72.0,57.47,93.0,87.93,93.57,5.65,4.08,7.23,0.0,696,296
+gpt-4.1,OpenAI,eicu,88.16,85.35,64.34,51.4,84.39,85.04,0.65,-1.48,2.76,0.2825,244,152
+deepseek-v3.2,DeepSeek,mimic-iv,95.92,60.26,59.09,93.5,85.79,95.28,9.49,5.8,13.85,0.0,132,49
+deepseek-v3.2,DeepSeek,mimic-iii,97.97,68.88,60.49,95.4,85.87,93.09,7.22,5.56,9.01,0.0,696,296
+deepseek-v3.2,DeepSeek,eicu,88.16,68.37,80.33,74.3,75.3,79.27,3.97,0.94,7.16,0.0045,244,152
+gemini-2.5-pro,Google,mimic-iv,95.92,65.28,54.55,92.0,87.35,96.25,8.9,5.19,13.25,0.0,132,49
+gemini-2.5-pro,Google,mimic-iii,97.64,70.15,59.2,94.3,87.99,95.04,7.06,5.35,8.75,0.0,696,296
+gemini-2.5-pro,Google,eicu,73.03,79.86,56.97,31.7,78.81,80.43,1.62,-0.55,3.96,0.0695,244,152

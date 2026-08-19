@@ -1,0 +1,18 @@
+item_no,stratum,db,field_key,model,clinician,clinician_conf,data_eng,data_eng_conf,both_humans_agree_against_model,clinician_note,data_eng_note
+51,S5,mimic-iii,807,glucose,UNKNOWN,4,UNKNOWN,4,True,床旁指血快速血糖，不是实验室血糖,"POC fingerstick glucose, distinct from lab glucose."
+55,S5,mimic-iii,225664,glucose,UNKNOWN,4,UNKNOWN,4,True,床旁末梢血糖，和实验室血糖不是一个概念,"POC fingerstick glucose, distinct from lab glucose."
+65,S5,mimic-iii,220051,dbp,dbp,5,UNKNOWN,4,False,有创动脉舒张压,Arterial-line diastolic; invasive BP is a distinct concept from NIBP.
+78,S3,mimic-iv,50827,respiratory_rate,UNKNOWN,3,respiratory_rate,3,False,随血气记录的呼吸机通气频率，不是实测呼吸频率,RR recorded with the ABG; no unit or values in sample.
+86,S2,eicu,Other Vital Signs and Infusions|Pulse|Value,heart_rate,UNKNOWN,3,UNKNOWN,4,True,通用Value单元格，数值像血压但没有单位,"Label lost; 48-138 range could be HR or MAP, cannot verify."
+87,S2,mimic-iv,226062,pco2,UNKNOWN,3,pco2,4,False,静脉血CO2分压，不是动脉PCO2,Venous sample; the concept does not separate venous from arterial.
+97,S1,mimic-iii,6208,UNKNOWN,UNSURE,2,UNSURE,2,True,拿不准是实测分钟通气量还是高限报警,Cannot tell alarm threshold (setting) vs measured Ve from the metadata; measured Ve would map to minute_volume.
+100,S3,mimic-iii,1337,sedation_score,sedation_scale,4,sedation_scale,5,True,Riker镇静-躁动量表,Riker SAS 1-7 scale.
+117,S2,eicu,Other Vital Signs and Infusions|Patient s Comfort/Function (Pain) GOAL At Rest|Value,pain_goal,UNKNOWN,3,UNSURE,2,False,0-7.8像谵妄或疼痛评分，但没有字段名,Label lost; 0-8 range could be a delirium score (CAM-ICU-7) but unverifiable.
+126,S5,mimic-iv,224688,respiratory_rate,UNKNOWN,4,UNKNOWN,4,True,呼吸机设定频率，不是实测呼吸频率,"Ventilator set rate, not measured RR; no set-rate concept."
+127,S5,mimic-iv,225664,glucose,UNKNOWN,4,UNKNOWN,4,True,床旁指血血糖，字段名里还写着参考范围,"POC fingerstick glucose, distinct from lab glucose."
+138,S2,mimic-iii,619,respiratory_rate,UNKNOWN,4,UNKNOWN,4,True,呼吸机设定频率，不是实测,"Ventilator set rate, not measured RR."
+143,S3,mimic-iii,5,sbp,sbp,3,UNKNOWN,4,False,ABI测量用的多普勒肱动脉收缩压,"Brachial pressure from an ABI study, not routine vitals."
+147,S3,mimic-iv,224652,sbp,sbp,3,UNKNOWN,4,False,IABP反搏间歇期的实测收缩压,"IABP unassisted systolic beat, not routine SBP."
+148,S3,mimic-iii,471,o2_flow_additional,o2_flow,5,o2_flow_additional,4,False,第二路吸氧流量,Second O2 flow source.
+156,S4,eicu,Vital Signs|Invasive BP|Invasive BP Mean,mbp,mbp,5,UNKNOWN,4,False,有创动脉平均压,Arterial-line mean pressure; invasive BP is distinct from NIBP.
+195,S3,eicu,respFlowPtVentData|SaO2,spo2,so2,4,so2,4,True,呼吸治疗单记录的动脉血氧饱和度,"RT-charted SaO2, not pulse oximetry."

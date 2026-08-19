@@ -1,0 +1,7 @@
+domain,setting,OpenSet_AUROC,P@Cov20,P@Cov30,P@Cov40,P@Cov50,UnitViol@Cov20,UnitViol@Cov30,UnitViol@Cov40,UnitViol@Cov50
+mimic-iv,Name-emb (无门控),93.03,84.0,70.27,52.0,41.94,0.0,5.56,4.44,7.41
+mimic-iv,Name-emb + 确定性门控,88.42,76.0,56.76,44.0,35.48,0.0,0.0,0.0,0.0
+mimic-iii,Name-emb (无门控),89.95,93.13,83.59,68.46,56.13,1.65,1.12,2.6,3.89
+mimic-iii,Name-emb + 确定性门控,76.64,70.99,51.53,39.62,31.69,0.0,0.0,0.0,0.0
+eicu,Name-emb (无门控),76.42,100.0,87.27,75.68,69.57,0.0,0.0,4.41,7.06
+eicu,Name-emb + 确定性门控,69.06,78.38,65.45,64.86,57.61,0.0,0.0,0.0,0.0

@@ -1,0 +1,29 @@
+\begin{table*}[t]
+\centering
+\caption{The same graded penalty $w\sum_d V_d$, evaluated two ways. (a) Consumed three ways---weight, dimensions, candidates, calibration split and test fields held fixed, only the consumer varies; $\Delta$ is against the matcher's own abstention, with paired bootstrap 95\% CIs. (b) $\Delta$AUROC of each dimension subset used as abstention evidence, on the same matcher and fields.}
+\label{tab:ablate}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l rr l rr l rr l@{}}
+\toprule
+& \multicolumn{3}{c}{MIMIC-IV} & \multicolumn{3}{c}{CareVue} & \multicolumn{3}{c}{eICU} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+& $\Delta$R@1 & $\Delta$AUC & 95\% CI & $\Delta$R@1 & $\Delta$AUC & 95\% CI & $\Delta$R@1 & $\Delta$AUC & 95\% CI \\
+\midrule
+\multicolumn{10}{@{}l}{\emph{(a) consumer of the penalty}}\\
+re-rank candidates & -4.1 & -0.5 & [-1.3,\,0.0] & -4.0 & 0.3 & [-0.3,\,1.1] & -2.6 & -0.4 & [-0.8,\,-0.1] \\
+reject candidates & -10.2 & -1.2 & [-5.7,\,3.0] & -7.1 & 2.7 & [0.5,\,5.0] & -5.3 & -1.9 & [-4.4,\,0.6] \\
+\textbf{abstain (ours)} & \textbf{0.0} & \textbf{5.7} & \textbf{[2.7,\,9.0]} & \textbf{0.0} & \textbf{5.7} & \textbf{[4.0,\,7.2]} & \textbf{0.0} & \textbf{0.7} & \textbf{[-1.5,\,2.8]} \\
+\addlinespace[2pt]
+\midrule
+\multicolumn{10}{@{}l}{\emph{(b) dimensions used as abstention evidence ($\Delta$AUROC)}}\\
+unit only &  & 5.3 & [93.3,\,98.6] &  & 3.2 & [88.9,\,93.2] &  & -0.7 & [77.5,\,88.3] \\
+data type only &  & 1.3 & [87.9,\,95.9] &  & 4.5 & [90.5,\,94.0] &  & 0.1 & [79.2,\,89.0] \\
+specimen only &  & 2.8 & [90.5,\,96.5] &  & 3.1 & [89.1,\,92.9] &  & 1.8 & [81.1,\,90.4] \\
+provenance only &  & -1.8 & [83.7,\,94.2] &  & -2.3 & [82.8,\,88.1] &  & -1.1 & [77.6,\,88.2] \\
+all four &  & 3.9 & [91.2,\,97.7] &  & 3.8 & [89.5,\,93.5] &  & 0.0 & [78.7,\,88.9] \\
+\textbf{unit + type + specimen (ours)} &  & \textbf{5.7} & \textbf{[93.8,\,98.6]} &  & \textbf{5.7} & \textbf{[91.8,\,95.3]} &  & \textbf{0.7} & \textbf{[79.2,\,89.5]} \\
+\bottomrule
+\end{tabular}
+\vspace{-4pt}
+\end{table*}

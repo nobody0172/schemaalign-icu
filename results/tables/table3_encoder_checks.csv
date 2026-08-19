@@ -1,0 +1,4 @@
+domain,matcher,dims_reselected,w_reselected,AUROC_base,AUROC_with_checks,delta,tuned_on,val_AUROC_base,val_AUROC_best,n_fields,n_positive
+mimic-iv,SapBERT (graded cosine confidence),unit+type,0.2,93.36,93.34,-0.02,mimic-iv val split (C4),95.94,97.81,132,49
+mimic-iii,SapBERT (graded cosine confidence),unit+type,0.2,92.48,90.6,-1.89,mimic-iv val split (C4),95.94,97.81,696,296
+eicu,SapBERT (graded cosine confidence),unit+type,0.2,80.65,79.43,-1.22,mimic-iv val split (C4),95.94,97.81,244,152

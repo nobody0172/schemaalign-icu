@@ -1,0 +1,7 @@
+method,domain,theta,Recall@1,Recall@5,Recall@10,Precision,Recall,F1,Coverage,UnitViolRate,OpenSet_AUROC,OpenSet_AUPRC,n_fields,n_positive,n_unknown
+Semantic recall + deterministic gate (prov-hard),mimic-iv,0.9,57.89,57.89,57.89,68.75,57.89,62.86,26.02,0.0,78.78,93.8,123,38,85
+Semantic recall + deterministic gate (prov-hard),mimic-iii,0.9,38.4,41.2,41.2,53.04,38.4,44.55,27.85,0.0,65.4,85.93,650,250,400
+Semantic recall + deterministic gate (prov-hard),eicu,0.9,30.83,33.33,33.33,69.81,30.83,42.77,28.96,0.0,57.56,90.93,183,120,63
+Semantic recall + deterministic gate (prov-soft),mimic-iv,0.9,57.89,57.89,57.89,68.75,57.89,62.86,26.02,0.0,78.78,93.8,123,38,85
+Semantic recall + deterministic gate (prov-soft),mimic-iii,0.9,38.4,41.2,41.2,53.04,38.4,44.55,27.85,0.0,65.4,85.93,650,250,400
+Semantic recall + deterministic gate (prov-soft),eicu,0.9,30.83,33.33,33.33,69.81,30.83,42.77,28.96,0.0,57.56,90.93,183,120,63

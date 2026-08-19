@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Zero-shot cross-database transfer of a 24-channel physiological time-series model trained on MIMIC-IV (validation AUROC $84.20\pm0.12$), as a function of how target fields are mapped onto channels. Mortality AUROC, mean$\pm$sd over five seeds; $c$ = channels receiving data. The last row is a patient-level paired bootstrap of the abstention effect.}
+\label{tab:transfer}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l cc cc@{}}
+\toprule
+& \multicolumn{2}{c}{CareVue ($n{=}19{,}112$)} & \multicolumn{2}{c}{eICU ($n{=}110{,}257$)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Field alignment & AUROC & $c$ & AUROC & $c$ \\
+\midrule
+reference (adjudicated) & 74.5\,$\pm$\,1.3 & 24 & 70.4\,$\pm$\,0.5 & 20 \\
+exact name & 58.3\,$\pm$\,0.7 & 17 & 62.7\,$\pm$\,4.1 & 12 \\
+frozen LLM & 74.4\,$\pm$\,1.1 & 24 & 66.4\,$\pm$\,1.6 & 21 \\
+\quad + abstention (\textbf{ours}) & 74.4\,$\pm$\,1.1 & 20 & 66.4\,$\pm$\,1.6 & 20 \\
+\midrule
+paired $\Delta$ (ours $-$ LLM) & \multicolumn{2}{c}{$0.06$ [-0.05, 0.18]} & \multicolumn{2}{c}{$-0.00$ [-0.06, 0.05]} \\
+\bottomrule
+\end{tabular}
+\vspace{-4pt}
+\end{table}

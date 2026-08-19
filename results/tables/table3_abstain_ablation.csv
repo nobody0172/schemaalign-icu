@@ -1,0 +1,31 @@
+domain,setting,dims,OpenSet_AUROC,CI_lo,CI_hi,delta_vs_base,Recall@1,Precision,n_fields,n_positive
+mimic-iv,全部四维,unit+type+specimen+provenance,94.81,91.23,97.74,3.85,95.92,69.12,132,49
+mimic-iv,− unit,type+specimen+provenance,92.61,87.8,96.44,1.65,95.92,69.12,132,49
+mimic-iv,− type,unit+specimen+provenance,94.68,91.11,97.49,3.71,95.92,69.12,132,49
+mimic-iv,− specimen,unit+type+provenance,94.0,89.94,97.42,3.04,95.92,69.12,132,49
+mimic-iv,− provenance,unit+type+specimen,96.64,93.84,98.64,5.68,95.92,69.12,132,49
+mimic-iv,仅 unit,unit,96.3,93.29,98.64,5.34,95.92,69.12,132,49
+mimic-iv,仅 type,type,92.29,87.86,95.89,1.33,95.92,69.12,132,49
+mimic-iv,仅 specimen,specimen,93.73,90.46,96.48,2.77,95.92,69.12,132,49
+mimic-iv,仅 provenance,provenance,89.22,83.71,94.16,-1.75,95.92,69.12,132,49
+mimic-iv,仅匹配器自身弃权,,90.96,,,0.0,95.92,69.12,132,49
+mimic-iii,全部四维,unit+type+specimen+provenance,91.75,89.49,93.54,3.82,97.3,72.0,696,296
+mimic-iii,− unit,type+specimen+provenance,90.73,88.47,92.74,2.8,97.3,72.0,696,296
+mimic-iii,− type,unit+specimen+provenance,89.79,87.4,91.9,1.86,97.3,72.0,696,296
+mimic-iii,− specimen,unit+type+provenance,90.71,88.27,92.71,2.79,97.3,72.0,696,296
+mimic-iii,− provenance,unit+type+specimen,93.57,91.76,95.26,5.65,97.3,72.0,696,296
+mimic-iii,仅 unit,unit,91.14,88.87,93.22,3.21,97.3,72.0,696,296
+mimic-iii,仅 type,type,92.38,90.55,94.05,4.45,97.3,72.0,696,296
+mimic-iii,仅 specimen,specimen,91.07,89.08,92.86,3.14,97.3,72.0,696,296
+mimic-iii,仅 provenance,provenance,85.59,82.75,88.14,-2.34,97.3,72.0,696,296
+mimic-iii,仅匹配器自身弃权,,87.93,,,0.0,97.3,72.0,696,296
+eicu,全部四维,unit+type+specimen+provenance,84.4,78.69,88.93,0.01,88.16,85.35,244,152
+eicu,− unit,type+specimen+provenance,84.97,79.61,89.48,0.58,88.16,85.35,244,152
+eicu,− type,unit+specimen+provenance,84.39,78.3,88.88,0.0,88.16,85.35,244,152
+eicu,− specimen,unit+type+provenance,83.28,77.37,88.34,-1.1,88.16,85.35,244,152
+eicu,− provenance,unit+type+specimen,85.04,79.22,89.54,0.65,88.16,85.35,244,152
+eicu,仅 unit,unit,83.68,77.51,88.35,-0.71,88.16,85.35,244,152
+eicu,仅 type,type,84.49,79.23,89.02,0.1,88.16,85.35,244,152
+eicu,仅 specimen,specimen,86.22,81.07,90.4,1.83,88.16,85.35,244,152
+eicu,仅 provenance,provenance,83.26,77.63,88.15,-1.13,88.16,85.35,244,152
+eicu,仅匹配器自身弃权,,84.39,,,0.0,88.16,85.35,244,152

@@ -1,0 +1,15 @@
+\section{Conclusions}
+
+In this paper we study open-set field alignment across ICU databases, where most fields
+correspond to no concept in any unified catalogue and the binding problem is therefore
+abstention rather than ranking. We show that a deterministic constraint can enter an
+alignment pipeline in two ways that are not interchangeable: as a filter that vetoes
+candidates, or as evidence that discounts the confidence of a match already made. A
+filter helps only when the matcher violates the constraint often enough to be worth the
+recall it costs, and a strong frozen matcher violates it in $0.7\%$ of accepted matches;
+read as evidence, the identical predicates improve open-set AUROC by $5.7$ points on two
+of three databases at no downstream cost, and the effect replicates across three
+language-model families. One limitation bounds these claims: the reference standard is
+model-adjudicated, with a blinded-expert error estimate near $4\%$ on the strata reviewed,
+and the residue concentrates in measurement-method distinctions that a method-agnostic
+concept catalogue cannot represent.

@@ -1,0 +1,7 @@
+domain,gold_subset,n_positive,Recall@1
+mimic-iv,non-LLM evidence,12,100.0
+mimic-iv,LLM-adjudicated,37,94.59
+mimic-iii,non-LLM evidence,101,98.02
+mimic-iii,LLM-adjudicated,195,96.92
+eicu,non-LLM evidence,37,100.0
+eicu,LLM-adjudicated,115,84.35
